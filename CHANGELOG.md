@@ -7,6 +7,27 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
 ---
 
+## [1.1.0] - 2026-07-20
+
+### Adicionado (Added)
+- **Camada de Compatibilidade Completa de Namespaces C#**:
+  - Implementadas **314 classes C#** customizadas dentro de `Source/UnifiedTraits/Compatibility/ModCompatibilityClasses.cs`.
+  - Cobertura integral de todos os `workerClass`, `stateClass`, `compClass` e atributos `Class` dos namespaces originais (`VanillaTraitsExpanded`, `HautsTraits`, `HautsFramework`, `HautsTraitsRoyalty`, `More_Traits`, `SimsTraits`, `MoloyTraits`, `TraitsPlus`, `Gewen_AdditionalTraits`, `TraitTracker`).
+- **Inclusão de MentalBreakDefs Nativos**:
+  - Adicionado `MentalBreakDefs_UnifiedTraits.xml` em `1.5/` e `1.6/` definindo `MentalBreakDef`s para quebras mentais e aflições dinâmicas (`UT_VTE_TechnophobeTantrum`, `UT_VTE_PanicFreezing`, `UT_VTE_Kleptomaniac`, `UT_BOT_ClaustrophobicBreak`, `UT_HVT_HumanityBreak`).
+- **Expansão de Patches Harmony (`UnifiedTraits.HarmonyPatches`)**:
+  - Adicionados `Patch_StatWorker`, `Patch_Pawn_HealthTracker`, `Patch_Pawn_SkillTracker`, `Patch_QualityUtility` e `Patch_TraitSet`.
+
+### Corrigido (Fixed)
+- **Resolução de Cross-References XML**:
+  - Resoluções completas em `<conflictingTraits>`, `<requiredTraits>`, `<nullifyingTraits>` e `<theOnlyAllowedMentalBreaks>`.
+- **Normalização da Sintaxe `<skillGains>`**:
+  - Substituição da estrutura invalida `<li><key>Skill</key><value>+Val</value></li>` pela sintaxe oficial de dicionário RimWorld `<SkillName>Val</SkillName>`.
+- **Estatísticas Vanilla**:
+  - Substituição de `HungerRateMultiplier` por `HungerRateFactor`.
+
+---
+
 ## [1.0.0] - 2026-07-20
 
 ### Adicionado (Added)
