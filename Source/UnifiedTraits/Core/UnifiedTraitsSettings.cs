@@ -40,29 +40,29 @@ namespace UnifiedTraits.Core
             Listing_Standard listing = new Listing_Standard();
             listing.Begin(inRect);
 
-            listing.Label("UnifiedTraits.Settings.CategoriesHeader".Translate("Categorias de Traits Ativas"));
+            listing.Label("Categorias de Traits Ativas");
             listing.GapLine();
 
-            listing.CheckboxLabeled("UnifiedTraits.Settings.EnableBasicTraits".Translate("Traits Básicos e Gerais (Basic & General)"), ref EnableBasicTraits);
-            listing.CheckboxLabeled("UnifiedTraits.Settings.EnableSynergisticTraits".Translate("Traits de Sinergia (Synergistic Traits)"), ref EnableSynergisticTraits);
-            listing.CheckboxLabeled("UnifiedTraits.Settings.EnableFalloutTraits".Translate("Traits do Universo Fallout (S.P.E.C.I.A.L.)"), ref EnableFalloutTraits);
-            listing.CheckboxLabeled("UnifiedTraits.Settings.EnableDarkestDungeonTraits".Translate("Traits de Darkest Dungeon (Virtudes & Aflições)"), ref EnableDarkestDungeonTraits);
-            listing.CheckboxLabeled("UnifiedTraits.Settings.EnableSimsCK3Traits".Translate("Traits de Personalidade & Social (CK3 & The Sims)"), ref EnableSimsCK3Traits);
-            listing.CheckboxLabeled("UnifiedTraits.Settings.EnableHeroicTraits".Translate("Traits Heróicos & Lendários (Heroes + Gods)"), ref EnableHeroicTraits);
+            listing.CheckboxLabeled("Traits Básicos e Gerais (Basic & General)", ref EnableBasicTraits);
+            listing.CheckboxLabeled("Traits de Sinergia (Synergistic Traits)", ref EnableSynergisticTraits);
+            listing.CheckboxLabeled("Traits do Universo Fallout (S.P.E.C.I.A.L.)", ref EnableFalloutTraits);
+            listing.CheckboxLabeled("Traits de Darkest Dungeon (Virtudes & Aflições)", ref EnableDarkestDungeonTraits);
+            listing.CheckboxLabeled("Traits de Personalidade & Social (CK3 & The Sims)", ref EnableSimsCK3Traits);
+            listing.CheckboxLabeled("Traits Heróicos & Lendários (Heroes + Gods)", ref EnableHeroicTraits);
 
             listing.Gap();
-            listing.Label("UnifiedTraits.Settings.MechanicsHeader".Translate("Sistemas Dinâmicos e Mecânicas"));
+            listing.Label("Sistemas Dinâmicos e Mecânicas");
             listing.GapLine();
 
-            listing.CheckboxLabeled("UnifiedTraits.Settings.EnableDynamicTraitEvolution".Translate("Evolução Dinâmica de Traits por Eventos de Vida"), ref EnableDynamicTraitEvolution);
+            listing.CheckboxLabeled("Evolução Dinâmica de Traits por Eventos de Vida", ref EnableDynamicTraitEvolution);
             if (EnableDynamicTraitEvolution)
             {
-                listing.Label($"UnifiedTraits.Settings.EvolutionRate".Translate($"Multiplicador de Velocidade de Evolução: {TraitEvolutionRateMultiplier:F1}x"));
+                listing.Label($"Multiplicador de Velocidade de Evolução: {TraitEvolutionRateMultiplier:F1}x");
                 TraitEvolutionRateMultiplier = listing.Slider(TraitEvolutionRateMultiplier, 0.1f, 3.0f);
             }
 
-            listing.CheckboxLabeled("UnifiedTraits.Settings.EnableStressAfflictionSystem".Translate("Sistema de Aflições e Virtudes por Estresse Extremo"), ref EnableStressAfflictionSystem);
-            listing.CheckboxLabeled("UnifiedTraits.Settings.EnableTraitSynergyTicks".Translate("Cálculo Periódico de Sinergias de Traits em Pawns"), ref EnableTraitSynergyTicks);
+            listing.CheckboxLabeled("Sistema de Aflições e Virtudes por Estresse Extremo", ref EnableStressAfflictionSystem);
+            listing.CheckboxLabeled("Cálculo Periódico de Sinergias de Traits em Pawns", ref EnableTraitSynergyTicks);
 
             listing.End();
         }

@@ -1,3 +1,4 @@
+using System;
 using HarmonyLib;
 using Verse;
 
@@ -18,10 +19,18 @@ namespace UnifiedTraits.HarmonyPatches
         {
             if (initialized) return;
 
-            Harmony harmony = new Harmony(HarmonyId);
-            harmony.PatchAll();
-            initialized = true;
-            Log.Message($"[UnifiedTraits] Patches do Harmony ('{HarmonyId}') aplicados com sucesso.");
+            try
+            {
+                Harmony harmony = new Harmony(HarmonyId);
+                harmony.PatchAll();
+                initialized = true;
+                Log.Message($"[UnifiedTraits] Patches do Harmony ('{HarmonyId}') aplicados com sucesso.");
+            }
+            catch (Exception ex)
+            {
+                Log.Error($"[UnifiedTraits] Erro ao aplicar patches do Harmony: {ex}");
+                initialized = true; // Impede tentativas repetidas em loop
+            }
         }
     }
 }
