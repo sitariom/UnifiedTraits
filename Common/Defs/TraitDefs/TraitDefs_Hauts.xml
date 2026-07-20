@@ -61,12 +61,10 @@
           <modExtensions>
               <li Class="HautsFramework.TraitGrantedStuff">
   				<prisonerResolveFactor>
-  					<li>
-  						<key>0</key><value>5</value>
-  					</li>
+  					<0>5</0>
   				</prisonerResolveFactor>
               </li>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>2</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>2</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>UT_HVT_Vagabond</li></conflictingTraits>
   	</TraitDef>
@@ -159,7 +157,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>3</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>3</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>UT_HVT_Asocial</li><li MayRequire="Ludeon.RimWorld.Anomaly">Disturbing</li></conflictingTraits>
   		<requiredWorkTags><li>Social</li></requiredWorkTags>
@@ -241,7 +239,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>3</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>3</0></chargeCosts></li>
           </modExtensions>
   	</TraitDef>
 
@@ -268,7 +266,7 @@
   		</degreeDatas>
   		<conflictingTraits><li>Immunity</li><li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li></conflictingTraits>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>4</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>4</0></chargeCosts></li>
           </modExtensions>
   	</TraitDef>
 
@@ -406,7 +404,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>2</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>2</0></chargeCosts></li>
               <li Class="HautsFramework.TraitGrantedStuff">
   				<grantedHediffs>
   					<li>
@@ -432,7 +430,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>7</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>7</0></chargeCosts></li>
               <li Class="HautsFramework.TraitGrantedStuff">
   				<grantedHediffs>
   					<li>
@@ -483,7 +481,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>1</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>1</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>UT_HVT_Asocial</li><li>UT_HVT_Sadist</li></conflictingTraits>
   		<requiredWorkTags><li>Social</li></requiredWorkTags>
@@ -574,7 +572,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>8</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>8</0></chargeCosts></li>
           </modExtensions>
   	</TraitDef>
 
@@ -602,7 +600,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>4</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>4</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>Brawler</li></conflictingTraits>
   		<conflictingPassions><li>Melee</li></conflictingPassions>
@@ -654,7 +652,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>1</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>1</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>Undergrounder</li></conflictingTraits>
   	</TraitDef>
@@ -679,7 +677,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>2</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>2</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>Nudist</li></conflictingTraits>
   		<requiredWorkTags><li>Crafting</li></requiredWorkTags>
@@ -756,7 +754,7 @@
   			  <li>UT_HVT_Tranquil</li>
   			</conflictingTraits>
   			<modExtensions>
-  				<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>5</value></li></chargeCosts></li>
+  				<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>5</0></chargeCosts></li>
   				<li Class="HautsFramework.TraitGrantedStuff">
   					<grantedHediffs>
   						<li>
@@ -841,7 +839,7 @@
   					</li>
   				</grantedAbilities>
               </li>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>2</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>2</0></chargeCosts></li>
           </modExtensions>
   		<requiredWorkTags><li>Violent</li></requiredWorkTags>
   	</TraitDef>
@@ -929,8 +927,8 @@
               <li Class="HautsFramework.ConceitedTrait" />
   			<li Class="HautsTraits.SpecificPNFChargeCost">
   				<chargeCosts>
-  					<li><key>1</key><value>4</value></li>
-  					<li><key>2</key><value>4</value></li>
+  					<1>4</1>
+  					<2>4</2>
   				</chargeCosts>
   			</li>
           </modExtensions>
@@ -1137,8 +1135,8 @@
   				<chargeCosts>
   					<li><key>-2</key><value>5</value></li>
   					<li><key>-1</key><value>3</value></li>
-  					<li><key>1</key><value>3</value></li>
-  					<li><key>2</key><value>5</value></li>
+  					<1>3</1>
+  					<2>5</2>
   				</chargeCosts>
   			</li>
           </modExtensions>
@@ -1160,7 +1158,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>3</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>3</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>UT_HVT_Faithful</li></conflictingTraits>
   	</TraitDef>
@@ -1223,7 +1221,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>4</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>4</0></chargeCosts></li>
               <li Class="HautsFramework.ConceitedTrait" />
   		</modExtensions>
   		<conflictingTraits><li>Ascetic</li><li>UT_HVT_Humble</li><li>UT_HVT_Liberator</li><li MayRequire="Ludeon.RimWorld.Royalty">UT_HVT_Anarchist</li></conflictingTraits>
@@ -1249,7 +1247,7 @@
   					</li>
   				</prisonerResolveFactor>
               </li>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>4</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>4</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>UT_HVT_Subjugator</li><li MayRequire="Ludeon.RimWorld.Royalty">UT_HVT_Anarchist</li></conflictingTraits>
   	</TraitDef>
@@ -1277,7 +1275,7 @@
   					</li>
   				</grantedHediffs>
               </li>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>5</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>5</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>UT_HVT_PersecutionComplex</li></conflictingTraits>
   	</TraitDef>
@@ -1415,7 +1413,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>1</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>1</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>UT_HVT_Caretaker</li></conflictingTraits>
   	</TraitDef>
@@ -1434,7 +1432,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>1</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>1</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>UT_HVT_Misopedist</li></conflictingTraits>
   		<requiredWorkTags><li>Social</li></requiredWorkTags>
@@ -1455,7 +1453,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>1</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>1</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>UT_HVT_Mechaphobe</li></conflictingTraits>
   		<requiredWorkTags><li>Crafting</li></requiredWorkTags>
@@ -1485,7 +1483,7 @@
   					</li>
   				</grantedAbilities>
               </li>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>4</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>4</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>UT_HVT_Mechaphile</li></conflictingTraits>
   	</TraitDef>
@@ -1508,7 +1506,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>5</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>5</0></chargeCosts></li>
           </modExtensions>
   	</TraitDef>
 
@@ -1560,7 +1558,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>3</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>3</0></chargeCosts></li>
           </modExtensions>
   	</TraitDef>
 
@@ -1591,7 +1589,7 @@
   					</li>
   				</grantedHediffs>
               </li>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>1</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>1</0></chargeCosts></li>
           </modExtensions>
   	</TraitDef>
 
@@ -1851,7 +1849,7 @@
   					</li>
   				</prisonerResolveFactor>
               </li>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>1</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>1</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>UT_HVT_Servile</li><li MayRequire="Ludeon.RimWorld.Ideology">UT_HVT_Liberator</li><li MayRequire="Ludeon.RimWorld.Ideology">UT_HVT_Subjugator</li></conflictingTraits>
   	</TraitDef>
@@ -1873,7 +1871,7 @@
   					</li>
   				</prisonerResolveFactor>
               </li>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>2</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>2</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>UT_HVT_Anarchist</li></conflictingTraits>
   	</TraitDef>
@@ -5361,7 +5359,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>1</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>1</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>Kind</li><li>UT_HVT_Conversationalist</li></conflictingTraits>
   	</TraitDef>
@@ -5387,7 +5385,7 @@
   		</degreeDatas>
   		<conflictingTraits><li>Abrasive</li><li>UT_HVT_Winsome</li><li MayRequire="RavingLegend.MoreTraits">RT_Celebrity</li></conflictingTraits>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>4</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>4</0></chargeCosts></li>
           </modExtensions>
   	</TraitDef>
 
@@ -5405,7 +5403,7 @@
               <li Class="HautsFramework.TraitGrantedStuff">
   				<grantedHediffs><li><key>0</key><value><li>UT_HVT_Ramby</li></value></li></grantedHediffs>
               </li>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>1</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>1</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>UT_HVT_Tranquil</li></conflictingTraits>
   	</TraitDef>
@@ -5423,7 +5421,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>2</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>2</0></chargeCosts></li>
               <li Class="HautsFramework.TraitGrantedStuff">
   				<grantedHediffs>
   					<li>
@@ -5460,7 +5458,7 @@
   					</li>
   				</grantedHediffs>
   			</li>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>3</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>3</0></chargeCosts></li>
           </modExtensions>
   		<requiredWorkTags><li>Violent</li></requiredWorkTags>
   	</TraitDef>
@@ -5482,7 +5480,7 @@
               <li Class="HautsFramework.TraitGrantedStuff">
   				<grantedHediffs><li><key>0</key><value><li>UT_HVT_TheseNightmaresSureAreChronic</li></value></li></grantedHediffs>
               </li>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>1</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>1</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>UT_HVT_Tranquil</li><li>UT_HVT_VividDreams</li></conflictingTraits>
   	</TraitDef>
@@ -5500,7 +5498,7 @@
               <li Class="HautsFramework.TraitGrantedStuff">
   				<grantedHediffs><li><key>0</key><value><li>UT_HVT_VividDreaming</li></value></li></grantedHediffs>
               </li>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>5</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>5</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>UT_HVT_Staid</li><li>UT_HVT_ChronicNightmares</li></conflictingTraits>
   	</TraitDef>
@@ -5522,7 +5520,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>1</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>1</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>UT_HVT_Skybound</li><li>UT_HVT_CelestialCelerity</li></conflictingTraits>
   	</TraitDef>
@@ -5537,7 +5535,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>2</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>2</0></chargeCosts></li>
           </modExtensions>
   		<conflictingTraits><li>Undergrounder</li><li>UT_HVT_Earthborne</li></conflictingTraits>
   	</TraitDef>
@@ -5569,7 +5567,7 @@
   		<conflictingTraits><li>UT_HVT_Agrizoophobe</li></conflictingTraits>
   		<requiredWorkTags><li>Animals</li></requiredWorkTags>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>2</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>2</0></chargeCosts></li>
           </modExtensions>
   	</TraitDef>
 
@@ -5591,7 +5589,7 @@
   					</li>
   				</grantedHediffs>
               </li>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>4</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>4</0></chargeCosts></li>
           </modExtensions>
   	</TraitDef>
 
@@ -5641,7 +5639,7 @@
   		<conflictingTraits><li>UT_HVT_Imperceptive</li></conflictingTraits>
   		<requiredWorkTags><li>Intellectual</li></requiredWorkTags>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>5</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>5</0></chargeCosts></li>
           </modExtensions>
   	</TraitDef>
 
@@ -5663,7 +5661,7 @@
   		</degreeDatas>
   		<conflictingTraits><li MayRequire="Goji.TheSimsTraits">UT_ST_Vegan</li></conflictingTraits>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>1</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>1</0></chargeCosts></li>
           </modExtensions>
   	</TraitDef>
 
@@ -5693,7 +5691,7 @@
   		  </li>
   		</degreeDatas>
           <modExtensions>
-  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><li><key>0</key><value>4</value></li></chargeCosts></li>
+  			<li Class="HautsTraits.SpecificPNFChargeCost"><chargeCosts><0>4</0></chargeCosts></li>
           </modExtensions>
   		<requiredWorkTags><li>Animals</li></requiredWorkTags>
   	</TraitDef>
