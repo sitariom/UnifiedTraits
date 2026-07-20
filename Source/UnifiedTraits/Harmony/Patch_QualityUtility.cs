@@ -5,32 +5,22 @@ using UnifiedTraits.Core;
 
 namespace UnifiedTraits.HarmonyPatches
 {
-    [HarmonyPatch(typeof(QualityUtility), "GenerateQualityCreatedByPawn", new[] { typeof(Pawn), typeof(SkillDef) })]
+    [HarmonyPatch(typeof(QualityUtility), "GenerateQualityCreatedByPawn", new[] { typeof(int), typeof(bool) })]
     public static class Patch_QualityUtility
     {
         [HarmonyPostfix]
-        public static void Postfix(Pawn pawn, SkillDef relevantSkill, ref QualityCategory __result)
+        public static void Postfix(int relevantSkillLevel, bool recipeIsArt, ref QualityCategory __result)
         {
-            if (pawn?.story?.traits == null)
-                return;
-
             var settings = UnifiedTraitsMod.Instance?.Settings;
             if (settings == null) return;
 
             if (!settings.EnableBasicTraits && !settings.EnableHeroicTraits)
                 return;
 
-            var traits = pawn.story.traits.allTraits;
-            for (int i = 0; i < traits.Count; i++)
+            // Se o nível da habilidade do artesão for alto ou para criação mestre
+            if (relevantSkillLevel >= 14 && __result < QualityCategory.Legendary && Rand.Value < 0.20f)
             {
-                var trait = traits[i];
-                if (trait.def.defName == "UT_VTE_MasterCraftsman" || trait.def.defName == "UT_HeroicPerfectionist")
-                {
-                    if (__result < QualityCategory.Legendary && Rand.Value < 0.25f)
-                    {
-                        __result = (QualityCategory)((int)__result + 1);
-                    }
-                }
+                __result = (QualityCategory)((int)__result + 1);
             }
         }
     }
