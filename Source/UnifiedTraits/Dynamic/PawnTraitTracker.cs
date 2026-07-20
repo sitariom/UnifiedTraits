@@ -9,7 +9,7 @@ namespace UnifiedTraits.Dynamic
     public class PawnTraitTracker : GameComponent
     {
         private int tickCounter = 0;
-        private const int CheckInterval = 1000; // Check every ~16 seconds of gameplay
+        private const int CheckInterval = 1000;
 
         public PawnTraitTracker(Game game)
         {
@@ -31,6 +31,18 @@ namespace UnifiedTraits.Dynamic
             }
         }
 
+        public void OnTraitGained(Pawn pawn, Trait trait)
+        {
+            if (pawn == null || trait == null) return;
+            Log.Message($"[UnifiedTraits] {pawn.NameShortColored} adquiriu a trait {trait.LabelCap}.");
+        }
+
+        public void OnTraitLost(Pawn pawn, Trait trait)
+        {
+            if (pawn == null || trait == null) return;
+            Log.Message($"[UnifiedTraits] {pawn.NameShortColored} perdeu a trait {trait.LabelCap}.");
+        }
+
         private void EvaluatePawnTraits()
         {
             var maps = Find.Maps;
@@ -38,7 +50,7 @@ namespace UnifiedTraits.Dynamic
 
             foreach (var map in maps)
             {
-                if (map.mapPawns == null) continue;
+                if (map?.mapPawns == null) continue;
 
                 var freeColonists = map.mapPawns.FreeColonists;
                 if (freeColonists == null) continue;
@@ -55,19 +67,17 @@ namespace UnifiedTraits.Dynamic
 
         private void EvaluateIndividualPawn(Pawn pawn)
         {
-            var settings = UnifiedTraitsMod.Instance.Settings;
+            var settings = UnifiedTraitsMod.Instance?.Settings;
+            if (settings == null) return;
 
-            // Check mood-based trait progression
             if (pawn.needs?.mood != null)
             {
                 float curMood = pawn.needs.mood.CurLevel;
                 
-                // Extremely low mood: risk of stress affliction / negative trait development
                 if (curMood < 0.15f && settings.EnableStressAfflictionSystem)
                 {
                     StressVirtueAfflictionHandler.TryTriggerStressAffliction(pawn);
                 }
-                // High mood & inspiration: possibility of virtue / positive trait progression
                 else if (curMood > 0.85f && settings.EnableDynamicTraitEvolution)
                 {
                     StressVirtueAfflictionHandler.TryTriggerVirtueProgression(pawn);
