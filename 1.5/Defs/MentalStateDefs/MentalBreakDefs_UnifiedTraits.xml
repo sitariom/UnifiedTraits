@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <MentalBreakDef ParentName="Tantrum">
+    <defName>UT_VTE_TechnophobeTantrum</defName>
+    <mentalState>UT_VTE_TechnophobeTantrum</mentalState>
+    <baseCommonality>1</baseCommonality>
+    <intensity>Major</intensity>
+  </MentalBreakDef>
+
+  <MentalBreakDef ParentName="BaseMentalBreak">
+    <defName>UT_VTE_PanicFreezing</defName>
+    <mentalState>UT_VTE_PanicFreezing</mentalState>
+    <baseCommonality>1</baseCommonality>
+    <intensity>Extreme</intensity>
+  </MentalBreakDef>
+
+  <MentalBreakDef ParentName="BaseMentalBreak">
+    <defName>UT_VTE_Kleptomaniac</defName>
+    <mentalState>UT_VTE_Kleptomaniac</mentalState>
+    <baseCommonality>0.8</baseCommonality>
+    <intensity>Minor</intensity>
+  </MentalBreakDef>
+
+  <MentalBreakDef ParentName="BaseMentalBreak">
+    <defName>UT_BOT_ClaustrophobicBreak</defName>
+    <mentalState>UT_BOT_ClaustrophobicBreak</mentalState>
+    <baseCommonality>12</baseCommonality>
+    <intensity>Extreme</intensity>
+  </MentalBreakDef>
+
+  <MentalBreakDef ParentName="BaseMentalBreak">
+    <defName>UT_HVT_HumanityBreak</defName>
+    <label>humanity break</label>
+    <intensity>Extreme</intensity>
+    <baseCommonality>999</baseCommonality>
+    <mentalState>UT_HVT_HumanityBreak</mentalState>
+  </MentalBreakDef>
+</Defs>

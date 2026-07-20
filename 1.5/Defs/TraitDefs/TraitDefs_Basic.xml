@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraitDef>
+      <defName>UT_BT_Slaughterer</defName>
+      <label>slaughterer</label>
+      <description>[PAWN_nameDef] butchers animals faster.</description>
+    <commonality>1.5</commonality>
+    <degreeDatas>
+        <li>
+          <label>slaughterer</label>
+          <description>[PAWN_nameDef] butchers carcasses faster.</description>
+          <degree>0</degree>
+          <statOffsets>
+            <ButcheryFleshEfficiency>0.15</ButcheryFleshEfficiency>
+            <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+            <ButcheryMechanoidEfficiency>0.15</ButcheryMechanoidEfficiency>
+          </statOffsets>
+          <skillGains>
+            <Cooking>4</Cooking>
+          </skillGains>
+        </li>
+      </degreeDatas>
+      <requiredWorkTags>
+        <li>Cooking</li>
+      </requiredWorkTags>
+    </TraitDef>
+
+  <TraitDef>
+    <defName>UT_BT_Diligent</defName>
+    <label>diligent</label>
+    <description>[PAWN_nameDef] approaches every task with focus and discipline, completing work faster and with greater skill.</description>
+    <commonality>1.5</commonality>
+    <degreeDatas>
+      <li>
+        <label>diligent</label>
+        <description>[PAWN_nameDef] takes pride in building and crafting efficiently, never wasting time or effort.</description>
+        <degree>0</degree>
+        <statOffsets>
+          <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+        </statOffsets>
+        <skillGains>
+          <Construction>4</Construction>
+          <Crafting>4</Crafting>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>ManualSkilled</li>
+      <li>Crafting</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>UT_BT_Marksman</defName>
+    <label>marksman</label>
+    <description>[PAWN_nameDef] has sharp eyes and steady hands, but prefers shooting over close combat.</description>
+    <commonality>1.5</commonality>
+    <degreeDatas>
+      <li>
+        <label>marksman</label>
+        <description>[PAWN_nameDef] is an expert with ranged weapons but struggles in melee combat.</description>
+        <degree>0</degree>
+        <skillGains>
+          <Shooting>5</Shooting>
+          <Melee>-5</Melee>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>Brawler</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+  <TraitDef>
+      <defName>UT_BT_Curious</defName>
+      <label>curious</label>
+      <description>[PAWN_nameDef] is endlessly curious and loves to learn new things.</description>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>curious</label>
+          <description>[PAWN_nameDef] spends time exploring and studying the world around them.</description>
+          <degree>0</degree>
+          <skillGains>
+            <Intellectual>3</Intellectual>
+          </skillGains>
+        </li>
+      </degreeDatas>
+      <requiredWorkTags>
+        <li>Intellectual</li>
+      </requiredWorkTags>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_BT_Brawny</defName>
+      <label>brawny</label>
+      <description>[PAWN_nameDef] is physically strong and performs better in close combat and heavy labor.</description>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>brawny</label>
+          <description>[PAWN_nameDef] has extra muscle and is good with their hands in melee and construction tasks.</description>
+          <degree>0</degree>
+          <skillGains>
+            <Melee>4</Melee>
+            <Construction>1</Construction>
+          </skillGains>
+        </li>
+      </degreeDatas>
+      <requiredWorkTags>
+        <li>Violent</li>
+        <li>ManualSkilled</li>
+      </requiredWorkTags>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_BT_Patient</defName>
+      <label>patient</label>
+      <description>[PAWN_nameDef] is calm and steady, able to deal with slow or trying situations without complaint.</description>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>patient</label>
+          <description>[PAWN_nameDef] stays composed and is often better at social and medical care.</description>
+          <degree>0</degree>
+          <skillGains>
+            <Social>2</Social>
+            <Medicine>1</Medicine>
+          </skillGains>
+          <statOffsets>
+            <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+            <PsychicSensitivity>-0.15</PsychicSensitivity>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <requiredWorkTags>
+        <li>Social</li>
+        <li>Caring</li>
+      </requiredWorkTags>
+    </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Shooter</defName>
+        <label>Shooter</label>
+        <description>[PAWN_nameDef] is a natural with ranged weapons.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>Shooter</label>
+            <description>[PAWN_nameDef] is a natural with ranged weapons.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Shooting>5</Shooting>
+            </skillGains>
+          </li>
+        </degreeDatas>
+        <conflictingTraits>
+          <li>Brawler</li>
+        </conflictingTraits>
+        <requiredWorkTags>
+          <li>Violent</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_MeleeExpert</defName>
+        <label>MeleeExpert</label>
+        <description>[PAWN_nameDef] excels in hand-to-hand combat.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>MeleeExpert</label>
+            <description>[PAWN_nameDef] excels in hand-to-hand combat.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Melee>5</Melee>
+            </skillGains>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Violent</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Builder</defName>
+        <label>Builder</label>
+        <description>[PAWN_nameDef] is skilled at construction work.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>Builder</label>
+            <description>[PAWN_nameDef] is skilled at construction work.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Construction>5</Construction>
+            </skillGains>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>ManualSkilled</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Miner</defName>
+        <label>Miner</label>
+        <description>[PAWN_nameDef] is a natural at mining.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>Miner</label>
+            <description>[PAWN_nameDef] is a natural at mining.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Mining>5</Mining>
+            </skillGains>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Mining</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Cook</defName>
+        <label>Cook</label>
+        <description>[PAWN_nameDef] is talented in the kitchen.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>Cook</label>
+            <description>[PAWN_nameDef] is talented in the kitchen.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Cooking>5</Cooking>
+            </skillGains>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Cooking</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Botanist</defName>
+        <label>Botanist</label>
+        <description>[PAWN_nameDef] has a green thumb.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>Botanist</label>
+            <description>[PAWN_nameDef] has a green thumb.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Plants>5</Plants>
+            </skillGains>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>PlantWork</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_AnimalFriend</defName>
+        <label>Animal Friend</label>
+        <description>[PAWN_nameDef] is great with animals.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>Animal Friend</label>
+            <description>[PAWN_nameDef] is great with animals.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Animals>5</Animals>
+            </skillGains>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Animals</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Crafter</defName>
+        <label>Crafter</label>
+        <description>[PAWN_nameDef] is skilled at crafting.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>Crafter</label>
+            <description>[PAWN_nameDef] is skilled at crafting.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Crafting>5</Crafting>
+            </skillGains>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Crafting</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Artist</defName>
+        <label>Artist</label>
+        <description>[PAWN_nameDef] is artistically gifted.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>Artist</label>
+            <description>[PAWN_nameDef] is artistically gifted.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Artistic>5</Artistic>
+            </skillGains>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Artistic</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Medic</defName>
+        <label>Medic</label>
+        <description>[PAWN_nameDef] is a natural healer.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>Medic</label>
+            <description>[PAWN_nameDef] is a natural healer.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Medicine>5</Medicine>
+            </skillGains>
+            <statOffsets>
+              <InjuryHealingFactor>0.15</InjuryHealingFactor>
+              <ImmunityGainSpeed>0.10</ImmunityGainSpeed>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Caring</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Socialite</defName>
+        <label>Socialite</label>
+        <description>[PAWN_nameDef] is socially adept.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>Socialite</label>
+            <description>[PAWN_nameDef] is socially adept.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Social>5</Social>
+            </skillGains>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Social</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Scholar</defName>
+        <label>Scholar</label>
+        <description>[PAWN_nameDef] is intellectually gifted.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>Scholar</label>
+            <description>[PAWN_nameDef] is intellectually gifted.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Intellectual>5</Intellectual>
+            </skillGains>
+            <statOffsets>
+              <GlobalLearningFactor>0.15</GlobalLearningFactor>
+              <PsychicSensitivity>0.15</PsychicSensitivity>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Intellectual</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Swift</defName>
+        <label>swift</label>
+        <description>[PAWN_nameDef] moves quickly and nimbly.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>swift</label>
+            <description>[PAWN_nameDef] is naturally quick on their feet.</description>
+            <degree>0</degree>
+            <statOffsets>
+              <MoveSpeed>0.15</MoveSpeed>
+              <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Charismatic</defName>
+        <label>charismatic</label>
+        <description>[PAWN_nameDef] has natural charm and persuasive abilities.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>charismatic</label>
+            <description>[PAWN_nameDef] easily wins people over with their natural charm.</description>
+            <degree>0</degree>
+            <statOffsets>
+              <TradePriceImprovement>0.10</TradePriceImprovement>
+              <SocialImpact>0.15</SocialImpact>
+            </statOffsets>
+            <skillGains>
+              <Social>3</Social>
+            </skillGains>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Social</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Careful</defName>
+        <label>careful</label>
+        <description>[PAWN_nameDef] takes extra care in their work.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>careful</label>
+            <description>[PAWN_nameDef] works slowly but with great attention to detail.</description>
+            <degree>0</degree>
+            <statOffsets>
+              <WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+              <MedicalOperationSpeed>0.15</MedicalOperationSpeed>
+              <ResearchSpeed>0.10</ResearchSpeed>
+              <ButcheryFleshEfficiency>0.10</ButcheryFleshEfficiency>
+              <ButcheryMechanoidEfficiency>0.10</ButcheryMechanoidEfficiency>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Sturdy</defName>
+        <label>sturdy</label>
+        <description>[PAWN_nameDef] has exceptional physical endurance.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>sturdy</label>
+            <description>[PAWN_nameDef] can carry more and resist damage better.</description>
+            <degree>0</degree>
+            <statOffsets>
+              <CarryingCapacity>35</CarryingCapacity>
+              <IncomingDamageFactor>-0.15</IncomingDamageFactor>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Focused</defName>
+        <label>focused</label>
+        <description>[PAWN_nameDef] maintains excellent concentration.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>focused</label>
+            <description>[PAWN_nameDef] excels at tasks requiring sustained attention.</description>
+            <degree>0</degree>
+            <statOffsets>
+              <AimingDelayFactor>-0.15</AimingDelayFactor>
+              <ResearchSpeed>0.15</ResearchSpeed>
+              <MedicalTendQuality>0.10</MedicalTendQuality>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_MasterBuilder</defName>
+        <label>master builder</label>
+        <description>[PAWN_nameDef] has a natural talent for construction and structural design.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>master builder</label>
+            <description>[PAWN_nameDef] builds with exceptional speed and precision, creating stronger structures.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Construction>3</Construction>
+            </skillGains>
+            <statOffsets>
+              <ConstructionSpeed>0.20</ConstructionSpeed>
+              <ConstructSuccessChance>0.10</ConstructSuccessChance>
+              <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>ManualSkilled</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Artisan</defName>
+        <label>artisan</label>
+        <description>[PAWN_nameDef] is a master of detailed crafting work.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>artisan</label>
+            <description>[PAWN_nameDef] creates items with exceptional quality and efficiency.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Crafting>3</Crafting>
+              <Artistic>2</Artistic>
+            </skillGains>
+            <statOffsets>
+              <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+              <ButcheryFleshEfficiency>0.15</ButcheryFleshEfficiency>
+              <ButcheryMechanoidEfficiency>0.15</ButcheryMechanoidEfficiency>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Crafting</li>
+          <li>Artistic</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Analytical</defName>
+        <label>analytical</label>
+        <description>[PAWN_nameDef] has a deeply analytical mind that excels at research and complex tasks.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>analytical</label>
+            <description>[PAWN_nameDef] approaches problems methodically, making breakthroughs in research more likely.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Intellectual>3</Intellectual>
+            </skillGains>
+            <statOffsets>
+              <ResearchSpeed>0.20</ResearchSpeed>
+              <GlobalLearningFactor>0.10</GlobalLearningFactor>
+              <MentalBreakThreshold>0.05</MentalBreakThreshold>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Intellectual</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Survivor</defName>
+        <label>survivor</label>
+        <description>[PAWN_nameDef] has developed remarkable resistance to harsh environments.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>survivor</label>
+            <description>[PAWN_nameDef] can endure toxic environments and harsh conditions better than most.</description>
+            <degree>0</degree>
+            <statOffsets>
+              <ToxicResistance>0.15</ToxicResistance>
+              <ToxicEnvironmentResistance>0.20</ToxicEnvironmentResistance>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Sleepless</defName>
+        <label>sleepless</label>
+        <description>[PAWN_nameDef] has adapted to function with minimal sleep.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>sleepless</label>
+            <description>[PAWN_nameDef] makes the most of their limited sleep, staying active longer than others.</description>
+            <degree>0</degree>
+            <statOffsets>
+              <RestRateMultiplier>0.25</RestRateMultiplier>
+              <RestFallRateFactor>-0.15</RestFallRateFactor>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Weatherproof</defName>
+        <label>weatherproof</label>
+        <description>[PAWN_nameDef] has exceptional tolerance for temperature extremes.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>weatherproof</label>
+            <description>[PAWN_nameDef] stays comfortable in both hot and cold conditions.</description>
+            <degree>0</degree>
+            <statOffsets>
+              <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+              <ComfyTemperatureMax>5</ComfyTemperatureMax>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Excavator</defName>
+        <label>excavator</label>
+        <description>[PAWN_nameDef] is skilled at extracting resources from the earth.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>excavator</label>
+            <description>[PAWN_nameDef] is efficient at mining and handling raw material extraction.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Mining>3</Mining>
+            </skillGains>
+            <statOffsets>
+              <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Mining</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_SousChef</defName>
+        <label>sous chef</label>
+        <description>[PAWN_nameDef] excels at kitchen work and food preparation.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>sous chef</label>
+            <description>[PAWN_nameDef] turns out meals quickly and reliably in the kitchen.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Cooking>3</Cooking>
+            </skillGains>
+            <statOffsets>
+              <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Cooking</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Horticulturist</defName>
+        <label>horticulturist</label>
+        <description>[PAWN_nameDef] has an intuitive understanding of plants and growing conditions.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>horticulturist</label>
+            <description>[PAWN_nameDef] is efficient at planting and tending crops.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Plants>3</Plants>
+            </skillGains>
+            <statOffsets>
+              <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>PlantWork</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Trainer</defName>
+        <label>trainer</label>
+        <description>[PAWN_nameDef] is talented at working with animals and training them.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>trainer</label>
+            <description>[PAWN_nameDef] gets better results when handling and training animals.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Animals>3</Animals>
+            </skillGains>
+            <statOffsets>
+              <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Animals</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Forager</defName>
+        <label>forager</label>
+        <description>[PAWN_nameDef] finds more edible resources while travelling.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>forager</label>
+            <description>[PAWN_nameDef] is skilled at spotting food while on the move.</description>
+            <degree>0</degree>
+            <statOffsets>
+              <ForagedNutritionPerDay>0.15</ForagedNutritionPerDay>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Rider</defName>
+        <label>rider</label>
+        <description>[PAWN_nameDef] is adept at riding animals in caravans.</description>
+        <commonality>0.75</commonality>
+        <degreeDatas>
+          <li>
+            <label>rider</label>
+            <description>[PAWN_nameDef] increases caravan travel speed when mounted.</description>
+            <degree>0</degree>
+            <statOffsets>
+              <ForagedNutritionPerDay>0.10</ForagedNutritionPerDay>
+              <CarryingCapacity>30</CarryingCapacity>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Animals</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Unyielding</defName>
+        <label>Unyielding</label>
+        <description>[PAWN_nameDef] is tough and shrugs off pain and exhaustion more easily than most.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>Unyielding</label>
+            <description>[PAWN_nameDef] can push through fatigue and injury without complaint.</description>
+            <degree>0</degree>
+            <statOffsets>
+              <PainShockThreshold>0.15</PainShockThreshold>
+              <ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+              <InjuryHealingFactor>0.15</InjuryHealingFactor>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Orderly</defName>
+        <label>orderly</label>
+        <description>[PAWN_nameDef] is unusually orderly and produces less filth.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>orderly</label>
+            <description>[PAWN_nameDef] keeps areas orderly by producing less filth.</description>
+            <degree>0</degree>
+            <statOffsets>
+              <FilthRate>-0.25</FilthRate>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Hearty</defName>
+        <label>hearty</label>
+        <description>[PAWN_nameDef] eats quickly and can carry a bit more.</description>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+          <li>
+            <label>hearty</label>
+            <description>[PAWN_nameDef] finishes meals faster and has a little extra carrying capacity.</description>
+            <degree>0</degree>
+            <statOffsets>
+              <EatingSpeed>0.20</EatingSpeed>
+              <CarryingCapacity>10</CarryingCapacity>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Bruiser</defName>
+        <label>bruiser</label>
+        <description>[PAWN_nameDef] is a fierce melee fighter who excels in close-quarters combat, but is not as effective with ranged weapons.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>bruiser</label>
+            <description>[PAWN_nameDef] is a fierce melee fighter who excels in close-quarters combat, but is not as effective with ranged weapons.</description>
+            <degree>0</degree>
+            <statOffsets>
+              <MeleeHitChance>0.15</MeleeHitChance>
+              <MeleeDamageFactor>0.15</MeleeDamageFactor>
+              <ShootingAccuracyPawn>-0.10</ShootingAccuracyPawn>
+            </statOffsets>
+            <skillGains>
+              <Melee>4</Melee>
+              <Shooting>-2</Shooting>
+            </skillGains>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Violent</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Deadeye</defName>
+        <label>deadeye</label>
+        <description>[PAWN_nameDef] is a master of ranged combat, with exceptional accuracy, but is clumsy in a melee fight.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>deadeye</label>
+            <description>[PAWN_nameDef] is a master of ranged combat, with exceptional accuracy, but is clumsy in a melee fight.</description>
+            <degree>0</degree>
+            <statOffsets>
+              <ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+              <AimingDelayFactor>-0.15</AimingDelayFactor>
+              <MeleeHitChance>-0.10</MeleeHitChance>
+            </statOffsets>
+            <skillGains>
+              <Shooting>4</Shooting>
+              <Melee>-2</Melee>
+            </skillGains>
+          </li>
+        </degreeDatas>
+        <conflictingTraits>
+          <li>Brawler</li>
+        </conflictingTraits>
+        <requiredWorkTags>
+          <li>Violent</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Tank</defName>
+        <label>tank</label>
+        <description>[PAWN_nameDef] is built like a tank, able to soak up damage that would incapacitate others, but their bulk slows them down.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>tank</label>
+            <description>[PAWN_nameDef] is built like a tank, able to soak up damage that would incapacitate others, but their bulk slows them down.</description>
+            <degree>0</degree>
+            <statOffsets>
+              <IncomingDamageFactor>-0.20</IncomingDamageFactor>
+              <PainShockThreshold>0.10</PainShockThreshold>
+              <MoveSpeed>-0.10</MoveSpeed>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Acrobat</defName>
+        <label>acrobat</label>
+        <description>[PAWN_nameDef] is light on their feet, able to dodge attacks and move quickly, but is more susceptible to damage when they do get hit.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>acrobat</label>
+            <description>[PAWN_nameDef] is light on their feet, able to dodge attacks and move quickly, but is more susceptible to damage when they do get hit.</description>
+            <degree>0</degree>
+            <statOffsets>
+              <MeleeDodgeChance>0.20</MeleeDodgeChance>
+              <MoveSpeed>0.10</MoveSpeed>
+              <IncomingDamageFactor>0.15</IncomingDamageFactor>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Culinarian</defName>
+        <label>culinarian</label>
+        <description>[PAWN_nameDef] has a refined palate and can create exquisite meals, but is a bit slower and more particular about their work.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>culinarian</label>
+            <description>[PAWN_nameDef] has a refined palate and can create exquisite meals, but is a bit slower and more particular about their work.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Cooking>6</Cooking>
+            </skillGains>
+            <statOffsets>
+              <CookSpeed>-0.10</CookSpeed>
+              <FoodPoisonChance>-0.05</FoodPoisonChance>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Cooking</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_FieldMedic</defName>
+        <label>field medic</label>
+        <description>[PAWN_nameDef] is skilled at patching up wounds in the heat of the moment, but lacks the finesse for complex surgery.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>field medic</label>
+            <description>[PAWN_nameDef] is skilled at patching up wounds in the heat of the moment, but lacks the finesse for complex surgery.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Medicine>4</Medicine>
+            </skillGains>
+            <statOffsets>
+              <MedicalTendSpeed>0.20</MedicalTendSpeed>
+              <MedicalSurgerySuccessChance>-0.10</MedicalSurgerySuccessChance>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Caring</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Gardener</defName>
+        <label>gardener</label>
+        <description>[PAWN_nameDef] has a natural talent for making things grow.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>gardener</label>
+            <description>[PAWN_nameDef] has a natural talent for making things grow.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Plants>6</Plants>
+            </skillGains>
+            <statOffsets>
+              <PlantHarvestYield>0.15</PlantHarvestYield>
+              <PlantWorkSpeed>0.10</PlantWorkSpeed>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>PlantWork</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Spelunker</defName>
+        <label>spelunker</label>
+        <description>[PAWN_nameDef] is an expert at working underground, mining faster and with a better yield.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>spelunker</label>
+            <description>[PAWN_nameDef] is an expert at working underground, mining faster and with a better yield.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Mining>6</Mining>
+            </skillGains>
+            <statOffsets>
+              <MiningSpeed>0.15</MiningSpeed>
+              <MiningYield>0.10</MiningYield>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Mining</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_Visionary</defName>
+        <label>visionary</label>
+        <description>[PAWN_nameDef] has a unique artistic vision, creating more valuable art, but their creative process is slow.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>visionary</label>
+            <description>[PAWN_nameDef] has a unique artistic vision, creating more valuable art, but their creative process is slow.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Artistic>6</Artistic>
+            </skillGains>
+            <statOffsets>
+              <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+              <MentalBreakThreshold>0.05</MentalBreakThreshold>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Artistic</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+        <defName>UT_BT_BeastMaster</defName>
+        <label>beast master</label>
+        <description>[PAWN_nameDef] has an uncanny connection with animals, making them easier to tame and train.</description>
+        <commonality>1.0</commonality>
+        <degreeDatas>
+          <li>
+            <label>beast master</label>
+            <description>[PAWN_nameDef] has an uncanny connection with animals, making them easier to tame and train.</description>
+            <degree>0</degree>
+            <skillGains>
+              <Animals>6</Animals>
+            </skillGains>
+            <statOffsets>
+              <TameAnimalChance>0.15</TameAnimalChance>
+              <TrainAnimalChance>0.15</TrainAnimalChance>
+            </statOffsets>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+          <li>Animals</li>
+        </requiredWorkTags>
+      </TraitDef>
+
+  <TraitDef>
+      <defName>UT_BT_Himbo</defName>
+      <label>himbo</label>
+      <description>[PAWN_nameDef] is a charming and hard-working person, but not the sharpest tool in the shed.</description>
+      <commonality>1.0</commonality>
+      <degreeDatas>
+        <li>
+          <label>himbo</label>
+          <description>[PAWN_nameDef] is a charming and hard-working person, but not the sharpest tool in the shed.</description>
+          <degree>0</degree>
+          <statOffsets>
+            <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+            <SocialImpact>0.15</SocialImpact>
+            <ResearchSpeed>-0.20</ResearchSpeed>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_BT_Herbalist</defName>
+      <label>Herbalist</label>
+      <description>[PAWN_nameDef] is a natural horticulturist, skilled in both plant care and medicine.</description>
+      <commonality>1.0</commonality>
+      <degreeDatas>
+        <li>
+          <label>Herbalist</label>
+          <description>[PAWN_nameDef] has a natural talent for cultivating plants and tending to the sick and injured.</description>
+          <degree>0</degree>
+          <statOffsets>
+            <PlantHarvestYield>0.10</PlantHarvestYield>
+            <PlantWorkSpeed>0.10</PlantWorkSpeed>
+            <MedicalTendQuality>0.10</MedicalTendQuality>
+            <MedicalOperationSpeed>0.10</MedicalOperationSpeed>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <requiredWorkTags>
+          <li>PlantWork</li>
+          <li>Caring</li>
+      </requiredWorkTags>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_BT_Polymath</defName>
+      <label>Polymath</label>
+      <description>[PAWN_nameDef] is a true polymath, with a talent for many different things. [PAWN_pronoun] excels in various fields, but this breadth of knowledge can sometimes lead to a slight social disconnect.</description>
+      <commonality>0.1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Polymath</label>
+          <description>[PAWN_nameDef] is a clever individual, good at many different things, but this can make [PAWN_objective] seem a bit distant.</description>
+          <degree>0</degree>
+          <statOffsets>
+            <GlobalLearningFactor>0.50</GlobalLearningFactor>
+            <MentalBreakThreshold>-0.06</MentalBreakThreshold>
+            <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+            <SocialImpact>-0.20</SocialImpact>
+          </statOffsets>
+          <skillGains>
+            <Shooting>1</Shooting>
+            <Melee>1</Melee>
+            <Construction>1</Construction>
+            <Mining>1</Mining>
+            <Cooking>1</Cooking>
+            <Plants>1</Plants>
+            <Animals>1</Animals>
+            <Crafting>1</Crafting>
+            <Artistic>1</Artistic>
+            <Medicine>1</Medicine>
+            <Social>1</Social>
+            <Intellectual>1</Intellectual>
+          </skillGains>
+        </li>
+      </degreeDatas>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_BT_GentleHand</defName>
+      <label>gentle hand</label>
+      <commonality>0.8</commonality>
+      <degreeDatas>
+        <li>
+          <label>gentle hand</label>
+          <description>[PAWN_nameDef] has a gentle way with animals, which makes them more productive and easier to handle.</description>
+          <degree>0</degree>
+          <statOffsets>
+            <AnimalGatherSpeed>0.15</AnimalGatherSpeed>
+            <AnimalGatherYield>0.15</AnimalGatherYield>
+            <TameAnimalChance>0.10</TameAnimalChance>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <requiredWorkTags>
+          <li>Animals</li>
+      </requiredWorkTags>
+    </TraitDef>
+
+  <TraitDef>
+    <defName>UT_BT_Friendly</defName>
+    <label>friendly</label>
+    <description>[PAWN_nameDef] is exceptionally amiable and effortlessly forms connections.</description>
+    <commonality>1.0</commonality>
+    <degreeDatas>
+      <li>
+        <label>friendly</label>
+        <description>[PAWN_nameDef] is exceptionally amiable and effortlessly forms connections.</description>
+        <degree>0</degree>
+        <socialFightChanceFactor>0.1</socialFightChanceFactor>
+        <statOffsets>
+            <SocialImpact>0.15</SocialImpact>
+        </statOffsets>
+        <skillGains>
+          <Social>4</Social>
+        </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>Psychopath</li>
+      <li>Abrasive</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Social</li>
+    </requiredWorkTags>
+  </TraitDef>
+</Defs>
