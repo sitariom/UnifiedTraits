@@ -1,0 +1,3990 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraitDef>
+      <defName>UT_RT_Nearsighted</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Nearsighted</label>
+          <description>[PAWN_nameDef] finds it difficult to focus on distant targets, and prefer to get up close and personal.</description>
+          <statOffsets>
+            <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+            <AimingDelayFactor>0.15</AimingDelayFactor>
+            <MeleeHitChance>2</MeleeHitChance>
+            <MeleeDodgeChance>2</MeleeDodgeChance>
+          </statOffsets>
+          <skillGains>
+            <li><key>Shooting</key><value>-2</value></li>
+            <li><key>Melee</key><value>2</value></li>
+          </skillGains>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Farsighted</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Farsighted</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Farsighted</label>
+          <description>[PAWN_nameDef] could spot a target from nearly a hundred meters, yet still somehow walk into walls.</description>
+          <statOffsets>
+            <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+            <AimingDelayFactor>-0.15</AimingDelayFactor>
+            <MeleeHitChance>-2</MeleeHitChance>
+            <MeleeDodgeChance>-2</MeleeDodgeChance>
+          </statOffsets>
+          <skillGains>
+            <li><key>Shooting</key><value>2</value></li>
+            <li><key>Melee</key><value>-2</value></li>
+          </skillGains>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Nearsighted</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Athletic</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Athletic</label>
+          <description>[PAWN_nameDef]'s movements are smooth and graceful.</description>
+          <statOffsets>
+            <MeleeDodgeChance>2</MeleeDodgeChance>
+            <MoveSpeed>0.10</MoveSpeed>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Stiff</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Stiff</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Stiff</label>
+          <description>[PAWN_nameDef] is so rigid, it's almost like [PAWN_pronoun] is souless.</description>
+          <statOffsets>
+            <MeleeDodgeChance>-2</MeleeDodgeChance>
+            <MoveSpeed>-0.10</MoveSpeed>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Athletic</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_GoodHygiene</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Good Hygiene</label>
+          <description>[PAWN_nameDef] takes care of [PAWN_possessive] personal hygiene.</description>
+          <statOffsets>
+            <FoodPoisonChance>-0.10</FoodPoisonChance>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_PoorHygiene</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_PoorHygiene</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Poor Hygiene</label>
+          <description>[PAWN_nameDef] doesn't care about [PAWN_possessive] hygiene, and sometimes get sick from bad food.</description>
+          <statOffsets>
+            <FoodPoisonChance>0.10</FoodPoisonChance>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_GoodHygiene</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Persuasive</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Persuasive</label>
+          <description>[PAWN_nameDef] often gets [PAWN_possessive] way with things.</description>
+          <statOffsets>
+            <NegotiationAbility>0.25</NegotiationAbility>
+            <ArrestSuccessChance>0.25</ArrestSuccessChance>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Unconvincing</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Unconvincing</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Unconvincing</label>
+          <description>[PAWN_nameDef] has never won a debate in [PAWN_possessive] life.</description>
+          <statOffsets>
+            <NegotiationAbility>-0.25</NegotiationAbility>
+            <ArrestSuccessChance>-0.25</ArrestSuccessChance>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Persuasive</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Resilient</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Resilient</label>
+          <description>[PAWN_nameDef] has been in plenty of fights since [PAWN_pronoun] was a kid, and had built up a tolerance to injury and pain as a result.</description>
+          <statOffsets>
+            <IncomingDamageFactor>-0.10</IncomingDamageFactor>
+            <PainShockThreshold>0.05</PainShockThreshold>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Fragile</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Fragile</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Fragile</label>
+          <description>[PAWN_nameDef] lived a pampered life until now, and is unused to the brutal challenges present out in the Rim.</description>
+          <statOffsets>
+            <IncomingDamageFactor>0.10</IncomingDamageFactor>
+            <PainShockThreshold>-0.05</PainShockThreshold>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Resilient</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Energetic</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Energetic</label>
+          <description>[PAWN_nameDef] always tackle his tasks with great enthusism.</description>
+          <statOffsets>
+            <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+            <MoveSpeed>0.15</MoveSpeed>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Sluggish</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Sluggish</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Sluggish</label>
+          <description>[PAWN_nameDef] is slow. Sooo... slooow...</description>
+          <statOffsets>
+            <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+            <MoveSpeed>-0.15</MoveSpeed>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Energetic</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Restful</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Restful</label>
+          <description>[PAWN_nameDef] always sleep like a baby.</description>
+          <statOffsets>
+            <RestRateMultiplier>0.25</RestRateMultiplier>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Restless</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Restless</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Restless</label>
+          <description>[PAWN_nameDef] often has a difficult time falling asleep.</description>
+          <statOffsets>
+            <RestRateMultiplier>-0.25</RestRateMultiplier>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Restful</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Efficient</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Efficient</label>
+          <description>[PAWN_nameDef] is quite productive when it comes to work.</description>
+          <statOffsets>
+            <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+            <GlobalLearningFactor>0.20</GlobalLearningFactor>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Inefficient</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Inefficient</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Inefficient</label>
+          <description>[PAWN_nameDef] is somewhat of a bottleneck in the colony.</description>
+          <statOffsets>
+            <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+            <GlobalLearningFactor>-0.20</GlobalLearningFactor>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Efficient</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Valiant</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Valiant</label>
+          <description>[PAWN_nameDef] is brave, [PAWN_pronoun] would stand [PAWN_possessive] where others would scramble and run.</description>
+          <statOffsets>
+            <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+            <PainShockThreshold>0.05</PainShockThreshold>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Craven</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Craven</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Craven</label>
+          <description>When there's a fight, [PAWN_nameDef] is the first to run.</description>
+          <statOffsets>
+            <MentalBreakThreshold>0.05</MentalBreakThreshold>
+            <PainShockThreshold>-0.05</PainShockThreshold>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Valiant</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Rowdy</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Rowdy</label>
+          <description>[PAWN_nameDef] likes a good fight, [PAWN_pronoun] will sometimes start a fight just because [PAWN_pronoun] can.</description>
+          <statOffsets>
+            <MentalBreakThreshold>0.05</MentalBreakThreshold>
+          </statOffsets>
+          <socialFightChanceFactor>2</socialFightChanceFactor>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Composed</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Composed</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Composed</label>
+          <description>[PAWN_nameDef] is usually calm and collected.</description>
+          <statOffsets>
+            <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+          </statOffsets>
+          <socialFightChanceFactor>-2</socialFightChanceFactor>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Rowdy</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_HeatTolerant</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Heat Tolerant</label>
+          <description>[PAWN_nameDef] is more comfortable being in hot environment than his peers.</description>
+          <statOffsets>
+            <ComfyTemperatureMax>3</ComfyTemperatureMax>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_HeatIntolerant</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_HeatIntolerant</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Heat Intolerant</label>
+          <description>[PAWN_nameDef] does not like being in the heat.</description>
+          <statOffsets>
+            <ComfyTemperatureMax>-3</ComfyTemperatureMax>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_HeatTolerant</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_ColdTolerant</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Cold Tolerant</label>
+          <description>[PAWN_nameDef] is more comfortable being in cold environment than his peers.</description>
+          <statOffsets>
+            <ComfyTemperatureMin>-3</ComfyTemperatureMin>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_ColdIntolerant</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_ColdIntolerant</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Cold Intolerant</label>
+          <description>[PAWN_nameDef] does not like being in the cold.</description>
+          <statOffsets>
+            <ComfyTemperatureMin>3</ComfyTemperatureMin>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_ColdTolerant</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Muscular</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Muscular</label>
+          <description>[PAWN_nameDef] has a well built body, people around [PAWN_pronoun] find that rather attractive.</description>
+          <statOffsets>
+            <CarryingCapacity>5</CarryingCapacity>
+            <PawnBeauty>1</PawnBeauty>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Frail</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Frail</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Frail</label>
+          <description>[PAWN_nameDef] looks a bit fragile, but not in a lovable way.</description>
+          <statOffsets>
+            <CarryingCapacity>-5</CarryingCapacity>
+            <PawnBeauty>-1</PawnBeauty>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Muscular</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Abstinent</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Abstinent</label>
+          <description>[PAWN_nameDef] doesn't eat or drink much.</description>
+          <hungerRateFactor>0.75</hungerRateFactor>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Ravenous</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Ravenous</defName>
+      <commonality>1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Ravenous</label>
+          <description>[PAWN_nameDef] has a bottomless pit for a stomach.</description>
+          <hungerRateFactor>1.25</hungerRateFactor>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Abstinent</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <ignoreConfigErrors>true</ignoreConfigErrors>
+      <defName>UT_RT_DemoCommon</defName>
+      <commonality>0</commonality>
+      <degreeDatas>
+        <li>
+          <label>&lt;color=#00ff00&gt;Trait Demo: Common&lt;/color&gt;</label>
+          <description>This is what a common trait would look like when paired with RimTraits: Vanilla Trait Colours.</description>
+        </li>
+      </degreeDatas>
+    </TraitDef>
+
+  <TraitDef>
+      <ignoreConfigErrors>true</ignoreConfigErrors>
+      <defName>UT_RT_DemoUncommon</defName>
+      <commonality>0</commonality>
+      <degreeDatas>
+        <li>
+          <label>&lt;color=#1f75fe&gt;Trait Demo: Uncommon&lt;/color&gt;</label>
+          <description>This is what an uncommon trait would look like when paired with RimTraits: Vanilla Trait Colours.</description>
+        </li>
+      </degreeDatas>
+    </TraitDef>
+
+  <TraitDef>
+      <ignoreConfigErrors>true</ignoreConfigErrors>
+      <defName>UT_RT_DemoRare</defName>
+      <commonality>0</commonality>
+      <degreeDatas>
+        <li>
+          <label>&lt;color=#9f40ff&gt;Trait Demo: Rare&lt;/color&gt;</label>
+          <description>This is what a rare trait would look like when paired with RimTraits: Vanilla Trait Colours.</description>
+        </li>
+      </degreeDatas>
+    </TraitDef>
+
+  <TraitDef>
+      <ignoreConfigErrors>true</ignoreConfigErrors>
+      <defName>UT_RT_DemoEpic</defName>
+      <commonality>0</commonality>
+      <degreeDatas>
+        <li>
+          <label>&lt;color=#d4af37&gt;Trait Demo: Epic&lt;/color&gt;</label>
+          <description>This is what an epic trait would look like when paired with RimTraits: Vanilla Trait Colours.</description>
+        </li>
+      </degreeDatas>
+    </TraitDef>
+
+  <TraitDef>
+      <ignoreConfigErrors>true</ignoreConfigErrors>
+      <defName>UT_RT_DemoLegendary</defName>
+      <commonality>0</commonality>
+      <degreeDatas>
+        <li>
+          <label>&lt;color=#e0115f&gt;Trait Demo: Legendary&lt;/color&gt;</label>
+          <description>This is what a legendary trait would look like when paired with RimTraits: Vanilla Trait Colours.</description>
+        </li>
+      </degreeDatas>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Gifted</defName>
+      <commonality>0.50</commonality>
+      <degreeDatas>
+        <li>
+          <label>Gifted</label>
+          <description>[PAWN_nameDef] is naturally talented, [PAWN_pronoun] gets a headstart before everyone else.</description>
+          <skillGains>
+            <li><key>Shooting</key><value>4</value></li>
+            <li><key>Melee</key><value>4</value></li>
+            <li><key>Construction</key><value>4</value></li>
+            <li><key>Mining</key><value>4</value></li>
+            <li><key>Cooking</key><value>4</value></li>
+            <li><key>Plants</key><value>4</value></li>
+            <li><key>Animals</key><value>4</value></li>
+            <li><key>Crafting</key><value>4</value></li>
+            <li><key>Artistic</key><value>4</value></li>
+            <li><key>Medicine</key><value>4</value></li>
+            <li><key>Social</key><value>4</value></li>
+            <li><key>Intellectual</key><value>4</value></li>
+          </skillGains>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Incompetent</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Incompetent</defName>
+      <commonality>0.50</commonality>
+      <degreeDatas>
+        <li>
+          <label>Incompetent</label>
+          <description>[PAWN_nameDef] is someone everyone loves to hate.</description>
+          <skillGains>
+            <li><key>Shooting</key><value>-4</value></li>
+            <li><key>Melee</key><value>-4</value></li>
+            <li><key>Construction</key><value>-4</value></li>
+            <li><key>Mining</key><value>-4</value></li>
+            <li><key>Cooking</key><value>-4</value></li>
+            <li><key>Plants</key><value>-4</value></li>
+            <li><key>Animals</key><value>-4</value></li>
+            <li><key>Crafting</key><value>-4</value></li>
+            <li><key>Artistic</key><value>-4</value></li>
+            <li><key>Medicine</key><value>-4</value></li>
+            <li><key>Social</key><value>-4</value></li>
+            <li><key>Intellectual</key><value>-4</value></li>
+          </skillGains>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Gifted</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_PatientCook</defName>
+      <commonality>0.50</commonality>
+      <degreeDatas>
+        <li>
+          <label>Patient Cook</label>
+          <description>[PAWN_nameDef] takes great care in the preparation of food, [PAWN_pronoun] never skip a step just to have an early meal.</description>
+          <statOffsets>
+            <CookSpeed>-0.75</CookSpeed>
+            <FoodPoisonChance>-0.10</FoodPoisonChance>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_ImpatientCook</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_ImpatientCook</defName>
+      <commonality>0.50</commonality>
+      <degreeDatas>
+        <li>
+          <label>Impatient Cook</label>
+          <description>[PAWN_nameDef] couldn't care less about following the recipes as long as [PAWN_pronoun] can get food into [PAWN_possessive] mouth in record time.</description>
+          <statOffsets>
+            <CookSpeed>0.75</CookSpeed>
+            <FoodPoisonChance>0.10</FoodPoisonChance>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_PatientCook</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Healthy</defName>
+      <commonality>0.50</commonality>
+      <degreeDatas>
+        <li>
+          <label>Healthy</label>
+          <description>[PAWN_nameDef] lives a healthy lifestyle, and wakes up feeling energetic and cheerful.</description>
+          <statOffsets>
+            <RestRateMultiplier>0.1</RestRateMultiplier>
+            <ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+            <ToxicSensitivity>-0.05</ToxicSensitivity>
+            <ComfyTemperatureMax>1</ComfyTemperatureMax>
+            <ComfyTemperatureMin>-1</ComfyTemperatureMin>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_ChronicallyIll</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_ChronicallyIll</defName>
+      <commonality>0.50</commonality>
+      <degreeDatas>
+        <li>
+          <label>Chronically Ill</label>
+          <description>[PAWN_nameDef] gets ill quite often, and seem to require more effort to get out of bed than the average person.</description>
+          <statOffsets>
+            <RestRateMultiplier>-0.1</RestRateMultiplier>
+            <ImmunityGainSpeed>-0.1</ImmunityGainSpeed>
+            <ToxicSensitivity>0.05</ToxicSensitivity>
+            <ComfyTemperatureMax>-1</ComfyTemperatureMax>
+            <ComfyTemperatureMin>1</ComfyTemperatureMin>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Healthy</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_TemperatureTolerant</defName>
+      <commonality>0.50</commonality>
+      <degreeDatas>
+        <li>
+          <label>Temperature Tolerant</label>
+          <description>[PAWN_nameDef] is comfortable in all seasons.</description>
+          <statOffsets>
+            <ComfyTemperatureMax>3</ComfyTemperatureMax>
+            <ComfyTemperatureMin>-3</ComfyTemperatureMin>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_TemperatureIntolerant</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_TemperatureIntolerant</defName>
+      <commonality>0.50</commonality>
+      <degreeDatas>
+        <li>
+          <label>Temperature Intolerant</label>
+          <description>[PAWN_nameDef] thinks that summer is way too hot, and winter is way too cold.</description>
+          <statOffsets>
+            <ComfyTemperatureMax>-3</ComfyTemperatureMax>
+            <ComfyTemperatureMin>3</ComfyTemperatureMin>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_TemperatureTolerant</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Coordinated</defName>
+      <commonality>0.75</commonality>
+      <degreeDatas>
+        <li>
+          <label>Coordinated</label>
+          <description>[PAWN_nameDef] has good reaction time and finds physical activities less stressful than [PAWN_possessive] peers.</description>
+          <statOffsets>
+            <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+            <MeleeHitChance>2</MeleeHitChance>
+            <MeleeDodgeChance>2</MeleeDodgeChance>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Clumsy</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Clumsy</defName>
+      <commonality>0.75</commonality>
+      <degreeDatas>
+        <li>
+          <label>Clumsy</label>
+          <description>[PAWN_nameDef] is easily distracted and often mess up when it comes to physical activities.</description>
+          <statOffsets>
+            <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+            <MeleeHitChance>-2</MeleeHitChance>
+            <MeleeDodgeChance>-2</MeleeDodgeChance>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Coordinated</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Hardy</defName>
+      <commonality>0.75</commonality>
+      <degreeDatas>
+        <li>
+          <label>Hardy</label>
+          <description>[PAWN_nameDef] is what people refer to as a 'stronk boi'.</description>
+          <statOffsets>
+            <IncomingDamageFactor>-0.10</IncomingDamageFactor>
+            <ImmunityGainSpeed>0.10</ImmunityGainSpeed>
+            <ToxicSensitivity>-0.10</ToxicSensitivity>
+            <ComfyTemperatureMax>1</ComfyTemperatureMax>
+            <ComfyTemperatureMin>-1</ComfyTemperatureMin>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Feeble</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Feeble</defName>
+      <commonality>0.75</commonality>
+      <degreeDatas>
+        <li>
+          <label>Feeble</label>
+          <description>[PAWN_nameDef] is so fragile, it doesn't take much to take [PAWN_objective] out of action.</description>
+          <statOffsets>
+            <IncomingDamageFactor>0.10</IncomingDamageFactor>
+            <ImmunityGainSpeed>-0.10</ImmunityGainSpeed>
+            <ToxicSensitivity>0.10</ToxicSensitivity>
+            <ComfyTemperatureMax>-1</ComfyTemperatureMax>
+            <ComfyTemperatureMin>1</ComfyTemperatureMin>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Hardy</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_EasilyAmused</defName>
+      <commonality>0.75</commonality>
+      <degreeDatas>
+        <li>
+          <label>Easily Amused</label>
+          <description>Whether by sheer optimism or a force of personality, [PAWN_nameDef] always manages to see the bright side of life.</description>
+          <skillGains>
+            <li><key>Artistic</key><value>3</value></li>
+          </skillGains>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_ConstantlyBemused</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_ConstantlyBemused</defName>
+      <commonality>0.75</commonality>
+      <degreeDatas>
+        <li>
+          <label>Constantly Bemused</label>
+          <description>Life to [PAWN_nameDef] is an endless, boring joke that [PAWN_pronoun] just can't get away from.</description>
+          <skillGains>
+            <li><key>Artistic</key><value>-3</value></li>
+          </skillGains>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_EasilyAmused</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Inquisitive</defName>
+      <commonality>0.75</commonality>
+      <degreeDatas>
+        <li>
+          <label>Inquisitive</label>
+          <description>[PAWN_nameDef] has an interest in understanding the workings of the world, and is able to apply [PAWN_possessive] knowledge in daily life.</description>
+          <statOffsets>
+            <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+          </statOffsets>
+          <skillGains>
+            <li><key>Intellectual</key><value>4</value></li>
+          </skillGains>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Ignorant</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Ignorant</defName>
+      <commonality>0.75</commonality>
+      <degreeDatas>
+        <li>
+          <label>Ignorant</label>
+          <description>Gaps in [PAWN_nameDef]'s education and general lack of curiosity makes life often stressful for [PAWN_objective].</description>
+          <statOffsets>
+            <MentalBreakThreshold>0.05</MentalBreakThreshold>
+          </statOffsets>
+          <skillGains>
+            <li><key>Intellectual</key><value>-4</value></li>
+          </skillGains>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Inquisitive</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Tidy</defName>
+      <commonality>0.75</commonality>
+      <degreeDatas>
+        <li>
+          <label>tidy</label>
+          <description>[PAWN_nameDef] likes to keep [PAWN_possessive] surroundings clean, and is used to being in an organised environment.</description>
+          <statOffsets>
+            <RestRateMultiplier>0.05</RestRateMultiplier>
+            <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+            <CleaningSpeed>0.15</CleaningSpeed>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Messy</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_RT_Messy</defName>
+      <commonality>0.75</commonality>
+      <degreeDatas>
+        <li>
+          <label>messy</label>
+          <description>[PAWN_nameDef] often neglect their surroundings, making it difficult for [PAWN_objective] to get work done.</description>
+          <statOffsets>
+            <RestRateMultiplier>-0.05</RestRateMultiplier>
+            <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+            <CleaningSpeed>-0.15</CleaningSpeed>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>RT_Tidy</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+  		<defName>UT_S1_AllOutOfFucks</defName>
+  		<commonality>0.3</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>All out of fucks</label>
+  				<description>[PAWN_nameDef] has no more fucks to give.</description>
+  				<disallowedThoughts>
+  				</disallowedThoughts>
+  				<statOffsets>
+  					<MentalBreakThreshold>-0.20</MentalBreakThreshold>
+  					<PainShockThreshold>0.50</PainShockThreshold>
+  					<SocialImpact>-0.9</SocialImpact>
+  				</statOffsets>
+  				<statFactors>
+  					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0</CertaintyLossFactor>
+  					<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0</ConversionPower>
+  					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0</SocialIdeoSpreadFrequencyFactor>
+  					<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">1.5</SuppressionPower>
+  					<RestRateMultiplier>0.6</RestRateMultiplier>
+  					<JoyNeedRateMultiplier>0</JoyNeedRateMultiplier>
+  				</statFactors>
+  				<skillGains>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<disabledWorkTags>
+  			<li>Social</li>
+  			<li>Caring</li>
+  			<li>Intellectual</li>
+  			<li>Cleaning</li>
+  			<li>Hauling</li>
+  			<li>Constructing</li>
+  			<li>Crafting</li>
+  			<li>Animals</li>
+  			<li>Artistic</li>
+  			<li>PlantWork</li>
+  			<li>Firefighting</li>
+  			<li>Cooking</li>	
+  		</disabledWorkTags>
+  		<conflictingTraits>
+  			<li>Kind</li>
+  			<li>NaturalMood</li>
+  			<li>AnnoyingVoice</li>
+  			<li>Abrasive</li>
+  			<li>Bloodlust</li>
+  			<li>Cannibal</li>
+  			<li>DrugDesire</li>
+  			<li>Gourmand</li>
+  			<li>Greedy</li>
+  			<li>Jealous</li>
+  			<li>Industriousness</li>
+  			<li>Kind</li>
+  			<li>Masochist</li>
+  			<li>Nerves</li>
+  			<li>Neurotic</li>
+  			<li>Nudist</li>
+  			<li>Psychopath</li>
+  			<li>TooSmart</li>
+  			<li>TorturedArtist</li>
+  			<li>Wimp</li>
+  			<li>S1_Doomed</li>
+  			<li>S1_Authoritarian</li>
+  			<li>S1_Braggart</li>
+  			<li>S1_SmallTalker</li>
+  			<li>S1_Cautious</li>
+  			<li>S1_Cheerful</li>
+  			<li>S1_CombatMedic</li>
+  			<li>S1_Complainer</li>
+  			<li>S1_Daredevil</li>
+  			<li>S1_EarlyRiser</li>
+  			<li>S1_Flincher</li>
+  			<li>S1_RolledUpSleeves</li>
+  			<li>S1_HealthyRoutines</li>
+  			<li>S1_Ruthless</li>
+  			<li>S1_Astronomer</li>
+  			<li>S1_Devout</li>
+  			<li>S1_Zealot</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Astronomer</defName>
+  		<commonality>0.0000001</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Astronomer</label>
+  				<description>[PAWN_nameDef] is made for designing colonies on the rimworlds.</description>
+  				<statOffsets>
+  					<GlobalLearningFactor>0.25</GlobalLearningFactor>
+  					<ConstructionSpeed>+0.25</ConstructionSpeed>
+  					<ResearchSpeed>+0.25</ResearchSpeed>
+  				</statOffsets>
+  				<statFactors>
+  					<JoyNeedRateMultiplier>0.9</JoyNeedRateMultiplier>
+  				</statFactors>
+  				<skillGains>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<forcedPassions>
+  			<li>Intellectual</li>
+  			<li>Construction</li>
+  		</forcedPassions>
+  		<disabledWorkTags>
+  			<li>Animals</li>
+  			<li>PlantWork</li>
+  			<li>Violent</li>
+  		</disabledWorkTags>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<conflictingTraits>
+  			<li>SlowLearner</li>
+  			<li>S1_Developer</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Authoritarian</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Authoritarian</label>
+  				<description>[PAWN_nameDef] is a little pushy, but with it comes natural authority.</description>
+  				<statOffsets>
+  					<TradePriceImprovement>0.20</TradePriceImprovement>
+  					<SocialImpact>+0.60</SocialImpact>
+  				</statOffsets>
+  				<statFactors>
+  					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0</CertaintyLossFactor>
+  					<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">2</ConversionPower>
+  					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">2</SocialIdeoSpreadFrequencyFactor>
+  					<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">2</SuppressionPower>
+  				</statFactors>
+  				<skillGains>
+  					<li>
+  						<key>Social</key>
+  							<value>6</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<forcedPassions>
+  			<li>Social</li>
+  		</forcedPassions>
+  		<disabledWorkTags>
+  			<li>ManualDumb</li>
+  		</disabledWorkTags>
+  		<conflictingTraits>
+  			<li>Kind</li>
+  			<li>Psychopath</li>
+  			<li>S1_Devout</li>
+  			<li>S1_Cheerful</li>
+  			<li>S1_Doomed</li>
+  			<li>S1_Cautious</li>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>S1_RolledUpSleeves</li>
+  			<li>S1_Ruthless</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Backpacker</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Backpacker</label>
+  				<description>[PAWN_nameDef] loves being outdoors, exploring new things. And [PAWN_pronoun] knows how to pack for whatever it takes [PAWN_objective].</description>
+  				<statOffsets>
+  					<CarryingCapacity>+25</CarryingCapacity>
+  					<PlantHarvestYield>0.2</PlantHarvestYield>
+  					<ComfyTemperatureMin>-8.0</ComfyTemperatureMin>
+  					<ComfyTemperatureMax>8.0</ComfyTemperatureMax>
+  					<HuntingStealth>+0.25</HuntingStealth>
+  					<FoodPoisonChance>-0.15</FoodPoisonChance>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Plants</key>
+  							<value>3</value>
+  					</li>
+  					<li>
+  						<key>Animals</key>
+  							<value>2</value>
+  					</li>
+  				</skillGains>
+  				<disallowedThoughts>
+  					<li>AteWithoutTable</li>
+  					<li>SleptOutside</li>
+  				</disallowedThoughts>
+  			</li>
+  		</degreeDatas>
+  		<forcedPassions>
+  			<li>Plants</li>
+  			<li>Animals</li>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>Undergrounder</li>
+  			<li>S1_Freerunner</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Blader</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Blader</label>
+  				<description>[PAWN_nameDef] loves sharp, bladed weapons and is deadly wielding them.</description>
+  				<statOffsets>
+  					<SharpDamageMultiplier>2</SharpDamageMultiplier>
+  					<MeleeWeapon_CooldownMultiplier>-0.5</MeleeWeapon_CooldownMultiplier>
+  					<MeleeDodgeChance>+5</MeleeDodgeChance>
+  					<MeleeHitChance>3</MeleeHitChance>
+  					<MoveSpeed>0.1</MoveSpeed>
+  				</statOffsets>
+  				<statFactors>
+  					<BluntDamageMultiplier>0.25</BluntDamageMultiplier>
+  					<JoyNeedRateMultiplier>0.9</JoyNeedRateMultiplier>
+  				</statFactors>
+  				<skillGains>
+  					<li>
+  						<key>Melee</key>
+  							<value>6</value>
+  					</li>
+  				</skillGains>				
+  			</li>
+  		</degreeDatas>
+  		<forcedPassions>
+  			<li>Melee</li>
+  		</forcedPassions>
+  		<disabledWorkTags>
+  			<li>Shooting</li>
+  		</disabledWorkTags>
+  		<conflictingTraits>
+  			<li>Wimp</li>
+  			<li>S1_Riflesmith</li>
+  			<li>S1_Fighter</li>
+  			<li>ShootingAccuracy</li>
+  			<li>Brawler</li>
+  			<li>ShootingAccuracy</li>
+  			<li>S1_RolledUpSleeves</li>
+  			<li>S1_Flincher</li>
+  			<li>S1_DefensiveFighter</li>
+  			<li>S1_CombatMedic</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Botanist</defName>
+  		<commonality>0.0000001</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Botanist</label>
+  				<description>[PAWN_nameDef] loves all things growing. And [PAWN_pronoun] has a very good hand with them.</description>
+  				<statOffsets>
+  					<PlantHarvestYield>0.35</PlantHarvestYield>
+  					<PlantWorkSpeed>0.25</PlantWorkSpeed>
+  					<PruningSpeed MayRequire="Ludeon.RimWorld.Ideology">0.2</PruningSpeed>
+  				</statOffsets>
+  				<skillGains>
+  				</skillGains>				
+  			</li>
+  		</degreeDatas>
+  		<forcedPassions>
+  			<li>Plants</li>
+  		</forcedPassions>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<conflictingTraits>
+  			<li>S1_Florist</li>
+  			<li>S1_Mason</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Braggart</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Braggart</label>
+  				<description>[PAWN_nameDef] always talks about [PAWN_possessive] own accomplishments. It's pretty tiresome, but has its uses.</description>
+  				<statOffsets>
+  					<TradePriceImprovement>0.20</TradePriceImprovement>
+  					<SocialImpact>-0.6</SocialImpact>
+  				</statOffsets>
+  				<skillGains>				
+  				</skillGains>				
+  			</li>
+  		</degreeDatas>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>Kind</li>
+  			<li>S1_Complainer</li>
+  			<li>S1_SmallTalker</li>
+  			<li>S1_Cheerful</li>
+  			<li>S1_Cautious</li>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>S1_Doomed</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Edgy</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Edgy</label>
+  				<description>[PAWN_nameDef] is almost over the edge. Dont push [PAWN_objective].</description>
+  				<statOffsets>
+  					<MentalBreakThreshold>+0.10</MentalBreakThreshold>
+  				</statOffsets>
+  				<statFactors>
+  					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.5</CertaintyLossFactor>
+  					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0</SocialIdeoSpreadFrequencyFactor>
+  					<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">3</SuppressionPower>
+  				</statFactors>
+  				<skillGains>
+  					<li>
+  						<key>Social</key>
+  							<value>-4</value>
+  					</li>
+  				</skillGains>
+  				<socialFightChanceFactor>3</socialFightChanceFactor>				
+  			</li>
+  		</degreeDatas>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<disabledWorkTags>
+  			<li>Social</li>
+  			<li>Caring</li>
+  		</disabledWorkTags>
+  		<conflictingTraits>
+  			<li>Kind</li>
+  			<li>NaturalMood</li>
+  			<li>S1_Cheerful</li>
+  			<li>S1_SmallTalker</li>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>S1_Determined</li>
+  			<li>S1_EarlyRiser</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_SmallTalker</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Small talker</label>
+  				<description>[PAWN_nameDef] is all about small talk.</description>
+  				<statOffsets>
+  					<SocialImpact>0.5</SocialImpact>
+  				</statOffsets>
+  				<statFactors>
+  					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">1.2</CertaintyLossFactor>
+  					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">1.4</SocialIdeoSpreadFrequencyFactor>
+  					<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.25</SuppressionPower>
+  				</statFactors>
+  				<skillGains>
+  					<li>
+  						<key>Social</key>
+  							<value>2</value>
+  					</li>					
+  				</skillGains>			
+  			</li>
+  		</degreeDatas>
+  		<forcedPassions>
+  			<li>Social</li>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Braggart</li>
+  			<li>S1_Edgy</li>
+  			<li>S1_Authoritarian</li>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>Abrasive</li>
+  			<li>S1_Ruthless</li>
+  			<li>S1_Cautious</li>
+  			<li>S1_Doomed</li>
+  			<li>S1_Uncultured</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Cautious</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Cautious</label>
+  				<description>[PAWN_nameDef] practices 'better safe than sorry'.</description>
+  				<statOffsets>
+  					<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
+  					<ConstructSuccessChance>0.2</ConstructSuccessChance>
+  					<MedicalSurgerySuccessChance>0.2</MedicalSurgerySuccessChance>
+  					<FixBrokenDownBuildingSuccessChance>0.2</FixBrokenDownBuildingSuccessChance>
+  					<PlantWorkSpeed>-0.2</PlantWorkSpeed>
+  					<AnimalGatherSpeed>-0.2</AnimalGatherSpeed>
+  					<ConstructionSpeed>-0.2</ConstructionSpeed>
+  					<ButcheryFleshSpeed>-0.2</ButcheryFleshSpeed>
+  					<ButcheryMechanoidSpeed>-0.2</ButcheryMechanoidSpeed>
+  					<MiningSpeed>-0.2</MiningSpeed>
+  					<ResearchSpeed>-0.2</ResearchSpeed>
+  					<CookSpeed>-0.2</CookSpeed>
+  					<DeepDrillingSpeed>-0.2</DeepDrillingSpeed>
+  					<FoodPoisonChance>-0.25</FoodPoisonChance>
+  					<MoveSpeed>-0.2</MoveSpeed>
+  					<AimingDelayFactor>0.20</AimingDelayFactor>
+  					<MeleeHitChance>-5</MeleeHitChance>
+  					<MeleeDodgeChance>+5</MeleeDodgeChance>
+  					<PainShockThreshold>-0.20</PainShockThreshold>
+  				</statOffsets>
+  				<statFactors>
+  					<PawnTrapSpringChance>0</PawnTrapSpringChance>
+  					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+  				</statFactors>
+  				<skillGains>
+  					<li>
+  						<key>Melee</key>
+  							<value>-4</value>
+  					</li>	
+  					<li>
+  						<key>Shooting</key>
+  							<value>-4</value>
+  					</li>					
+  				</skillGains>			
+  			</li>
+  		</degreeDatas>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Edgy</li>
+  			<li>S1_Authoritarian</li>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>S1_Backpacker</li>
+  			<li>S1_Blader</li>
+  			<li>S1_Fighter</li>
+  			<li>S1_Zealot</li>
+  			<li>S1_Determined</li>
+  			<li>S1_CombatMedic</li>
+  			<li>S1_Braggart</li>
+  			<li>S1_Cheerful</li>
+  			<li>S1_RolledUpSleeves</li>
+  			<li>Psychopath</li>
+  			<li>S1_Ruthless</li>
+  			<li>S1_Riflesmith</li>
+  			<li>S1_Zealot</li>
+  			<li>Bloodlust</li>
+  			<li>Brawler</li>
+  			<li>Tough</li>
+  			<li>Neurotic</li>
+  			<li>NaturalMood</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Cheerful</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Cheerful</label>
+  				<description>[PAWN_nameDef] is just a bucket of joy.</description>
+  				<statOffsets>
+  					<SocialImpact>0.75</SocialImpact>
+  					<MentalBreakThreshold>-0.15</MentalBreakThreshold>
+  				</statOffsets>
+  				<statFactors>
+  					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">1.4</SocialIdeoSpreadFrequencyFactor>
+  					<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.3</SuppressionPower>
+  					<JoyNeedRateMultiplier>1.33</JoyNeedRateMultiplier>
+  				</statFactors>
+  				<skillGains>
+  					<li>
+  						<key>Social</key>
+  							<value>6</value>
+  					</li>			
+  				</skillGains>			
+  			</li>
+  		</degreeDatas>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Edgy</li>
+  			<li>S1_Authoritarian</li>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>S1_Zealot</li>
+  			<li>S1_Braggart</li>
+  			<li>S1_Cautious</li>
+  			<li>S1_Complainer</li>
+  			<li>S1_Determined</li>
+  			<li>S1_Doomed</li>
+  			<li>S1_Ruthless</li>
+  			<li>Psychopath</li>
+  			<li>Jealous</li>
+  			<li>Greedy</li>
+  			<li>Abrasive</li>
+  			<li>Masochist</li>
+  			<li>S1_Zealot</li>
+  			<li>NaturalMood</li>
+  			<li>Neurotic</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Clever</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Clever</label>
+  				<description>[PAWN_nameDef] has a sharp mind.</description>
+  				<statOffsets>
+  					<SocialImpact>0.2</SocialImpact>
+  					<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+  					<PlantWorkSpeed>0.2</PlantWorkSpeed>
+  					<AnimalGatherSpeed>0.2</AnimalGatherSpeed>
+  					<ConstructionSpeed>0.2</ConstructionSpeed>
+  					<ButcheryFleshSpeed>0.2</ButcheryFleshSpeed>
+  					<ButcheryMechanoidSpeed>0.4</ButcheryMechanoidSpeed>
+  					<MiningSpeed>0.2</MiningSpeed>
+  					<ResearchSpeed>0.4</ResearchSpeed>
+  					<CookSpeed>1.2</CookSpeed>
+  					<PruningSpeed MayRequire="Ludeon.RimWorld.Ideology">0.2</PruningSpeed>
+  					<DeepDrillingSpeed>0.2</DeepDrillingSpeed>
+  					<TradePriceImprovement>0.2</TradePriceImprovement>
+  					<MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
+  					<MedicalTendQuality>0.1</MedicalTendQuality>
+  				</statOffsets>
+  				<statFactors>
+  					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">1.2</SocialIdeoSpreadFrequencyFactor>
+  					<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">1.5</ConversionPower>
+  				</statFactors>
+  				<skillGains>
+  					<li>
+  						<key>Social</key>
+  							<value>2</value>
+  					</li>		
+  					<li>
+  						<key>Intellectual</key>
+  							<value>6</value>
+  					</li>
+  					<li>
+  						<key>Crafting</key>
+  							<value>4</value>
+  					</li>	
+  					<li>
+  						<key>Medicine</key>
+  							<value>4</value>
+  					</li>						
+  				</skillGains>			
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Crafting</li>
+  			<li>Intellectual</li>
+  			<li>Social</li>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  			<li>Intellectual</li>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>FastLearner</li>
+  			<li>Neurotic</li>
+  			<li>Pyromaniac</li>
+  			<li>SlowLearner</li>
+  			<li>TooSmart</li>
+  			<li>TorturedArtist</li>
+  			<li>S1_Daredevil</li>
+  			<li>S1_Doomed</li>
+  			<li>S1_Uncultured</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_CombatMedic</defName>
+  		<commonality>0.0000001</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Combat medic</label>
+  				<description>[PAWN_nameDef] is trained in speedy treatment.</description>
+  				<statOffsets>
+  					<MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
+  					<MedicalTendQuality>-0.1</MedicalTendQuality>
+  					<MedicalOperationSpeed>0.2</MedicalOperationSpeed>
+  					<MedicalTendSpeed>0.4</MedicalTendSpeed>
+  					<MoveSpeed>0.4</MoveSpeed>
+  					<MentalBreakThreshold>-0.10</MentalBreakThreshold>
+  					<PainShockThreshold>0.20</PainShockThreshold>
+  				</statOffsets>
+  				<statFactors>
+  					<RestRateMultiplier>0.8</RestRateMultiplier>
+  				</statFactors>
+  				<skillGains>					
+  				</skillGains>			
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Caring</li>
+  			<li>Violent</li>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  			<li>Medicine</li>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Cautious</li>
+  			<li>S1_Fighter</li>
+  			<li>S1_Riflesmith</li>
+  			<li>S1_Blader</li>
+  			<li>S1_Astronomer</li>
+  			<li>S1_Botanist</li>
+  			<li>S1_DefensiveFighter</li>
+  			<li>S1_Developer</li>
+  			<li>S1_Devout</li>
+  			<li>S1_Flincher</li>
+  			<li>S1_Ruthless</li>
+  			<li>S1_Mason</li>
+  			<li>SpeedOffset</li>
+  			<li>Brawler</li>
+  			<li>Nerves</li>
+  			<li>Neurotic</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Complainer</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Complainer</label>
+  				<description>[PAWN_nameDef] is the kind of person who thinks everything is everbody else's fault.</description>
+  				<statOffsets>
+  					<SocialImpact>-0.6</SocialImpact>
+  				</statOffsets>
+  				<statFactors>
+  				</statFactors>
+  				<skillGains>
+  					<li>
+  						<key>Social</key>
+  							<value>-6</value>
+  					</li>						
+  				</skillGains>			
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Cheerful</li>
+  			<li>S1_SmallTalker</li>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>Kind</li>
+  			<li>NaturalMood</li>
+  			<li>S1_Ruthless</li>
+  			<li>S1_Daredevil</li>
+  			<li>S1_Zealot</li>
+  			<li>S1_EarlyRiser</li>
+  			<li>S1_Determined</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_LivingBioreactor</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Living bioreactor</label>
+  				<description>[PAWN_nameDef]'s body just works a bit differently. [PAWN_pronoun] eats a lot, but has a lot of energy an strength in return.</description>
+  				<statOffsets>
+  					<ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+  					<MaxHitPoints>60</MaxHitPoints>
+  				</statOffsets>
+  				<statFactors>
+  					<RestRateMultiplier>1.3</RestRateMultiplier>
+  					<MeleeWeapon_DamageMultiplier>1.5</MeleeWeapon_DamageMultiplier>
+  				</statFactors>
+  				<skillGains>					
+  				</skillGains>
+  				<hungerRateFactor>1.75</hungerRateFactor>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>Wimp</li>
+  			<li>Gourmand</li>
+  			<li>S1_Freerunner</li>
+  			<li>Nimble</li>
+  			<li>S1_Spindly</li>
+  			<li>S1_Behemoth</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Daredevil</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Daredevil</label>
+  				<description>[PAWN_nameDef] is the definition of 'head on'. Sometimes it's not to [PAWN_possessive] benefit.</description>
+  				<statOffsets>
+  					<PainShockThreshold>0.15</PainShockThreshold>
+  					<MentalBreakThreshold>-0.15</MentalBreakThreshold>
+  				</statOffsets>
+  				<statFactors>
+  					<IncomingDamageFactor>1.6</IncomingDamageFactor>
+  				</statFactors>
+  				<skillGains>					
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Cautious</li>
+  			<li>Wimp</li>
+  			<li>Neurotic</li>
+  			<li>Nerves</li>
+  			<li>S1_Clever</li>
+  			<li>S1_Determined</li>
+  			<li>S1_DefensiveFighter</li>
+  			<li>S1_Developer</li>
+  			<li>S1_Astronomer</li>
+  			<li>S1_Botanist</li>
+  			<li>S1_Florist</li>
+  			<li>S1_Flincher</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_SteadyHands</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Steady hands</label>
+  				<description>[PAWN_nameDef] has steady hands.</description>
+  				<statOffsets>
+  					<ShootingAccuracyPawn>3.5</ShootingAccuracyPawn>
+  					<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+  					<MedicalSurgerySuccessChance>0.2</MedicalSurgerySuccessChance>
+  					<MedicalTendQuality>0.2</MedicalTendQuality>
+  				</statOffsets>
+  				<statFactors>
+  				</statFactors>
+  				<skillGains>					
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  			<li>Shooting</li>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>ShootingAccuracy</li>
+  			<li>Brawler</li>
+  			<li>S1_Blader</li>
+  			<li>Neurotic</li>
+  			<li>Nerves</li>
+  			<li>Wimp</li>
+  			<li>S1_Flincher</li>
+  			<li>S1_Spindly</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Determined</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Determined</label>
+  				<description>[PAWN_nameDef] is determined and won't fold easily.</description>
+  				<statOffsets>
+  					<MentalBreakThreshold>-0.08</MentalBreakThreshold>
+  					<PainShockThreshold>0.25</PainShockThreshold>
+  				</statOffsets>
+  				<statFactors>
+  					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.5</CertaintyLossFactor>
+  					<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">1.25</ConversionPower>
+  					<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">1.25</SuppressionPower>
+  					<IncomingDamageFactor>0.75</IncomingDamageFactor>
+  				</statFactors>
+  				<skillGains>					
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Flincher</li>
+  			<li>Wimp</li>
+  			<li>S1_Cautious</li>
+  			<li>S1_Ruthless</li>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>S1_Clever</li>
+  			<li>S1_Complainer</li>
+  			<li>S1_Doomed</li>
+  			<li>Jealous</li>
+  			<li>Masochist</li>
+  			<li>NaturalMood</li>
+  			<li>S1_Cheerful</li>
+  			<li>S1_Edgy</li>
+  			<li>Nerves</li>
+  			<li>Neurotic</li>
+  			<li>S1_Uncultured</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Doomed</defName>
+  		<commonality>0.3</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Doomed</label>
+  				<description>[PAWN_nameDef] is doomed.</description>
+  				<statOffsets>
+  					<MentalBreakThreshold>0.2</MentalBreakThreshold>
+  					<SocialImpact>-0.5</SocialImpact>
+  				</statOffsets>
+  				<statFactors>
+  					<IncomingDamageFactor>2</IncomingDamageFactor>
+  				</statFactors>
+  				<skillGains>					
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Cheerful</li>
+  			<li>S1_Determined</li>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>NaturalMood</li>
+  			<li>Nerves</li>
+  			<li>S1_CombatMedic</li>
+  			<li>S1_EarlyRiser</li>
+  			<li>S1_RolledUpSleeves</li>
+  			<li>S1_HealthyRoutines</li>
+  			<li>S1_LivingBioreactor</li>
+  			<li>S1_Behemoth</li>
+  			<li>S1_Freerunner</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_EarlyRiser</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Early riser</label>
+  				<description>Every new day equals new opportunities.[PAWN_nameDef] is as eager to explore them all.</description>
+  				<statOffsets>
+  					<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+  				</statOffsets>
+  				<statFactors>
+  					<RestRateMultiplier>1.4</RestRateMultiplier>
+  				</statFactors>
+  				<skillGains>					
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>S1_Doomed</li>
+  			<li>S1_Complainer</li>
+  			<li>S1_Braggart</li>
+  			<li>S1_Cautious</li>
+  			<li>S1_Ruthless</li>
+  			<li>Wimp</li>
+  			<li>Masochist</li>
+  			<li>NightOwl</li>
+  			<li>Psychopath</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Developer</defName>
+  		<commonality>0.0000001</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Developer</label>
+  				<description>[PAWN_nameDef] always finds a way to improve things.</description>
+  				<statOffsets>
+  				</statOffsets>
+  				<statFactors>
+  					<ResearchSpeed>1.4</ResearchSpeed>
+  					<GeneralLaborSpeed>1.25</GeneralLaborSpeed>
+  					<GlobalLearningFactor>1.10</GlobalLearningFactor>
+  					<JoyNeedRateMultiplier>0.8</JoyNeedRateMultiplier>
+  				</statFactors>
+  				<skillGains>				
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  			<li>Intellectual</li>
+  			<li>Crafting</li>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>S1_Doomed</li>
+  			<li>S1_Botanist</li>
+  			<li>S1_Backpacker</li>
+  			<li>S1_Astronomer</li>
+  			<li>S1_CombatMedic</li>
+  			<li>S1_RolledUpSleeves</li>
+  			<li>S1_Florist</li>
+  			<li>S1_Riflesmith</li>
+  			<li>S1_Fighter</li>
+  			<li>S1_Mason</li>
+  			<li>SlowLearner</li>
+  			<li>TorturedArtist</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_DefensiveFighter</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Defensive fighter</label>
+  				<description>[PAWN_nameDef] always takes a defensive stance when fighting. [PAWN_pronoun] takes and deals less damage.</description>
+  				<statOffsets>
+  				</statOffsets>
+  				<statFactors>
+  					<IncomingDamageFactor>0.6</IncomingDamageFactor>
+  					<BluntDamageMultiplier>0.6</BluntDamageMultiplier>
+  					<SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+  				</statFactors>
+  				<skillGains>		
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  			<li>Shooting</li>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Daredevil</li>
+  			<li>S1_Blader</li>
+  			<li>S1_Fighter</li>
+  			<li>S1_Riflesmith</li>
+  			<li>S1_CombatMedic</li>
+  			<li>Brawler</li>
+  			<li>Bloodlust</li>
+  			<li>S1_Zealot</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Flincher</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Flincher</label>
+  				<description>[PAWN_nameDef] has a pretty bad habit of closing [PAWN_possessive] eyes when something's coming at [PAWN_objective].</description>
+  				<statOffsets>
+  					<MeleeDodgeChance>-10</MeleeDodgeChance>
+  				</statOffsets>
+  				<statFactors>
+  					<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.5</SuppressionPower>
+  				</statFactors>
+  				<skillGains>
+  					<li>
+  						<key>Melee</key>
+  							<value>-6</value>
+  					</li>		
+  					<li>
+  						<key>Shooting</key>
+  							<value>-6</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Daredevil</li>
+  			<li>S1_Blader</li>
+  			<li>S1_SteadyHands</li>
+  			<li>S1_Ruthless</li>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>S1_CombatMedic</li>
+  			<li>S1_Determined</li>
+  			<li>S1_Fighter</li>
+  			<li>Tough</li>
+  			<li>ShootingAccuracy</li>
+  			<li>Bloodlust</li>
+  			<li>Brawler</li>
+  			<li>S1_Riflesmith</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Florist</defName>
+  		<commonality>0.0000001</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Florist</label>
+  				<description>[PAWN_nameDef] has great hands with all things growing.</description>
+  				<statOffsets>
+  					<PlantHarvestYield>0.15</PlantHarvestYield>
+  					<PlantWorkSpeed>0.25</PlantWorkSpeed>
+  					<PruningSpeed MayRequire="Ludeon.RimWorld.Ideology">0.2</PruningSpeed>
+  					<GeneralLaborSpeed>0.12</GeneralLaborSpeed>
+  				</statOffsets>
+  				<statFactors>
+  				</statFactors>
+  				<skillGains>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  			<li>Plants</li>
+  			<li>Artistic</li>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Botanist</li>
+  			<li>S1_Mason</li>
+  			<li>S1_CombatMedic</li>
+  			<li>S1_Astronomer</li>
+  			<li>S1_Fighter</li>
+  			<li>S1_Riflesmith</li>
+  			<li>S1_Developer</li>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>Undergrounder</li>
+  			<li>TorturedArtist</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Freerunner</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Freerunner</label>
+  				<description>[PAWN_nameDef] is everywhere all the time.</description>
+  				<statOffsets>
+  					<CarryingCapacity>-30</CarryingCapacity>
+  					<MoveSpeed>0.5</MoveSpeed>
+  					<MeleeDodgeChance>+10</MeleeDodgeChance>
+  				</statOffsets>
+  				<statFactors>
+  					<Mass>0.7</Mass>
+  					<IncomingDamageFactor>1.35</IncomingDamageFactor>
+  				</statFactors>
+  				<skillGains>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_RolledUpSleeves</li>
+  			<li>S1_LivingBioreactor</li>
+  			<li>Nimble</li>
+  			<li>Tough</li>
+  			<li>SpeedOffset</li>
+  			<li>Brawler</li>
+  			<li>S1_Backpacker</li>
+  			<li>S1_Cautious</li>
+  			<li>S1_Spindly</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_S1_RolledUpSleeves</defName>
+  		<commonality>0.0000001</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Rolled up sleeves</label>
+  				<description>[PAWN_nameDef] is the sort of person who does [PAWN_possessive] job and let everybody else worry about the rest.</description>
+  				<statOffsets>
+  					<PlantWorkSpeed>0.2</PlantWorkSpeed>
+  					<MiningSpeed>0.2</MiningSpeed>
+  					<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+  					<GeneralLaborSpeed>0.3</GeneralLaborSpeed>
+  					<AnimalGatherSpeed>0.2</AnimalGatherSpeed>
+  					<ConstructionSpeed>0.2</ConstructionSpeed>
+  					<ButcheryFleshSpeed>0.2</ButcheryFleshSpeed>
+  					<ButcheryMechanoidSpeed>0.2</ButcheryMechanoidSpeed>
+  					<DeepDrillingSpeed>0.2</DeepDrillingSpeed>
+  					<PruningSpeed MayRequire="Ludeon.RimWorld.Ideology">0.2</PruningSpeed>
+  					<CarryingCapacity>+50</CarryingCapacity>
+  					<MoveSpeed>0.2</MoveSpeed>
+  					<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+  				</statOffsets>
+  				<statFactors>
+  					<CookSpeed>1.2</CookSpeed>
+  					<JoyNeedRateMultiplier>0.9</JoyNeedRateMultiplier>
+  				</statFactors>
+  				<skillGains>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>S1_Authoritarian</li>
+  			<li>S1_Braggart</li>
+  			<li>S1_Daredevil</li>
+  			<li>S1_Astronomer</li>
+  			<li>S1_Developer</li>
+  			<li>S1_Florist</li>
+  			<li>S1_Edgy</li>
+  			<li>S1_Freerunner</li>
+  			<li>S1_LivingBioreactor</li>
+  			<li>S1_Fighter</li>
+  			<li>S1_CombatMedic</li>
+  			<li>S1_Riflesmith</li>
+  			<li>S1_Doomed</li>
+  			<li>S1_Edgy</li>
+  			<li>S1_Complainer</li>
+  			<li>Masochist</li>
+  			<li>TorturedArtist</li>
+  			<li>Wimp</li>
+  			<li>Gourmand</li>
+  			<li>Jealous</li>
+  			<li>Greedy</li>
+  			<li>Psychopath</li>
+  			<li>Bloodlust</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_HealthyRoutines</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Healty routines</label>
+  				<description>[PAWN_nameDef] takes everyday routines seriously.</description>
+  				<statOffsets>
+  					<ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+  					<GeneralLaborSpeed>0.2</GeneralLaborSpeed>
+  					<MoveSpeed>0.2</MoveSpeed>
+  					<MaxHitPoints>50</MaxHitPoints>
+  				</statOffsets>
+  				<statFactors>
+  					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+  					<JoyNeedRateMultiplier>1.33</JoyNeedRateMultiplier>
+  				</statFactors>
+  				<skillGains>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_RolledUpSleeves</li>
+  			<li>S1_Doomed</li>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>S1_Complainer</li>
+  			<li>Wimp</li>
+  			<li>DrugDesire</li>
+  			<li>Neurotic</li>
+  			<li>Nerves</li>
+  			<li>NaturalMood</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_S1_Riflesmith</defName>
+  		<commonality>0.0000001</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Riflesmith</label>
+  				<description>[PAWN_nameDef] loves crafting and shooting rifles and other bigger guns. And not much else.</description>
+  				<statOffsets>
+  					<AimingDelayFactor>-0.3</AimingDelayFactor>
+  				</statOffsets>
+  				<statFactors>
+  					<AccuracyLong>1.3</AccuracyLong>
+  					<AccuracyMedium>1.1</AccuracyMedium>
+  					<AccuracyShort>0.9</AccuracyShort>
+  					<AccuracyTouch>0.7</AccuracyTouch>
+  				</statFactors>
+  				<skillGains>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  			<li>Shooting</li>
+  			<li>Crafting</li>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Blader</li>
+  			<li>S1_DefensiveFighter</li>
+  			<li>S1_Flincher</li>
+  			<li>S1_Mason</li>
+  			<li>S1_Botanist</li>
+  			<li>S1_Florist</li>
+  			<li>S1_Astronomer</li>
+  			<li>S1_CombatMedic</li>
+  			<li>S1_Fighter</li>
+  			<li>S1_Developer</li>
+  			<li>S1_RolledUpSleeves</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_S1_Mason</defName>
+  		<commonality>0.0000001</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Mason</label>
+  				<description>[PAWN_nameDef] is all about the stones.</description>
+  				<statOffsets>
+  					<MiningSpeed>0.4</MiningSpeed>
+  					<MiningYield>0.4</MiningYield>
+  				</statOffsets>
+  				<statFactors>
+  				</statFactors>
+  				<skillGains>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  			<li>Mining</li>
+  			<li>Artistic</li>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Blader</li>
+  			<li>S1_DefensiveFighter</li>
+  			<li>S1_Flincher</li>
+  			<li>S1_Botanist</li>
+  			<li>S1_Florist</li>
+  			<li>S1_Astronomer</li>
+  			<li>S1_CombatMedic</li>
+  			<li>S1_Fighter</li>
+  			<li>S1_Developer</li>
+  			<li>Wimp</li>
+  			<li>Nimble</li>
+  			<li>S1_Freerunner</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_S1_Fighter</defName>
+  		<commonality>0.000001</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Fighter</label>
+  				<description>[PAWN_nameDef] likes to fight. And [PAWN_pronoun]'s good at it.</description>
+  				<statOffsets>
+  				</statOffsets>
+  				<statFactors>
+  					<MeleeWeapon_DamageMultiplier>1.65</MeleeWeapon_DamageMultiplier>
+  					<RangedWeapon_DamageMultiplier>1.65</RangedWeapon_DamageMultiplier>
+  					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+  				</statFactors>
+  				<skillGains>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  			<li>Shooting</li>
+  			<li>Melee</li>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Blader</li>
+  			<li>S1_Cautious</li>
+  			<li>S1_Riflesmith</li>
+  			<li>S1_CombatMedic</li>
+  			<li>S1_DefensiveFighter</li>
+  			<li>Wimp</li>
+  			<li>S1_Flincher</li>
+  			<li>S1_Botanist</li>
+  			<li>S1_Florist</li>
+  			<li>S1_Astronomer</li>
+  			<li>S1_Developer</li>
+  			<li>Brawler</li>
+  			<li>Nerves</li>
+  			<li>Neurotic</li>
+  			<li>ShootingAccuracy</li>
+  			<li>TorturedArtist</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_S1_Ruthless</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Ruthless</label>
+  				<description>[PAWN_nameDef] does whatever it takes and not very often in the nicest of ways.</description>
+  				<statOffsets>
+  					<PainShockThreshold>0.20</PainShockThreshold>
+  					<SocialImpact>+0.3</SocialImpact>
+  				</statOffsets>
+  				<statFactors>
+  					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0</SocialIdeoSpreadFrequencyFactor>
+  					<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">3</SuppressionPower>
+  					<MeleeWeapon_DamageMultiplier>1.1</MeleeWeapon_DamageMultiplier>
+  					<RangedWeapon_DamageMultiplier>1.1</RangedWeapon_DamageMultiplier>
+  				</statFactors>
+  				<skillGains>
+  					<li>
+  						<key>Shooting</key>
+  							<value>3</value>
+  					</li>
+  					<li>
+  						<key>Melee</key>
+  							<value>3</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Violent</li>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  			<li>Caring</li>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Cautious</li>
+  			<li>S1_CombatMedic</li>
+  			<li>S1_DefensiveFighter</li>
+  			<li>S1_Botanist</li>
+  			<li>S1_Cheerful</li>
+  			<li>S1_Complainer</li>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>S1_Flincher</li>
+  			<li>S1_SmallTalker</li>
+  			<li>S1_RolledUpSleeves</li>
+  			<li>S1_Determined</li>
+  			<li>S1_Authoritarian</li>
+  			<li>S1_Doomed</li>
+  			<li>S1_EarlyRiser</li>
+  			<li>Kind</li>
+  			<li>Nerves</li>
+  			<li>Neurotic</li>
+  			<li>TorturedArtist</li>
+  			<li>Wimp</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName MayRequire="Ludeon.RimWorld.Ideology">UT_S1_Devout</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Devout</label>
+  				<description>[PAWN_nameDef] is all about spreading the faith through words.</description>
+  				<statOffsets>
+  					<SocialImpact>0.2</SocialImpact>
+  				</statOffsets>
+  				<statFactors>
+  					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0</CertaintyLossFactor>
+  					<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">3</ConversionPower>
+  					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">2</SocialIdeoSpreadFrequencyFactor>
+  					<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.25</SuppressionPower>
+  					<JoyNeedRateMultiplier>0.6</JoyNeedRateMultiplier>
+  				</statFactors>
+  				<skillGains>
+  					<li>
+  						<key>Social</key>
+  							<value>4</value>
+  					</li>
+  				</skillGains>			
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  			<li>Violent</li>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  			<li>Social</li>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Zealot</li>
+  			<li>S1_Ruthless</li>
+  			<li>S1_Authoritarian</li>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>S1_Edgy</li>
+  			<li>S1_Daredevil</li>
+  			<li>S1_Fighter</li>
+  			<li>Psychopath</li>
+  			<li>S1_CombatMedic</li>
+  			<li>S1_Riflesmith</li>
+  			<li>S1_Blader</li>
+  			<li>Brawler</li>
+  			<li>Bloodlust</li>
+  			<li>DislikesMen</li>
+  			<li>DislikesWomen</li>
+  			<li>TorturedArtist</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName MayRequire="Ludeon.RimWorld.Ideology">UT_S1_Zealot</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Zealot</label>
+  				<description>[PAWN_nameDef] is fighting in the name of [PAWN_possessive] faith.</description>
+  				<statOffsets>
+  				</statOffsets>
+  				<statFactors>
+  					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0</CertaintyLossFactor>
+  					<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">1.5</ConversionPower>
+  					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.25</SocialIdeoSpreadFrequencyFactor>
+  					<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">1.5</SuppressionPower>
+  				</statFactors>
+  				<skillGains>
+  					<li>
+  						<key>Shooting</key>
+  							<value>4</value>
+  					</li>
+  					<li>
+  						<key>Melee</key>
+  							<value>4</value>
+  					</li>
+  				</skillGains>			
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Violent</li>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Devout</li>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>Wimp</li>
+  			<li>Nerves</li>
+  			<li>Psychopath</li>
+  			<li>Neurotic</li>
+  			<li>S1_Cautious</li>
+  			<li>S1_DefensiveFighter</li>
+  			<li>S1_Doomed</li>
+  			<li>S1_Flincher</li>
+  			<li>Kind</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Behemoth</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Behemoth</label>
+  				<description>[PAWN_nameDef] is huge. Strong, but slow in two different ways.</description>
+  				<statOffsets>
+  					<CarryingCapacity>+75</CarryingCapacity>
+  					<MaxHitPoints>100</MaxHitPoints>
+  					<MoveSpeed>-1.5</MoveSpeed>
+  					<MeleeWeapon_DamageMultiplier>1.25</MeleeWeapon_DamageMultiplier>
+  					<MeleeDodgeChance>-15</MeleeDodgeChance>
+  					<MeleeHitChance>-5</MeleeHitChance>
+  					<MeleeWeapon_CooldownMultiplier>0.6</MeleeWeapon_CooldownMultiplier>
+  					<SocialImpact>-0.3</SocialImpact>
+  				</statOffsets>
+  				<statFactors>
+  					<Mass>1.7</Mass>
+  					<IncomingDamageFactor>0.75</IncomingDamageFactor>
+  					<GlobalLearningFactor>0.25</GlobalLearningFactor>
+  				</statFactors>
+  				<skillGains>
+  				</skillGains>			
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Violent</li>
+  			<li>Commoner</li>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  			<li>Intellectual</li>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>Wimp</li>
+  			<li>Nerves</li>
+  			<li>Neurotic</li>
+  			<li>Nimble</li>
+  			<li>S1_Freerunner</li>
+  			<li>SpeedOffset</li>
+  			<li>S1_Blader</li>
+  			<li>S1_Clever</li>
+  			<li>TooSmart</li>
+  			<li>GreatMemory</li>
+  			<li>S1_Astronomer</li>
+  			<li>S1_Developer</li>
+  			<li>Neurotic</li>
+  			<li>Psychopath</li>
+  			<li>Bloodlust</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Uncultured</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Uncultured</label>
+  				<description>[PAWN_nameDef] is not interested in that. Nope, not that either.</description>
+  				<statOffsets>
+  					<SocialImpact>-0.3</SocialImpact>
+  				</statOffsets>
+  				<statFactors>
+  					<SocialImpact>-0.7</SocialImpact>
+  					<GlobalLearningFactor>0.5</GlobalLearningFactor>
+  					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.2</CertaintyLossFactor>
+  					<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.2</ConversionPower>
+  					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.05</SocialIdeoSpreadFrequencyFactor>
+  					<JoyNeedRateMultiplier>0.5</JoyNeedRateMultiplier>
+  				</statFactors>
+  				<skillGains>	
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  			<li>Intellectual</li>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>TooSmart</li>
+  			<li>S1_Clever</li>
+  			<li>S1_Cheerful</li>
+  			<li>S1_Developer</li>
+  			<li>S1_Astronomer</li>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>FastLearner</li>
+  			<li>Greedy</li>
+  			<li>GreatMemory</li>
+  			<li>S1_SmallTalker</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_SubstanceTolerant</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Substance tolerant</label>
+  				<description>[PAWN_nameDef]'s body doesn't respond much to any kind of substances. For good or bad.</description>
+  				<statOffsets>
+  				</statOffsets>
+  				<statFactors>
+  					<MedicalTendQualityOffset>0.5</MedicalTendQualityOffset>
+  					<ChemsNeedRateMultiplier>0.1</ChemsNeedRateMultiplier>
+  				</statFactors>
+  				<skillGains>								
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Spindly</li>
+  			<li>Wimp</li>
+  			<li>DrugDesire</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_S1_Spindly</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Spindly</label>
+  				<description>[PAWN_nameDef] has long arms and legs. [PAWN_pronoun] moves fast, but is a little frail and doesn't have perfect control of [PAWN_possessive] limbs.</description>
+  				<statOffsets>
+  					<MoveSpeed>0.25</MoveSpeed>
+  					<MaxHitPoints>-35</MaxHitPoints>
+  					<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+  				</statOffsets>
+  				<statFactors>
+  				</statFactors>
+  				<skillGains>							
+  				</skillGains>			
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>Tough</li>
+  			<li>S1_Blader</li>
+  			<li>Brawler</li>
+  			<li>S1_Behemoth</li>
+  			<li>S1_LivingBioreactor</li>
+  			<li>S1_SteadyHands</li>
+  			<li>S1_HealthyRoutines</li>
+  			<li>S1_SubstanceTolerant</li>
+  			<li>SpeedOffset</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_JunkArtist</defName>
+  		<commonality>0.0000001</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Junk artist</label>
+  				<description>[PAWN_nameDef] can make good looking stuff from pretty much anything.</description>
+  				<statOffsets>
+  					<ButcheryMechanoidEfficiency>0.4</ButcheryMechanoidEfficiency>
+  					<ButcheryMechanoidSpeed>0.2</ButcheryMechanoidSpeed>
+  					<CarryingCapacity>+25</CarryingCapacity>
+  					<FixBrokenDownBuildingSuccessChance>0.2</FixBrokenDownBuildingSuccessChance>
+  					<SmeltingSpeed>0.2</SmeltingSpeed>
+  					<WorkTableWorkSpeedFactor>0.2</WorkTableWorkSpeedFactor>					
+  				</statOffsets>
+  				<statFactors>
+  				</statFactors>
+  				<skillGains>							
+  				</skillGains>			
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  			<li>Artistic</li>
+  		</forcedPassions>
+  		<conflictingTraits>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_DirectHitter</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Direct hitter</label>
+  				<description>[PAWN_nameDef] has a habit of hitting [PAWN_possessive] enemies the right way.</description>
+  				<statOffsets>
+  				</statOffsets>
+  				<statFactors>
+  					<SharpDamageMultiplier>1.15</SharpDamageMultiplier>
+  					<BluntDamageMultiplier>1.15</BluntDamageMultiplier>
+  				</statFactors>
+  				<skillGains>
+  					<li>
+  						<key>Shooting</key>
+  							<value>2</value>
+  					</li>
+  					<li>
+  						<key>Melee</key>
+  							<value>2</value>	
+  					</li>
+  				</skillGains>			
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Violent</li>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_IndirectHitter</li>
+  			<li>S1_DefensiveFighter</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_IndirectHitter</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Indirect hitter</label>
+  				<description>[PAWN_nameDef] has a habit of hitting [PAWN_possessive] enemies the wrong way.</description>
+  				<statOffsets>
+  				</statOffsets>
+  				<statFactors>
+  					<SharpDamageMultiplier>0.85</SharpDamageMultiplier>
+  					<BluntDamageMultiplier>0.85</BluntDamageMultiplier>
+  				</statFactors>
+  				<skillGains>
+  					<li>
+  						<key>Shooting</key>
+  							<value>-2</value>
+  					</li>
+  					<li>
+  						<key>Melee</key>
+  							<value>-2</value>	
+  					</li>
+  				</skillGains>			
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Violent</li>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_DirectHitter</li>
+  			<li>S1_Blader</li>
+  			<li>S1_Fighter</li>
+  			<li>S1_CombatMedic</li>
+  			<li>S1_Riflesmith</li>
+  			<li>Tough</li>
+  			<li>Brawler</li>
+  			<li>ShootingAccuracy</li>
+  			<li>S1_SteadyHands</li>
+  			<li>S1_Zealot</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Exile</defName>
+  		<commonality>0.0000001</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Exile</label>
+  				<description>[PAWN_nameDef] is doing all [PAWN_pronoun] can to not piss someone off.</description>
+  				<statOffsets>
+  					<SocialImpact>-0.6</SocialImpact>
+  				</statOffsets>
+  				<statFactors>
+  					<RestRateMultiplier>1.4</RestRateMultiplier>
+  					<JoyNeedRateMultiplier>0.6</JoyNeedRateMultiplier>
+  				</statFactors>
+  				<skillGains>
+  				</skillGains>	
+  				<hungerRateFactor>0.6</hungerRateFactor>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_DirectHitter</li>
+  			<li>S1_Blader</li>
+  			<li>S1_Fighter</li>
+  			<li>S1_CombatMedic</li>
+  			<li>S1_Riflesmith</li>
+  			<li>S1_Zealot</li>
+  			<li>S1_Devout</li>
+  			<li>NaturalMood</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_WildChild</defName>
+  		<commonality>0.0000001</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Wild child</label>
+  				<description>[PAWN_nameDef] is gonna be a wild child all [PAWN_possessive] life.</description>
+  				<statOffsets>
+  					<SocialImpact>-1</SocialImpact>
+  					<PlantHarvestYield>0.3</PlantHarvestYield>
+  					<PlantWorkSpeed>0.5</PlantWorkSpeed>
+  					<AnimalGatherSpeed>0.5</AnimalGatherSpeed>
+  					<AnimalGatherYield>0.3</AnimalGatherYield>
+  					<EatingSpeed>0.5</EatingSpeed>
+  					<Cleanliness>-0.8</Cleanliness>
+  					<ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+  					<TameAnimalChance>0.6</TameAnimalChance>
+  					<TrainAnimalChance>0.6</TrainAnimalChance>
+  				</statOffsets>
+  				<statFactors>
+  					<RestRateMultiplier>0.75</RestRateMultiplier>
+  					<JoyNeedRateMultiplier>1.5</JoyNeedRateMultiplier>
+  					<FoodPoisonChance>0</FoodPoisonChance>
+  				</statFactors>
+  				<skillGains>
+  				</skillGains>	
+  				<hungerRateFactor>0.6</hungerRateFactor>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  			<li>Plants</li>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>S1_Cheerful</li>
+  			<li>S1_Authoritarian</li>
+  			<li>S1_Ruthless</li>
+  			<li>S1_Zealot</li>
+  			<li>S1_Devout</li>
+  			<li>S1_Determined</li>
+  			<li>S1_Edgy</li>
+  			<li>S1_Flincher</li>
+  			<li>S1_Braggart</li>
+  			<li>S1_SmallTalker</li>
+  			<li>S1_Complainer</li>
+  			<li>S1_HealthyRoutines</li>
+  			<li>AnnoyingVoice</li>
+  			<li>Transhumanist</li>
+  			<li>Wimp</li>
+  			<li>TorturedArtist</li>
+  			<li>Psychopath</li>
+  			<li>Jealous</li>
+  			<li>Greedy</li>
+  			<li>DrugDesire</li>
+  			<li>DislikesMen</li>
+  			<li>DislikesWomen</li>
+  			<li>Gourmand</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_GoGetter</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Go-getter</label>
+  				<description>[PAWN_nameDef] knows what [PAWN_pronoun] wants and usually gets it.</description>
+  				<statOffsets>
+  					<SocialImpact>0.25</SocialImpact>
+  					<TradePriceImprovement>0.3</TradePriceImprovement>
+  				</statOffsets>
+  				<statFactors>
+  				</statFactors>
+  				<skillGains>
+  				</skillGains>	
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Social</li>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_AllOutOfFucks</li>
+  			<li>Jealous</li>
+  			<li>Ascetic</li>
+  			<li>Masochist</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_Sloppy</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Sloppy</label>
+  				<description>[PAWN_nameDef] is simply sloppy.</description>
+  				<statOffsets>
+  				</statOffsets>
+  				<statFactors>
+  					<WorkSpeedGlobal>1.35</WorkSpeedGlobal>
+  					<ConstructSuccessChance>0.7</ConstructSuccessChance>
+  					<MedicalSurgerySuccessChance>0.8</MedicalSurgerySuccessChance>
+  					<MedicalTendQuality>0.7</MedicalTendQuality>
+  					<ButcheryMechanoidEfficiency>0.6</ButcheryMechanoidEfficiency>
+  					<ButcheryFleshEfficiency>0.6</ButcheryFleshEfficiency>
+  					<FixBrokenDownBuildingSuccessChance>0.6</FixBrokenDownBuildingSuccessChance>
+  					<FoodPoisonChance>1.4</FoodPoisonChance>
+  					<TameAnimalChance>0.7</TameAnimalChance>
+  					<TrainAnimalChance>0.7</TrainAnimalChance>
+  					<ResearchSpeed>0.5</ResearchSpeed>
+  				</statFactors>
+  				<skillGains>
+  				</skillGains>	
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Social</li>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Astronomer</li>
+  			<li>S1_Botanist</li>
+  			<li>S1_Clever</li>
+  			<li>S1_CombatMedic</li>
+  			<li>S1_Developer</li>
+  			<li>S1_Florist</li>
+  			<li>S1_Riflesmith</li>
+  			<li>S1_SteadyHands</li>
+  			<li>Gourmand</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_CageFighter</defName>
+  		<commonality>0.0000001</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Cage fighter</label>
+  				<description>[PAWN_nameDef] is a fearsome fighter with fists and blunt weapons.</description>
+  				<statOffsets>
+  					<BluntDamageMultiplier>2</BluntDamageMultiplier>
+  					<MeleeWeapon_CooldownMultiplier>-0.5</MeleeWeapon_CooldownMultiplier>
+  					<MeleeDodgeChance>+3</MeleeDodgeChance>
+  					<MeleeHitChance>5</MeleeHitChance>
+  					<CarryingCapacity>50</CarryingCapacity>
+  				</statOffsets>
+  				<statFactors>
+  					<SharpDamageMultiplier>0.25</SharpDamageMultiplier>
+  					<JoyNeedRateMultiplier>0.9</JoyNeedRateMultiplier>
+  				</statFactors>
+  				<skillGains>
+  				</skillGains>	
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  			<li>Melee</li>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_Blader</li>
+  			<li>S1_DefensiveFighter</li>
+  			<li>S1_CombatMedic</li>
+  			<li>S1_Riflesmith</li>
+  			<li>S1_IndirectHitter</li>
+  			<li>S1_Fighter</li>
+  			<li>S1_Cheerful</li>
+  			<li>S1_EarlyRiser</li>
+  			<li>Wimp</li>
+  			<li>Brawler</li>
+  			<li>Gourmand</li>
+  			<li>Kind</li>
+  			<li>ShootingAccuracy</li>
+  			<li>TorturedArtist</li>
+  			<li>TooSmart</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_LikesSummer</defName>
+  		<commonality>1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Likes summer</label>
+  				<description>[PAWN_nameDef] believes summer is the best time of year.</description>
+  				<statOffsets>
+  				</statOffsets>
+  				<statFactors>
+  				</statFactors>
+  				<skillGains>							
+  				</skillGains>			
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_LikesFall</li>
+  			<li>S1_LikesSpring</li>
+  			<li>S1_LikesWinter</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_LikesFall</defName>
+  		<commonality>1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Likes fall</label>
+  				<description>[PAWN_nameDef] believes fall is the best time of year.</description>
+  				<statOffsets>
+  				</statOffsets>
+  				<statFactors>
+  				</statFactors>
+  				<skillGains>							
+  				</skillGains>			
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_LikesSummer</li>
+  			<li>S1_LikesSpring</li>
+  			<li>S1_LikesWinter</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_LikesWinter</defName>
+  		<commonality>1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Likes winter</label>
+  				<description>[PAWN_nameDef] believes winter is the best time of year.</description>
+  				<statOffsets>
+  				</statOffsets>
+  				<statFactors>
+  				</statFactors>
+  				<skillGains>							
+  				</skillGains>			
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_LikesFall</li>
+  			<li>S1_LikesSpring</li>
+  			<li>S1_LikesSummer</li>
+  			<li>S1_Backpacker</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+  		<defName>UT_S1_LikesSpring</defName>
+  		<commonality>1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Likes spring</label>
+  				<description>[PAWN_nameDef] believes spring is the best time of year.</description>
+  				<statOffsets>
+  				</statOffsets>
+  				<statFactors>
+  				</statFactors>
+  				<skillGains>							
+  				</skillGains>			
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  		</requiredWorkTags>
+  		<disabledWorkTags>
+  		</disabledWorkTags>
+  		<forcedPassions>
+  		</forcedPassions>
+  		<conflictingTraits>
+  			<li>S1_LikesFall</li>
+  			<li>S1_LikesSummer</li>
+  			<li>S1_LikesWinter</li>
+  		</conflictingTraits>
+  	</TraitDef>	
+
+  <TraitDef>
+      <defName>UT_MT_Petty</defName>
+      <degreeDatas>
+        <li>
+          <label>Petty</label>
+          <description>{PAWN_nameDef} is overtly concerned with social hitches. {PAWN_pronoun} tends to annoy others and can't stand {PAWN_possessive} ex-lovers moving on.</description>
+          <skillGains>
+            <li>
+              <key>Social</key>
+              <value>-2</value>
+            </li>
+          </skillGains>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>Psychopath</li>
+      </conflictingTraits>
+      <requiredWorkTags>
+        <li>Social</li>
+      </requiredWorkTags>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_MT_Charismatic</defName>
+      <degreeDatas>
+        <li>
+          <label>Charismatic</label>
+          <description>{PAWN_nameDef} has a shining personality. {PAWN_possessive} words can get through to others more than usual.</description>
+          <skillGains>
+            <li>
+              <key>Social</key>
+              <value>4</value>
+            </li>
+          </skillGains>
+          <statOffsets>
+            <SocialImpact>0.50</SocialImpact>
+            <TradePriceImprovement>0.2</TradePriceImprovement>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>Psychopath</li>
+        <li>MT_Petty</li>
+      </conflictingTraits>
+      <requiredWorkTags>
+        <li>Social</li>
+      </requiredWorkTags>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_MT_Eccentric</defName>
+      <degreeDatas>
+        <li>
+          <label>Eccentric</label>
+          <description>{PAWN_nameDef} Acts abnormally, probably due to their oddly high intelligence. {PAWN_pronoun} often makes a larger impact socially... For better or worse. {PAWN_nameDef} is so out of the social loop, {PAWN_pronoun} doesn't realise when {PAWN_pronoun} is being insulted.</description>
+          <skillGains>
+            <li>
+              <key>Intellectual</key>
+              <value>4</value>
+              <key>Social</key>
+              <value>-4</value>
+            </li>
+          </skillGains>
+          <statOffsets>
+            <SocialImpact>0.50</SocialImpact>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>MT_Charismatic</li>
+      </conflictingTraits>
+      <requiredWorkTags>
+        <li>Social</li>
+        <li>Intellectual</li>
+      </requiredWorkTags>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_MT_Conductor</defName>
+      <commonality>0.2</commonality>
+      <degreeDatas>
+        <li>
+          <label>Conductor</label>
+          <description>{PAWN_nameDef} leads the movement of others well. Colonists around {PAWN_nameDef} move faster.</description>
+        </li>
+      </degreeDatas>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_MT_Commander</defName>
+      <commonality>0.2</commonality>
+      <degreeDatas>
+        <li>
+          <label>Commander</label>
+          <description>{PAWN_nameDef} is an effective leader in ranged combat. Colonists around {PAWN_nameDef} have better aim.</description>
+        </li>
+      </degreeDatas>
+      <requiredWorkTags>
+        <li>Violent</li>
+      </requiredWorkTags>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_MT_Hermit</defName>
+      <commonality>0.4</commonality>
+      <degreeDatas>
+        <li>
+          <label>Hermit</label>
+          <description>{PAWN_nameDef} prefers being solitary. {PAWN_pronoun} is better at working with plants anyways.</description>
+          <skillGains>
+            <li>
+              <key>Social</key>
+              <value>-4</value>
+            </li>
+            <li>
+              <key>Plants</key>
+              <value>4</value>
+            </li>
+          </skillGains>
+          <statOffsets>
+            <PlantHarvestYield>0.15</PlantHarvestYield>
+            <SocialImpact>-0.50</SocialImpact>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_MT_Peppy</defName>
+      <commonality>0.5</commonality>
+      <degreeDatas>
+        <li>
+          <label>Peppy</label>
+          <description>{PAWN_nameDef} is full of energy. {PAWN_pronoun} will randomly gain the Frenzy Go Inspiration, even if {PAWN_pronoun} is not happy.</description>
+        </li>
+      </degreeDatas>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_MT_Volatile_Crafter</defName>
+      <commonality>0.2</commonality>
+      <degreeDatas>
+        <li>
+          <label>Volatile Crafter</label>
+          <description>{PAWN_nameDef} is a genius crafter, and will often have creative inspiration. However, {PAWN_possessive} mind is constantly ticking, making {PAWN_nameDef} much more likely to have a mental break.</description>
+          <skillGains>
+            <li>
+              <key>Artistic</key>
+              <value>3</value>
+            </li>
+            <li>
+              <key>Crafting</key>
+              <value>3</value>
+            </li>
+          </skillGains>
+          <statOffsets>
+            <MentalBreakThreshold>0.20</MentalBreakThreshold>
+          </statOffsets>
+        </li>
+      </degreeDatas>
+      <requiredWorkTags>
+        <li>Crafting</li>
+        <li>Artistic</li>
+      </requiredWorkTags>
+      <conflictingTraits>
+        <li>MT_Peppy</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_MT_Luminary</defName>
+      <commonality>0.05</commonality>
+      <degreeDatas>
+        <li>
+          <label>Luminary</label>
+          <description>For whatever reason, everyone seems to really care how {PAWN_nameDef} is feeling.</description>
+        </li>
+      </degreeDatas>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_MT_Tyrant</defName>
+      <commonality>0.1</commonality>
+      <degreeDatas>
+        <li>
+          <label>Tyrannic</label>
+          <description>{PAWN_nameDef} harshly criticizes and dictates the actions of others. Colonists around {PAWN_nameDef} move and work faster, but receive a mood debuff from the added stress.</description>
+        </li>
+      </degreeDatas>
+      <conflictingTraits>
+        <li>Kind</li>
+        <li>MT_Conductor</li>
+      </conflictingTraits>
+    </TraitDef>
+
+  <TraitDef>
+      <defName>UT_MT_Venturous</defName>
+      <commonality>0.2</commonality>
+      <degreeDatas>
+        <li>
+          <label>Venturous</label>
+          <description>{PAWN_nameDef} loves to take risks and complete quests. {PAWN_pronoun} will recieve mood buffs for successful quests, and debuffs for failed quests.</description>
+        </li>
+      </degreeDatas>
+    </TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Misanthrope</defName>
+  		<commonality>0.3</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>misanthrope</label>
+  				<description>{PAWN_nameDef} hates everyone equally.</description>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>DislikesMen</li>
+  			<li>DislikesWomen</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Dysgeusia</defName>
+  		<commonality>0.1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>dysgeuisia</label>
+  				<description>{PAWN_nameDef} was born without a sense of taste and cannot enjoy food.</description>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Gourmand</li>
+  			<li>BOT_Eclectic_Palate</li>
+  			<li>BOT_Entomophagous</li>
+  			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_RefinedPalate</li>
+  			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Gastronomist</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Eclectic_Palate</defName>
+  		<commonality>0.2</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>eclectic palate</label>
+  				<description>{PAWN_nameDef} loves to eat food with a variety of ingredients but will be upset over bland food.</description>
+  				<skillGains>
+  					<Cooking>2</Cooking>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Ascetic</li>
+  			<li>BOT_Dysgeusia</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Pacifist</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>pacifist</label>
+  				<description>{PAWN_nameDef} hates violence and wouldn't hurt a fly. They'll get upset if forced to do so.</description>
+  				<disallowedMentalStates>
+  					<li>SocialFighting</li>
+  					<li>Berserk</li>
+  					<li>Slaughterer</li>
+  					<li>MurderousRage</li>
+  					<li>SadisticRage</li>
+  					<li>InsultingSpree</li>
+  					<li>TargetedInsultingSpree</li>
+  				</disallowedMentalStates>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Bloodlust</li>
+  			<li>Psychopath</li>
+  			<li>Brawler</li>
+  			<li>BOT_Sadist</li>
+  			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Vengeful</li>
+  			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_MadSurgeon</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Narcoleptic</defName>
+  		<commonality>0.1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>narcoleptic</label>
+  				<description>{PAWN_nameDef} suffers from a neurological disorder that makes {PAWN_pronoun} prone to randomly fall alseep anywhere.</description>
+  				<forcedMentalState>BOT_NarcolepticAsleep</forcedMentalState>
+  				<forcedMentalStateMtbDays>0.4</forcedMentalStateMtbDays>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>BOT_Loves_Sleeping</li>
+  			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Insomniac</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Pyrophobia</defName>
+  		<commonality>0.1</commonality>
+  		<disabledWorkTags>Firefighting</disabledWorkTags>
+  		<degreeDatas>
+  			<li>
+  				<label>pyrophobia</label>
+  				<description>{PAWN_nameDef} is irrationally afraid of fire and will flee the scene if not drafted. {PAWN_pronoun} hates getting burns.</description>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Pyromaniac</li>
+  		</conflictingTraits>
+  		<modExtensions>
+  			<li Class="More_Traits.ModExtensions.BOT_TraitExtension">
+  				<hediffDef>BOT_Fleeing</hediffDef>
+  			</li>
+  		</modExtensions>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Nyctophobia</defName>
+  		<commonality>0.1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>nyctophobia</label>
+  				<description>{PAWN_nameDef} is afraid of the dark. They'll will be extra unhappy when in darkness and has trouble sleeping without light.</description>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Undergrounder</li>
+  			<li>NightOwl</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Loves_Sleeping</defName>
+  		<commonality>0.3</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>loves sleeping</label>
+  				<description>{PAWN_nameDef} always feels good after a good night's sleep.</description>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>BOT_Narcoleptic</li>
+  			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Insomniac</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_StrongBody</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>good Constitution</label>
+  				<description>{PAWN_nameDef} was born with a strong, healthy body. They can carry more, mine faster, deal more damage in melee combat and take reduced damage from attacks.</description>
+  				<degree>-1</degree>
+  				<statFactors>
+  					<MiningSpeed>1.2</MiningSpeed>
+  				</statFactors>
+  				<statOffsets>
+  					<CarryingCapacity>25.0</CarryingCapacity>
+  					<IncomingDamageFactor>-0.15</IncomingDamageFactor>
+  					<ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+  					<PainShockThreshold>0.20</PainShockThreshold>
+  				</statOffsets>
+  				<skillGains>
+  					<Melee>2</Melee>
+  					<Mining>2</Mining>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>BOT_WeakBody</li>
+  			<li>Wimp</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_WeakBody</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>poor Constitution</label>
+  				<description>{PAWN_nameDef} was unfortunately born with a weak, feeble body. They cannot carry as much as everyone else, mine slower, deal less damage in melee and take increased damage from attacks.</description>
+  				<degree>1</degree>
+  				<statFactors>
+  					<MiningSpeed>0.8</MiningSpeed>
+  				</statFactors>
+  				<statOffsets>
+  					<CarryingCapacity>-25.0</CarryingCapacity>
+  					<IncomingDamageFactor>0.15</IncomingDamageFactor>
+  					<ImmunityGainSpeed>-0.15</ImmunityGainSpeed>
+  					<PainShockThreshold>-0.20</PainShockThreshold>
+  				</statOffsets>
+  				<skillGains>
+  					<Melee>-2</Melee>
+  					<Mining>-2</Mining>
+  				</skillGains>
+  			</li>   
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>BOT_StrongBody</li>
+  			<li>Tough</li>
+  			<li>Brawler</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Apathetic</defName>
+  		<commonality>0.1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>apathetic</label>
+  				<description>{PAWN_nameDef} has no goals in life. No dreams, motivation or passions. It's going to take a lot to break what is left of them.</description>
+  				<statOffsets>
+  					<MentalBreakThreshold>-0.18</MentalBreakThreshold>
+  				</statOffsets>
+  				<statFactors>
+  					<GlobalLearningFactor>0.75</GlobalLearningFactor>
+  				</statFactors>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Nerves</li>
+  			<li>TorturedArtist</li>
+  			<li>NaturalMood</li>
+  			<li>BOT_Moody</li>
+  			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Anxious</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Entomophobia</defName>
+  		<commonality>0.1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>entomophobia</label>
+  				<description>{PAWN_nameDef} has an intense fear of insects and will not hesitate to run away upon spotting one.</description>
+  			</li>
+  		</degreeDatas>
+  		<modExtensions>
+  			<li Class="More_Traits.ModExtensions.BOT_TraitExtension">
+  				<hediffDef>BOT_Fleeing</hediffDef>
+  			</li>
+  		</modExtensions>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Entomophagous</defName>
+  		<commonality>0.25</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>entomophagous</label>
+  				<description>Having had easy access to insect meat during most of their life {PAWN_nameDef} became accustomed to eating it to the point that {PAWN_pronoun} preferred it over normal meat.</description>
+  				<disallowedThoughtsFromIngestion>
+  					<li>
+  						<meatSource>Insect</meatSource>
+  						<thoughts>
+  							<li>AteRawFood</li>
+  							<li>AteInsectMeatDirect</li>
+  							<li>AteInsectMeatAsIngredient</li>
+  						</thoughts>
+  					</li>
+  				</disallowedThoughtsFromIngestion>
+  				<extraThoughtsFromIngestion>
+  					<li>
+  						<meatSource>Insect</meatSource>
+  						<thoughtsDirect>
+  							<li>BOT_Entomophagous_AteInsectMeatDirect</li>
+  						</thoughtsDirect>
+  						<thoughtsAsIngredient>
+  							<li>BOT_Entomophagous_AteInsectMeatAsIngredient</li>
+  						</thoughtsAsIngredient>
+  					</li>
+  				</extraThoughtsFromIngestion>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Cannibal</li>
+  			<li>BOT_Dysgeusia</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Gregarious</defName>
+  		<commonality>0.3</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>gregarious</label>
+  				<description>{PAWN_nameDef} loves the company of others. The more, the merrier.</description>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Psychopath</li>
+  			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Anxious</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Pluviophile</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>pluviophile</label>
+  				<description>{PAWN_nameDef} loves the rain. {PAWN_pronoun} doesn't mind being wet and gets happy during rainy weather.</description>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>BOT_Chionophile</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Chionophile</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>chionophile</label>
+  				<description>There's nothing {PAWN_nameDef} loves more than snow! No amount of snow is going to slow them down.</description>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>BOT_Pluviophile</li>
+  			<li>BOT_Temperature_Love</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Moody</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>moody</label>
+  				<description>It doesn't take much to make {PAWN_nameDef} either really excited or to bring {PAWN_possessive} mood completely down.</description>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>TorturedArtist</li>
+  			<li>NaturalMood</li>
+  			<li>BOT_Apathetic</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_EarlyBird</defName>
+  		<commonality>1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>early bird</label>
+  				<description>{PAWN_nameDef} prefers to wake up early in the day to get as much work done as possible during the day.\n\n{PAWN_pronoun} gets a mood boost if awake during the early hours of a day (5h-12h) and mood loss if awake during the evening (17h-0h).</description>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>NightOwl</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Communal</defName>
+  		<commonality>0.7</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>communal</label>
+  				<description>{PAWN_nameDef} has grown accustomed to a tightly nit colony and loves sleeping in barracks. Preferably with many other pawns.</description>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Jealous</li>
+  			<li>Greedy</li>
+  			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Anxious</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Sadist</defName>
+  		<commonality>0.2</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>sadist</label>
+  				<description>{PAWN_nameDef} likes seeing other pawns suffer and gets excited from causing damage.</description>
+  				<skillGains>
+  					<Melee>1</Melee>
+  					<Shooting>1</Shooting>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>BOT_Pacifist</li>
+  			<li>Kind</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Vulgar</defName>
+  		<commonality>0.8</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>vulgar</label>
+  				<description>For whatever purpose, {PAWN_nameDef} has taught {PAWN_objective}self every swear word in the dictionary and uses this profane knowledge unconsciously in {PAWN_possessive} day-to-day life.</description>
+  				<skillGains>
+  					<Social>-2</Social>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Kind</li>
+  			<li>BOT_Comedian</li>
+  			<li>Abrasive</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Comedian</defName>
+  		<commonality>0.7</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>comedian</label>
+  				<description>{PAWN_nameDef} always tries to raise their fellow pawns' mood by telling jokes. Or try to, at least.</description>
+  				<skillGains>
+  					<Social>2</Social>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>BOT_Vulgar</li>
+  			<li>Abrasive</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Claustrophobic</defName>
+  		<commonality>0.3</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>claustrophobic</label>
+  				<description>{PAWN_nameDef} hates being in confined spaces.</description>
+  			</li>
+  		</degreeDatas>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_CongenitalAnalgesia</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>congenital analgesia</label>
+  				<description>{PAWN_nameDef} was born without the ability to feel pain. {PAWN_pronoun} is unable to experience psychic phenomena as a side effect.</description>
+  				<statFactors>
+  					<PsychicSensitivity>0</PsychicSensitivity>
+  				</statFactors>
+  				<painFactor>0</painFactor>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Wimp</li>
+  			<li>Masochist</li>
+  			<li>PsychicSensitivity</li>
+  			<li>BOT_Hyperalgesia</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_GunCrazy</defName>
+  		<commonality>0.5</commonality>
+  		<forcedPassions>
+  			<li>Shooting</li>
+  		</forcedPassions>
+  		<conflictingPassions>
+  			<li>Melee</li>
+  		</conflictingPassions>
+  		<degreeDatas>
+  			<li>
+  				<label>gun crazy</label>
+  				<description>{PAWN_nameDef} loves guns! Especially shooting them. If {PAWN_pronoun} hits or not isn't important.</description>
+  				<statOffsets>
+  					<ShootingAccuracyPawn>-12</ShootingAccuracyPawn>
+  					<AimingDelayFactor>-0.8</AimingDelayFactor>
+  				</statOffsets>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Brawler</li>
+  			<li>ShootingAccuracy</li>
+  			<li MayRequire="Fuglypump.FalloutTraits">FT_AimOffset</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Hyperalgesia</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>hyperalgesia</label>
+  				<description>{PAWN_nameDef} has a rare disorder that makes {PAWN_pronoun} extremely sensitive to pain, making anything painful so much worse.</description>
+  				<statFactors>
+  					<PsychicSensitivity>2</PsychicSensitivity>
+  				</statFactors>
+  				<painFactor>1.5</painFactor>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>BOT_CongenitalAnalgesia</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Metabolism</defName>
+  		<commonality>0.8</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>fast metabolism</label>
+  				<description>{PAWN_nameDef}'s body works at a faster rate than a normal person, letting them heal faster at the cost of getting hungry quicker.</description>
+  				<hungerRateFactor>1.25</hungerRateFactor>
+  				<degree>0</degree>
+  			</li>
+  			<li>
+  				<label>slow metabolism</label>
+  				<description>{PAWN_nameDef}'s body works at a slower rate than a normal person, healing much slower as a result. At least they don't eat as much.</description>
+  				<hungerRateFactor>0.75</hungerRateFactor>
+  				<degree>1</degree>
+  			</li>   
+  		</degreeDatas>
+  		<modExtensions>
+  			<li Class="More_Traits.ModExtensions.BOT_TraitExtension">
+  				<hediffDef>BOT_Metabolism</hediffDef>
+  			</li>
+  		</modExtensions>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Temperature_Love</defName>
+  		<commonality>0.8</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>thermophile</label>
+  				<description>{PAWN_nameDef} just loves the heat and won't suffer any negative thoughts related to being warm. {PAWN_pronoun} despises being cold, though.</description>
+  				<degree>-1</degree>
+  				<statOffsets>
+  					<ComfyTemperatureMax>5.0</ComfyTemperatureMax>
+  				</statOffsets>
+  			</li>
+  			<li>
+  				<label>cryophile</label>
+  				<description>{PAWN_nameDef} just loves the cold and won't suffer any negative thoughts related to being cold. {PAWN_pronoun} despises being warm, though.</description>
+  				<degree>1</degree>
+  				<statOffsets>
+  					<ComfyTemperatureMin>-5.0</ComfyTemperatureMin>
+  				</statOffsets>
+  			</li>   
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_HeatInclined</li>
+  			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_ColdInclined</li>
+  		</conflictingTraits>
+    </TraitDef>
+
+  <TraitDef MayRequire="Ludeon.RimWorld.Biotech">
+  		<defName>UT_BOT_FamilyOriented</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>family oriented</label>
+  				<description>{PAWN_nameDef} values the concept of a family very highly, and likes to guide young minds. Knowing that the families in the colony are happy is important to them and being a parent is one of {PAWN_pronoun}'s dreams.</description>
+  				<disallowedThoughts>
+  					<li>MyChildHappy</li>
+  					<li>MyChildrenHappy</li>
+  					<li>MyChildSad</li>
+  					<li>MyChildrenSad</li>
+  				</disallowedThoughts>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Psychopath</li>
+  			<li>BOT_ChildHate</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef MayRequire="Ludeon.RimWorld.Biotech">
+  		<defName>UT_BOT_ChildHate</defName>
+  		<commonality>0.5</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>hates children</label>
+  				<description>{PAWN_nameDef} despises children. To {PAWN_pronoun} they're small, loud and obnoxious parasites that ruin every place they infest. {PAWN_nameDef} actively go out of {PAWN_pronoun}s way to avoid having children.</description>
+  				<disallowedThoughts>
+  					<li>MyChildHappy</li>
+  					<li>MyChildrenHappy</li>
+  					<li>MyChildSad</li>
+  					<li>MyChildrenSad</li>
+  					<li>KilledChild</li>
+  					<li>KilledChild_Opinion</li>
+  					<li>Stillbirth</li>
+  					<li>Miscarried</li>
+  					<li>EnslavedChild</li>
+  					<li>ChildInGrowthVat</li>
+  				</disallowedThoughts>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Psychopath</li>
+  			<li>BOT_FamilyOriented</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef MayRequire="Ludeon.RimWorld.Biotech">
+  		<defName>UT_BOT_PressureCooker</defName>
+  		<commonality>0.3</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>pressure cooker</label>
+  				<description>{PAWN_nameDef} has issues letting their feelings bottle up and consequentially eventually explodes from all the stress. They'll break more often than normal pawns but they'll feel massive relief for a long period of time afterwards.</description>
+  				<statOffsets>
+  					<MentalBreakThreshold>.22</MentalBreakThreshold>
+  				</statOffsets>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Nerves</li>
+  			<li>BOT_Apathetic</li>
+  			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Brave</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Composed</defName>
+  		<commonality>0.3</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>composed</label>
+  				<description>{PAWN_nameDef} is able to keep cool under pressure, and will even perform better when there's a risk for mental breaks.</description>
+  			</li>
+  		</degreeDatas>
+  		<modExtensions>
+  			<li Class="More_Traits.ModExtensions.BOT_TraitExtension">
+  				<hediffDef>BOT_Composed</hediffDef>
+  			</li>
+  		</modExtensions>
+  		<conflictingTraits>
+  			<li>Nerves</li>
+  			<li>BOT_Apathetic</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_SoylentNeed</defName>
+  		<commonality>0.3</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>soylent need</label>
+  				<description>{PAWN_nameDef} tasted the green sludge once and can't get enough of it now. {PAWN_pronoun} will prefer to eat from a Nutrient Paste Dispenser over anything else.</description>
+  				<disallowedThoughtsFromIngestion>
+  					<li>
+  						<thing>MealNutrientPaste</thing>
+  						<thoughts>
+  							<li>AteNutrientPasteMeal</li>
+  						</thoughts>
+  					</li>
+  				</disallowedThoughtsFromIngestion>
+  				<extraThoughtsFromIngestion>
+  					<li>
+  						<thing>MealNutrientPaste</thing>
+  						<thoughts>
+  							<li>BOT_SoylentNeed_AteNutrientPasteMeal</li>
+  						</thoughts>
+  					</li>
+  				</extraThoughtsFromIngestion>
+  				<ingestibleModifiers>
+  					<li>
+  						<ingestible>MealNutrientPaste</ingestible>
+  						<optimalityOffset>25</optimalityOffset>
+  						<poisonChanceOverride>0</poisonChanceOverride>
+  					</li>
+  				</ingestibleModifiers>
+  				<disallowedThoughts>
+  					<li>AteFineMeal</li>
+  					<li>AteLavishMeal</li>
+  				</disallowedThoughts>
+  				<possessions>
+  					<MealNutrientPaste>4</MealNutrientPaste>
+  				</possessions>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Cannibal</li>
+  			<li>BOT_Dysgeusia</li>
+  			<li>BOT_Entomophobia</li>
+  			<li>BOT_Eclectic_Palate</li>
+  			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_RefinedPalate</li>
+  			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Gastronomist</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_AnimalWhisperer</defName>
+  		<commonality>0.3</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>animal whisperer</label>
+  				<description>{PAWN_nameDef} is strangely proficient at dealing with animals of all kinds and sizes and never triggers attacks if taming attempts fail. {PAWN_pronoun} likes having animals in the colony, having bonded animals and especially loves getting nuzzled.</description>
+  				<skillGains>
+  					<Animals>4</Animals>
+  				</skillGains>
+  				<disallowedThoughts>
+  					<li>Nuzzled</li>
+  					<li>BondedAnimalMaster</li>
+  					<li>NotBondedAnimalMaster</li>
+  				</disallowedThoughts>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Psychopath</li>
+  			<li>BOT_Apathetic</li>
+  			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_AnimalLover</li>
+  			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_AnimalHater</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_BOT_Sleepyhead</defName>
+  		<commonality>0.2</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>sleepyhead</label>
+  				<description>{PAWN_nameDef} loves to sleep in and will gladly ignore their schedule if it means they can lie in bed and sleep some more. </description>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>QuickSleeper</li>
+  			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Insomniac</li>
+  		</conflictingTraits>
+  	</TraitDef>
+</Defs>

@@ -1,0 +1,81 @@
+{
+  "project": "UnifiedTraits",
+  "version": "1.6",
+  "symbols": {
+    "UnifiedTraitsMod": {
+      "type": "class",
+      "file": "Source\\UnifiedTraits\\Core\\UnifiedTraitsMod.cs",
+      "access": "public",
+      "modifier": "normal",
+      "base": "Mod"
+    },
+    "UnifiedTraitsSettings": {
+      "type": "class",
+      "file": "Source\\UnifiedTraits\\Core\\UnifiedTraitsSettings.cs",
+      "access": "public",
+      "modifier": "normal",
+      "base": "ModSettings"
+    },
+    "UnifiedTraitsDefOf": {
+      "type": "class",
+      "file": "Source\\UnifiedTraits\\Definitions\\UnifiedTraitsDefOf.cs",
+      "access": "public",
+      "modifier": "static",
+      "base": "Object"
+    },
+    "PawnTraitTracker": {
+      "type": "class",
+      "file": "Source\\UnifiedTraits\\Dynamic\\PawnTraitTracker.cs",
+      "access": "public",
+      "modifier": "normal",
+      "base": "GameComponent"
+    },
+    "StressVirtueAfflictionHandler": {
+      "type": "class",
+      "file": "Source\\UnifiedTraits\\Dynamic\\StressVirtueAfflictionHandler.cs",
+      "access": "public",
+      "modifier": "static",
+      "base": "Object"
+    },
+    "HarmonyInit": {
+      "type": "class",
+      "file": "Source\\UnifiedTraits\\Harmony\\HarmonyInit.cs",
+      "access": "public",
+      "modifier": "static",
+      "base": "Object"
+    },
+    "Patch_MentalBreakWorker": {
+      "type": "class",
+      "file": "Source\\UnifiedTraits\\Harmony\\Patch_MentalBreakWorker.cs",
+      "access": "public",
+      "modifier": "static",
+      "base": "Object"
+    },
+    "Patch_Pawn_InteractionsTracker": {
+      "type": "class",
+      "file": "Source\\UnifiedTraits\\Harmony\\Patch_Pawn_InteractionsTracker.cs",
+      "access": "public",
+      "modifier": "static",
+      "base": "Object"
+    },
+    "SynergyEvaluator": {
+      "type": "class",
+      "file": "Source\\UnifiedTraits\\Synergies\\SynergyEvaluator.cs",
+      "access": "public",
+      "modifier": "static",
+      "base": "Object"
+    }
+  },
+  "harmony_patches": [
+    {
+      "file": "Source\\UnifiedTraits\\Harmony\\Patch_MentalBreakWorker.cs",
+      "targetType": "MentalBreakWorker",
+      "targetMethod": "TryStart"
+    },
+    {
+      "file": "Source\\UnifiedTraits\\Harmony\\Patch_Pawn_InteractionsTracker.cs",
+      "targetType": "Pawn_InteractionsTracker",
+      "targetMethod": "FactionSocialOrCharacterOpinion"
+    }
+  ]
+}

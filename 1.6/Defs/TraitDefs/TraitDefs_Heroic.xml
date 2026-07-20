@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraitDef>
+  		<defName>UT_GAT_Confident</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Confident</label>
+  				<description>{PAWN_nameDef} is confident that everything will work out for the best.</description>
+  				<statOffsets>
+  					<MentalBreakThreshold>-0.06</MentalBreakThreshold>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Social</key>
+  						<value>2</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Overweight</defName>
+  		<commonality>0.25</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Overweight</label>
+  				<description>{PAWN_nameDef} is seriously overweight. {PAWN_pronoun} moves slowly, and works even slower.</description>
+  				<statOffsets>
+  					<MoveSpeed>-0.3</MoveSpeed>
+  					<WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
+  					<MeatAmount>10</MeatAmount>
+  				</statOffsets>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>GAT_Athletic</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Athletic</defName>
+  		<commonality>0.25</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Athletic</label>
+  				<description>{PAWN_nameDef} has honed {PAWN_possessive} mind and body for most of {PAWN_possessive} life.</description>
+  				<statOffsets>
+  					<MoveSpeed>0.35</MoveSpeed>
+  					<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+  					<AimingDelayFactor>-0.10</AimingDelayFactor>
+  					<ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Melee</key>
+  						<value>2</value>
+  					</li>
+  					<li>
+  						<key>Shooting</key>
+  						<value>2</value>
+  					</li>
+  					<li>
+  						<key>Construction</key>
+  						<value>1</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>GAT_Overweight</li>
+  		</conflictingTraits>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Dexterous</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Dexterous</label>
+  				<description>{PAWN_nameDef} demonstrates neat skill, especially with {PAWN_possessive} hands.</description>
+  				<statOffsets>
+  					<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+  					<AimingDelayFactor>-0.10</AimingDelayFactor>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Crafting</key>
+  						<value>2</value>
+  					</li>
+  					<li>
+  						<key>Artistic</key>
+  						<value>2</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Perceptive</defName>
+  		<commonality>0.3</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Perceptive</label>
+  				<description>{PAWN_nameDef} has a keen eye, and can quickly spot a target.</description>
+  				<statOffsets>
+  					<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+  					<MeleeHitChance>0.10</MeleeHitChance>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Shooting</key>
+  						<value>1</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Violent</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Clean</defName>
+  		<commonality>0.3</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Clean</label>
+  				<description>{PAWN_nameDef} is fastidious to a fault.</description>
+  				<statOffsets>
+  					<WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
+  					<FoodPoisonChance>-0.5</FoodPoisonChance>
+  					<ImmunityGainSpeed>0.2</ImmunityGainSpeed>
+  					<MedicalSurgerySuccessChance>0.2</MedicalSurgerySuccessChance>
+  					<MedicalTendQuality>0.2</MedicalTendQuality>
+  					<MedicalOperationSpeed>0.2</MedicalOperationSpeed>
+  					<MedicalTendSpeed>0.2</MedicalTendSpeed>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Cooking</key>
+  						<value>1</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Nearsighted</defName>
+  		<commonality>0.3</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Near-sighted</label>
+  				<description>{PAWN_nameDef} has a hard time seeing things clearly unless {PAWN_pronoun} is relatively close to it.</description>
+  				<statOffsets>
+  					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+  					<ShootingAccuracyPawn>-0.25</ShootingAccuracyPawn>
+  				</statOffsets>
+  			</li>
+  		</degreeDatas>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_QuickLearner</defName>
+  		<commonality>0.3</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Quick Learner</label>
+  				<description>{PAWN_nameDef} has always picked up skills pretty quickly.</description>
+  				<statOffsets>
+  					<GlobalLearningFactor>0.25</GlobalLearningFactor>
+  				</statOffsets>
+  			</li>
+  		</degreeDatas>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Glutton</defName>
+  		<commonality>0.3</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Glutton</label>
+  				<description>Some people use a spoon to eat. {PAWN_nameDef} uses a shovel...</description>
+  				<statOffsets>
+  					<EatingSpeed>0.25</EatingSpeed>
+  				</statOffsets>
+  			</li>
+  		</degreeDatas>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Persuasive</defName>
+  		<commonality>0.2</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Persuasive</label>
+  				<description>{PAWN_nameDef} is good at persuading someone to do or believe something through reasoning or the use of temptation.</description>
+  				<statOffsets>
+  					<NegotiationAbility>0.10</NegotiationAbility>
+  					<SocialImpact>0.1</SocialImpact>
+  					<TradePriceImprovement>0.05</TradePriceImprovement>
+  				</statOffsets>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>GAT_TradePriceImprovementOffset</li>
+  		</conflictingTraits>
+  		<requiredWorkTags>
+  			<li>Social</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_HeavySleeper</defName>
+  		<commonality>0.4</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Heavy Sleeper</label>
+  				<description>{PAWN_nameDef} could sleep through an earthquake.</description>
+  			</li>
+  		</degreeDatas>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Pervert</defName>
+  		<commonality>0.2</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Pervert</label>
+  				<description>{PAWN_nameDef} is an extreme pervert. {PAWN_pronoun} doesn't mind sharing a room, or streaking. It makes others feel incredibly uncomfortable.</description>
+  				<skillGains>
+  					<li>
+  						<key>Social</key>
+  						<value>-1</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Morbid</defName>
+  		<commonality>0.8</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Morbid</label>
+  				<description>Ashes to ashes and dust to dust. {PAWN_nameDef} is fascinated by corpses and decay.</description>
+  			</li>
+  		</degreeDatas>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_CarefulSurgeon</defName>
+  		<commonality>0.1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Careful Surgeon</label>
+  				<description>{PAWN_nameDef} takes medicine very seriously. {PAWN_pronoun} wants to do no harm and isn't afraid to take longer to do the job right.</description>
+  				<statOffsets>
+  					<MedicalOperationSpeed>0.2</MedicalOperationSpeed>
+  					<MedicalTendSpeed>0.2</MedicalTendSpeed>
+  					<MedicalSurgerySuccessChance>0.6</MedicalSurgerySuccessChance>
+  					<MedicalTendQuality>0.3</MedicalTendQuality>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Medicine</key>
+  						<value>1</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTypes>
+  			<li>Doctor</li>
+  		</requiredWorkTypes>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_ProfessionalButcher</defName>
+  		<commonality>0.1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Natural Butcher</label>
+  				<description>Sometimes it's hard to tell where the knife stops and {PAWN_nameDef} starts. People like to say that "if it bleeds {PAWN_nameDef} can skin it and split it".</description>
+  				<statOffsets>
+  					<ButcheryMechanoidSpeed>-0.5</ButcheryMechanoidSpeed>
+  					<ButcheryFleshSpeed>0.5</ButcheryFleshSpeed>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Cooking</key>
+  						<value>1</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTypes>
+  			<li>Cooking</li>
+  		</requiredWorkTypes>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_ProfessionalTailor</defName>
+  		<commonality>0.1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Natural Tailor</label>
+  				<description>{PAWN_nameDef} likes making apparel. {PAWN_pronoun} can work wonders with a needle and thread; a hammer and anvil, not so much.</description>
+  				<statOffsets>
+  					<SmithingSpeed>-0.5</SmithingSpeed>
+  					<TailoringSpeed>0.5</TailoringSpeed>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Crafting</key>
+  						<value>1</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTypes>
+  			<li>Tailoring</li>
+  		</requiredWorkTypes>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_LovedByAnimals</defName>
+  		<commonality>0.1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Loved by Animals</label>
+  				<description>{PAWN_nameDef} is loved by animals, but people don't feel quite the same.</description>
+  				<statOffsets>
+  					<TrainAnimalChance>0.5</TrainAnimalChance>
+  					<TameAnimalChance>0.5</TameAnimalChance>
+  					<SocialImpact>-0.5</SocialImpact>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Animals</key>
+  						<value>1</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTypes>
+  			<li>Handling</li>
+  		</requiredWorkTypes>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_AvidArtist</defName>
+  		<commonality>0.1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Eccentric Artist</label>
+  				<description>{PAWN_nameDef} is an eccentric artist. {PAWN_pronoun} has an affinity for the arts, {PAWN_pronoun} often gets lost in {PAWN_possessive} work and forget to take care of {PAWN_objective}self.</description>
+  				<statOffsets>
+  					<SculptingSpeed>0.5</SculptingSpeed>
+  					<ToxicSensitivity>0.1</ToxicSensitivity>
+  					<ImmunityGainSpeed>-0.1</ImmunityGainSpeed>
+  					<PsychicSensitivity>0.1</PsychicSensitivity>
+  					<MentalBreakThreshold>0.1</MentalBreakThreshold>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Artistic</key>
+  						<value>1</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTypes>
+  			<li>Art</li>
+  		</requiredWorkTypes>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_GeniusResearcher</defName>
+  		<commonality>0.1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Genius Inventor</label>
+  				<description>Strange new ideas just appear in the mind of {PAWN_nameDef}. Researching new technology comes easily to {PAWN_nameDef}, but {PAWN_pronoun} always seems distracted.</description>
+  				<statOffsets>
+  					<ResearchSpeed>0.7</ResearchSpeed>
+  					<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
+  					<MoveSpeed>-0.1</MoveSpeed>
+  					<PsychicSensitivity>0.1</PsychicSensitivity>
+  					<MentalBreakThreshold>0.1</MentalBreakThreshold>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Intellectual</key>
+  						<value>1</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTypes>
+  			<li>Research</li>
+  		</requiredWorkTypes>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_GreenestThumb</defName>
+  		<commonality>0.1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Green Thumb</label>
+  				<description>{PAWN_nameDef} has a passion for gardening. {PAWN_pronoun} knows exactly what a plant needs to grow happily.</description>
+  				<statOffsets>
+  					<PlantWorkSpeed>0.5</PlantWorkSpeed>
+  					<PlantHarvestYield>1.5</PlantHarvestYield>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Plants</key>
+  						<value>1</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>ManualSkilled</li>
+  			<li>PlantWork</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_EfficientBuilder</defName>
+  		<commonality>0.1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Efficient Builder</label>
+  				<description>{PAWN_nameDef} doesn't like to waste materials. {PAWN_pronoun} takes great care in {PAWN_possessive} work.</description>
+  				<statOffsets>
+  					<ConstructionSpeed>-0.1</ConstructionSpeed>
+  					<ConstructSuccessChance>1.5</ConstructSuccessChance>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Construction</key>
+  						<value>1</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTypes>
+  			<li>Construction</li>
+  		</requiredWorkTypes>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_FastMiner</defName>
+  		<commonality>0.1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Fast Miner</label>
+  				<description>{PAWN_nameDef} knows how to exploit the cleavage of rocks. {PAWN_pronoun} doesn't understand why plants are so much more fragile though.</description>
+  				<statOffsets>
+  					<MiningSpeed>0.5</MiningSpeed>
+  					<SmoothingSpeed>0.5</SmoothingSpeed>
+  					<PlantHarvestYield>-0.75</PlantHarvestYield>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Mining</key>
+  						<value>1</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTypes>
+  			<li>Mining</li>
+  		</requiredWorkTypes>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_TradePriceImprovementOffset</defName>
+  		<commonality>1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Sucker</label>
+  				<description>They say a sucker is born every minute, and {PAWN_nameDef} is that sucker.</description>
+  				<degree>-1</degree>
+  				<statOffsets>
+  					<TradePriceImprovement>-0.20</TradePriceImprovement>
+  				</statOffsets>
+  			</li>
+  			<li>
+  				<label>Amateur Haggler</label>
+  				<description>{PAWN_nameDef} likes to haggle. {PAWN_pronoun} gets better prices than most people.</description>
+  				<degree>1</degree>
+  				<statOffsets>
+  					<TradePriceImprovement>0.20</TradePriceImprovement>
+  				</statOffsets>
+  			</li>
+  			<li>
+  				<label>Haggling Enthusiast</label>
+  				<description>{PAWN_nameDef} always gets the best deals - so much so that others often fail to realize they're being duped.</description>
+  				<degree>2</degree>
+  				<statOffsets>
+  					<TradePriceImprovement>0.40</TradePriceImprovement>
+  				</statOffsets>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>GAT_Persuasive</li>
+  		</conflictingTraits>
+  		<requiredWorkTags>
+  			<li>Social</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_SocialImpactOffset</defName>
+  		<commonality>1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Awkward</label>
+  				<description>The elephant in the room is named {PAWN_nameDef}.</description>
+  				<degree>-1</degree>
+  				<statOffsets>
+  					<SocialImpact>-0.20</SocialImpact>
+  				</statOffsets>
+  			</li>
+  			<li>
+  				<label>Tucker</label>
+  				<description>"That's a lotta graves. Lotta holes to fill. Bow-Chicka-Bow-Wow" - {PAWN_nameDef}, probably.</description>
+  				<degree>1</degree>
+  				<statOffsets>
+  					<SocialImpact>0.20</SocialImpact>
+  				</statOffsets>
+  			</li>
+  			<li>
+  				<label>Melodic Voice</label>
+  				<description>{PAWN_nameDef} could talk for days on end and people would still listen to that sweet voice.</description>
+  				<degree>2</degree>
+  				<statOffsets>
+  					<SocialImpact>0.40</SocialImpact>
+  				</statOffsets>
+  				<marketValueFactorOffset>0.2</marketValueFactorOffset>
+  			</li>
+  		</degreeDatas>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_DiplomacyPowerOffset</defName>
+  		<commonality>1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Uncouth</label>
+  				<description>Subtle is the game of diplomacy, and subtle, {PAWN_nameDef} is not.</description>
+  				<degree>-1</degree>
+  				<statOffsets>
+  					<NegotiationAbility>-0.20</NegotiationAbility>
+  				</statOffsets>
+  			</li>
+  			<li>
+  				<label>Diplomatic</label>
+  				<description>{PAWN_nameDef} knows how to grease the wheels of diplomacy.</description>
+  				<degree>1</degree>
+  				<statOffsets>
+  					<NegotiationAbility>0.20</NegotiationAbility>
+  				</statOffsets>
+  			</li>
+  			<li>
+  				<label>Very diplomatic</label>
+  				<description>{PAWN_nameDef} has such a way with {PAWN_objective} words and gifts that {PAWN_pronoun} always manages to cool down a tense situation.</description>
+  				<degree>2</degree>
+  				<statOffsets>
+  					<NegotiationAbility>0.40</NegotiationAbility>
+  				</statOffsets>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Social</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_ShootingOffsetTrait</defName>
+  		<commonality>1</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Shooting Amateur</label>
+  				<description>{PAWN_nameDef} has never held a gun in {PAWN_objective} hands. The weight of the cold metal in {PAWN_objective} hands makes {PAWN_pronoun} shudder uncontrollably.</description>
+  				<degree>-1</degree>
+  				<statOffsets>
+  					<ShootingAccuracyPawn>-0.20</ShootingAccuracyPawn>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Shooting</key>
+  						<value>-2</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  			<li>
+  				<label>Shooting enthusiast</label>
+  				<description>{PAWN_nameDef} knows {PAWN_objective} way with a gun.</description>
+  				<degree>1</degree>
+  				<statOffsets>
+  					<ShootingAccuracyPawn>0.20</ShootingAccuracyPawn>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Shooting</key>
+  						<value>2</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  			<li>
+  				<label>Shooting Professional</label>
+  				<description>"My rifle is my best friend. It is my life. I must master it as I must master my life." - {PAWN_nameDef}, probably.</description>
+  				<degree>2</degree>
+  				<statOffsets>
+  					<ShootingAccuracyPawn>0.40</ShootingAccuracyPawn>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Shooting</key>
+  						<value>4</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<conflictingTraits>
+  			<li>Brawler</li>
+  		</conflictingTraits>
+  		<requiredWorkTags>
+  			<li>Violent</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Hercules</defName>
+  		<commonality>0.01</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Herculean</label>
+  				<description>Brave {PAWN_nameDef}, born with impossible strength and force of will.</description>
+  				<statOffsets>
+  					<MentalBreakThreshold>-1</MentalBreakThreshold>
+  					<CarryingCapacity>150</CarryingCapacity>
+  					<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+  					<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Melee</key>
+  						<value>6</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Violent</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Achilles</defName>
+  		<commonality>0.05</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Achillean</label>
+  				<description>{PAWN_nameDef} is said to have been dipped in the river of death, {PAWN_pronoun} seems invulnerable in battle.</description>
+  				<statOffsets>
+  					<ImmunityGainSpeed>1</ImmunityGainSpeed>
+  					<MoveSpeed>.5</MoveSpeed>
+  					<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+  					<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Melee</key>
+  						<value>2</value>
+  					</li>
+  					<li>
+  						<key>Shooting</key>
+  						<value>2</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Violent</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Odysseus</defName>
+  		<commonality>0.05</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Odyssean</label>
+  				<description>Craftier by far than any mortal man, {PAWN_nameDef} is also a very capable warrior.</description>
+  				<statOffsets>
+  					<GlobalLearningFactor>1</GlobalLearningFactor>
+  					<ShootingAccuracyPawn>.5</ShootingAccuracyPawn>
+  					<MeleeHitChance>.5</MeleeHitChance>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Melee</key>
+  						<value>1</value>
+  					</li>
+  					<li>
+  						<key>Shooting</key>
+  						<value>1</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Violent</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Ares</defName>
+  		<commonality>0.01</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Ares' Wrath</label>
+  				<description>Feared by {PAWN_objective} enemies and worshiped by warriors, {PAWN_nameDef} is a bloodthirsty embodiment of war.</description>
+  				<statOffsets>
+  					<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+  					<MoveSpeed>.5</MoveSpeed>
+  					<MeleeHitChance>1</MeleeHitChance>
+  					<ArmorRating_Blunt>1</ArmorRating_Blunt>
+  					<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Melee</key>
+  						<value>8</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Violent</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Artemis</defName>
+  		<commonality>0</commonality>
+  		<commonalityFemale>0.01</commonalityFemale>
+  		<degreeDatas>
+  			<li>
+  				<label>Artemis' Blessing</label>
+  				<description>{PAWN_nameDef}'s natural instinct to protect and nurture the people led {PAWN_objective} to champion the hunt.</description>
+  				<statOffsets>
+  					<HuntingStealth>0.5</HuntingStealth>
+  					<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+  					<AimingDelayFactor>-1</AimingDelayFactor>
+  					<ButcheryFleshSpeed>1</ButcheryFleshSpeed>
+  					<CookSpeed>1</CookSpeed>
+  					<ArmorRating_Blunt>1</ArmorRating_Blunt>
+  					<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+  					<ForagedNutritionPerDay>1</ForagedNutritionPerDay>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Shooting</key>
+  						<value>8</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Violent</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Aphrodite</defName>
+  		<commonality>0.01</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Aphrodite's Grace</label>
+  				<description>So wondrous is {PAWN_nameDef} to behold that one look can inspire tears, desire, jealousy, and love.</description>
+  				<statOffsets>
+  					<NegotiationAbility>1</NegotiationAbility>
+  					<SocialImpact>1</SocialImpact>
+  					<TradePriceImprovement>1</TradePriceImprovement>
+  					<ArmorRating_Blunt>1</ArmorRating_Blunt>
+  					<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Social</key>
+  						<value>8</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Social</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Mercury</defName>
+  		<commonality>0.01</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Mercury's Blessing</label>
+  				<description>It is said that {PAWN_nameDef} can leap the space between lightning and thunder, outfox the fox king, and reach tomorrow before the sun.</description>
+  				<statOffsets>
+  					<EatingSpeed>1</EatingSpeed>
+  					<WorkSpeedGlobal>1</WorkSpeedGlobal>
+  					<GlobalLearningFactor>1</GlobalLearningFactor>
+  					<MoveSpeed>1</MoveSpeed>
+  					<ArmorRating_Blunt>1</ArmorRating_Blunt>
+  					<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Intellectual</key>
+  						<value>8</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Sylvanus</defName>
+  		<commonality>0.01</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Sylvanus' Blessing</label>
+  				<description>Companion to all woodland creatures, both mundane and fantastic, {PAWN_nameDef} protects and nurtures those that respect {PAWN_possessive} domain.</description>
+  				<statOffsets>
+  					<TameAnimalChance>1</TameAnimalChance>
+  					<TrainAnimalChance>1</TrainAnimalChance>
+  					<PlantWorkSpeed>1</PlantWorkSpeed>
+  					<PlantHarvestYield>2</PlantHarvestYield>
+  					<ArmorRating_Blunt>1</ArmorRating_Blunt>
+  					<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+  					<ForagedNutritionPerDay>1</ForagedNutritionPerDay>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Plants</key>
+  						<value>4</value>
+  					</li>
+  					<li>
+  						<key>Animals</key>
+  						<value>4</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Artistic</li>
+  			<li>PlantWork</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Vulcan</defName>
+  		<commonality>0.01</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Vulcan's Fire</label>
+  				<description>{PAWN_nameDef} crafts with fire and forge as an artist would with paint and brush.</description>
+  				<statOffsets>
+  					<ConstructSuccessChance>2</ConstructSuccessChance>
+  					<ConstructionSpeed>1</ConstructionSpeed>
+  					<SmithingSpeed>1</SmithingSpeed>
+  					<SmeltingSpeed>1</SmeltingSpeed>
+  					<ArmorRating_Blunt>1</ArmorRating_Blunt>
+  					<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Crafting</key>
+  						<value>4</value>
+  					</li>
+  					<li>
+  						<key>Construction</key>
+  						<value>4</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Crafting</li>
+  			<li>ManualSkilled</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef>
+  		<defName>UT_GAT_Imhotep</defName>
+  		<commonality>0.01</commonality>
+  		<degreeDatas>
+  			<li>
+  				<label>Imhotep's Wisdom</label>
+  				<description>{PAWN_nameDef} sends to sleep those who suffer, the new day bringing good health to them.</description>
+  				<statOffsets>
+  					<MedicalTendSpeed>1</MedicalTendSpeed>
+  					<MedicalOperationSpeed>1</MedicalOperationSpeed>
+  					<MedicalSurgerySuccessChance>1</MedicalSurgerySuccessChance>
+  					<MedicalTendQuality>1</MedicalTendQuality>
+  					<ArmorRating_Blunt>1</ArmorRating_Blunt>
+  					<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+  				</statOffsets>
+  				<skillGains>
+  					<li>
+  						<key>Medicine</key>
+  						<value>8</value>
+  					</li>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Caring</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef ParentName="GAT_DivineBase">
+  		<defName>UT_GAT_Apollo</defName>
+  		<degreeDatas>
+  			<li>
+  				<label>Apollo's Harmony</label>
+  				<description>Patron of the arts and student of the bow, {PAWN_nameDef} will bring beauty to {PAWN_possessive} world, one way or another.</description>
+  				<statOffsets>
+  					<SculptingSpeed MayRequire="Alias.DegeneralizeWork">1</SculptingSpeed>
+  					<AimingDelayFactor>-1</AimingDelayFactor>
+  					<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+  					<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+  					<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+  				</statOffsets>
+  				<skillGains>
+  					<Shooting>4</Shooting>
+  					<Artistic>4</Artistic>
+  				</skillGains>
+  				<allowedMeditationFocusTypes>
+  					<li>Artistic</li>
+  				</allowedMeditationFocusTypes>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Violent</li>
+  			<li>Artistic</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef ParentName="GAT_DivineBase">
+  		<defName>UT_GAT_Hades</defName>
+  		<degreeDatas>
+  			<li>
+  				<label>Hades' Wealth</label>
+  				<description>{PAWN_nameDef} knows where the riches are buried, {PAWN_pronoun} also knows that the dead can't take it with them.</description>
+  				<statOffsets>
+  					<MiningSpeed>1</MiningSpeed>
+  					<DeepDrillingSpeed>1</DeepDrillingSpeed>
+  					<MiningYield>1</MiningYield>
+  				</statOffsets>
+  				<skillGains>
+  					<Mining>8</Mining>
+  				</skillGains>
+  				<allowedMeditationFocusTypes>
+  					<li>Morbid</li>
+  				</allowedMeditationFocusTypes>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Mining</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef ParentName="GAT_DivineBase">
+  		<defName>UT_GAT_Demeter</defName>
+  		<degreeDatas>
+  			<li>
+  				<label>Demeter's Bounty</label>
+  				<description>{PAWN_nameDef} has a special connection with plants, they grow, flower, and die at {PAWN_possessive} order.</description>
+  				<statOffsets>
+  					<PlantWorkSpeed>1</PlantWorkSpeed>
+  					<PlantHarvestYield>2</PlantHarvestYield>
+  					<PruningSpeed MayRequire="Ludeon.RimWorld.Ideology">1</PruningSpeed>
+  				</statOffsets>
+  				<statFactors>
+  					<ForagedNutritionPerDay>2</ForagedNutritionPerDay>
+  				</statFactors>
+  				<skillGains>
+  					<Plants>8</Plants>
+  				</skillGains>
+  				<allowedMeditationFocusTypes>
+  					<li>Natural</li>
+  				</allowedMeditationFocusTypes>
+  			</li>
+  		</degreeDatas>
+  	</TraitDef>
+
+  <TraitDef ParentName="GAT_DivineBase">
+  		<defName>UT_GAT_Pan</defName>
+  		<degreeDatas>
+  			<li>
+  				<label>Pan's Blessing</label>
+  				<description>Companion to creatures both mundane and fantastic, {PAWN_nameDef} protects and nurtures {PAWN_possessive} flock.</description>
+  				<statOffsets>
+  					<AnimalGatherSpeed>1</AnimalGatherSpeed>
+  					<AnimalGatherYield>1</AnimalGatherYield>
+  					<TameAnimalChance>1</TameAnimalChance>
+  					<TrainAnimalChance>1</TrainAnimalChance>
+  					<BondAnimalChanceFactor>1</BondAnimalChanceFactor>
+  				</statOffsets>
+  				<skillGains>
+  					<Animals>8</Animals>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Artistic</li>
+  			<li>PlantWork</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef ParentName="GAT_DivineBase">
+  		<defName>UT_GAT_Hephaestus</defName>
+  		<degreeDatas>
+  			<li>
+  				<label>Hephaestus' Forge</label>
+  				<description>{PAWN_nameDef} crafts with fire and forge as an artist would with paint and brush.</description>
+  				<statOffsets>
+  					<GeneralLaborSpeed>0.5</GeneralLaborSpeed>
+  					<SmithingSpeed MayRequire="Alias.DegeneralizeWork">1</SmithingSpeed>
+  					<SmeltingSpeed>1</SmeltingSpeed>
+  					<ConstructionSpeed>1</ConstructionSpeed>
+  					<ConstructSuccessChance>1</ConstructSuccessChance>
+  					<Flammability>-0.20</Flammability>
+  					<ArmorRating_Heat>0.5</ArmorRating_Heat>
+  				</statOffsets>
+  				<skillGains>
+  					<Crafting>4</Crafting>
+  					<Construction>4</Construction>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Crafting</li>
+  			<li>ManualSkilled</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef ParentName="GAT_DivineBase">
+  		<defName>UT_GAT_Asclepius</defName>
+  		<degreeDatas>
+  			<li>
+  				<label>Asclepius' Healing</label>
+  				<description>{PAWN_nameDef}'s healing can cure the sick and keep death itself at bay.</description>
+  				<statOffsets>
+  					<MedicalTendSpeed>1</MedicalTendSpeed>
+  					<MedicalTendQuality>1</MedicalTendQuality>
+  					<MedicalOperationSpeed>1</MedicalOperationSpeed>
+  					<MedicalSurgerySuccessChance>1</MedicalSurgerySuccessChance>
+  				</statOffsets>
+  				<skillGains>
+  					<Medicine>8</Medicine>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>Caring</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef ParentName="GAT_DivineBase">
+  		<defName>UT_GAT_Athena</defName>
+  		<degreeDatas>
+  			<li>
+  				<label>Athena's Wisdom</label>
+  				<description>{PAWN_nameDef} commands the wisdom of the ages. {PAWN_pronoun} is a master tactician and inventor extraordinaire with few intellectual rivals.</description>
+  				<statOffsets>
+  					<GlobalLearningFactor>1</GlobalLearningFactor>
+  					<ResearchSpeed>1</ResearchSpeed>
+  					<MortarMissRadiusFactor>-0.5</MortarMissRadiusFactor>
+  					<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+  					<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+  				</statOffsets>
+  				<skillGains>
+  					<Intellectual>8</Intellectual>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  		<requiredWorkTags>
+  			<li>ManualSkilled</li>
+  		</requiredWorkTags>
+  	</TraitDef>
+
+  <TraitDef ParentName="GAT_DivineBase">
+  		<defName>UT_GAT_Hermes</defName>
+  		<degreeDatas>
+  			<li>
+  				<label>Hermes' Haste</label>
+  				<description>{PAWN_nameDef} only speed is fast. {PAWN_pronoun} is quick to close a deal and even quicker to close a distance.</description>
+  				<statOffsets>
+  					<WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+  					<MoveSpeed>1</MoveSpeed>
+  					<EatingSpeed>1</EatingSpeed>
+  					<TradePriceImprovement>1</TradePriceImprovement>
+  				</statOffsets>
+  				<skillGains>
+  					<Social>8</Social>
+  				</skillGains>
+  			</li>
+  		</degreeDatas>
+  	</TraitDef>
+</Defs>

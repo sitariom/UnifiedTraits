@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Settings Headers -->
+  <UnifiedTraits.Settings.CategoriesHeader>Active Trait Categories</UnifiedTraits.Settings.CategoriesHeader>
+  <UnifiedTraits.Settings.EnableBasicTraits>Basic &amp; General Traits</UnifiedTraits.Settings.EnableBasicTraits>
+  <UnifiedTraits.Settings.EnableSynergisticTraits>Synergistic Traits</UnifiedTraits.Settings.EnableSynergisticTraits>
+  <UnifiedTraits.Settings.EnableFalloutTraits>Fallout Universe Traits (S.P.E.C.I.A.L.)</UnifiedTraits.Settings.EnableFalloutTraits>
+  <UnifiedTraits.Settings.EnableDarkestDungeonTraits>Darkest Dungeon Traits (Virtues &amp; Afflictions)</UnifiedTraits.Settings.EnableDarkestDungeonTraits>
+  <UnifiedTraits.Settings.EnableSimsCK3Traits>Personality &amp; Social Traits (CK3 &amp; The Sims)</UnifiedTraits.Settings.EnableSimsCK3Traits>
+  <UnifiedTraits.Settings.EnableHeroicTraits>Heroic &amp; Legendary Traits (Heroes + Gods)</UnifiedTraits.Settings.EnableHeroicTraits>
+
+  <!-- Dynamic Systems -->
+  <UnifiedTraits.Settings.MechanicsHeader>Dynamic Systems &amp; Mechanics</UnifiedTraits.Settings.MechanicsHeader>
+  <UnifiedTraits.Settings.EnableDynamicTraitEvolution>Dynamic Trait Evolution via Life Events</UnifiedTraits.Settings.EnableDynamicTraitEvolution>
+  <UnifiedTraits.Settings.EvolutionRate>Evolution Speed Multiplier: {0}</UnifiedTraits.Settings.EvolutionRate>
+  <UnifiedTraits.Settings.EnableStressAfflictionSystem>Extreme Stress Virtues &amp; Afflictions System</UnifiedTraits.Settings.EnableStressAfflictionSystem>
+  <UnifiedTraits.Settings.EnableTraitSynergyTicks>Periodic Trait Synergy Calculation on Pawns</UnifiedTraits.Settings.EnableTraitSynergyTicks>
+  <!-- Dynamic Event Messages -->
+  <UnifiedTraits.Message.AfflictionGained>{0} developed the affliction: {1} due to extreme stress!</UnifiedTraits.Message.AfflictionGained>
+  <UnifiedTraits.Message.VirtueGained>{0} developed the virtue: {1} through resilience!</UnifiedTraits.Message.VirtueGained>
+</LanguageData>

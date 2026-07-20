@@ -1,0 +1,11 @@
+# Visual Studio / .NET Build Outputs
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# Antigravity / Scratch files
+.system_generated/
+scratch/
+UnifiedTraits_v1.0.0.zip

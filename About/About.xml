@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Unified Traits Reimagined</name>
+	<author>Antigravity Team &amp; RimWorld Community</author>
+	<packageId>UnifiedTraits.Core</packageId>
+	<supportedVersions>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+	</loadAfter>
+	<description>
+Unified Traits Reimagined é a unificação completa, reescrita do zero e otimizada de 16 mods populares de traits do RimWorld.
+
+Características Principais:
+- Reimplementação completa e otimizada em C# de mais de 1.900 definições de traits.
+- Painel de Configurações do Mod (Mod Settings) para ativamento/desativamento de temas (Fallout, Darkest Dungeon, Heróis, CK3, Sims, Sinergias).
+- Engine de Evolução Dinâmica de Traits (Pawns ganham, evoluem ou perdem traits com base em eventos de vida e estresse).
+- Sistema de Sinergias periódicas e inteiramente integrado a todas as DLCs (Royalty, Ideology, Biotech, Anomaly).
+- Tradução nativa completa em Português (PT-BR) e Inglês.
+	</description>
+</ModMetaData>
