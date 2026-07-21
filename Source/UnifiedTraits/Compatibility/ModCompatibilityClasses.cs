@@ -1,4 +1,4 @@
-// Auto-generated compatibility classes for UnifiedTraits Reimagined
+// Auto-generated compatibility classes with full field declarations for UnifiedTraits Reimagined
 using System;
 using System.Collections.Generic;
 
@@ -10,6 +10,10 @@ namespace AnimalBehaviours
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object batteriesToAffect;
+        public object electroChargeAmount;
+        public object electroRadius;
+        public object electroRate;
     }
 
     public class HediffCompProperties_Floating : Verse.HediffCompProperties
@@ -22,16 +26,84 @@ namespace AnimalBehaviours
 
 }
 
-namespace Gewen_AdditionalTraits
+public class HediffCompProperties : Verse.HediffCompProperties
 {
-    public class ThoughtWorker_Perv : RimWorld.ThoughtWorker
+    public HediffCompProperties()
     {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
+        this.compClass = typeof(Verse.HediffComp);
     }
+}
 
+public class HediffCompProperties_Disappears : Verse.HediffCompProperties
+{
+    public HediffCompProperties_Disappears()
+    {
+        this.compClass = typeof(Verse.HediffComp);
+    }
+    public int disappearsAfterTicks;
+    public bool showRemainingTime;
+}
+
+public class HediffCompProperties_DisappearsOnDeath : Verse.HediffCompProperties
+{
+    public HediffCompProperties_DisappearsOnDeath()
+    {
+        this.compClass = typeof(Verse.HediffComp);
+    }
+}
+
+public class HediffCompProperties_Effecter : Verse.HediffCompProperties
+{
+    public HediffCompProperties_Effecter()
+    {
+        this.compClass = typeof(Verse.HediffComp);
+    }
+    public object stateEffecter;
+}
+
+public class HediffCompProperties_GiveAbility : Verse.HediffCompProperties
+{
+    public HediffCompProperties_GiveAbility()
+    {
+        this.compClass = typeof(Verse.HediffComp);
+    }
+    public object abilityDefs;
+}
+
+public class HediffCompProperties_Invisibility : Verse.HediffCompProperties
+{
+    public HediffCompProperties_Invisibility()
+    {
+        this.compClass = typeof(Verse.HediffComp);
+    }
+    public bool visibleToPlayer;
+}
+
+public class HediffCompProperties_KillAfterDays : Verse.HediffCompProperties
+{
+    public HediffCompProperties_KillAfterDays()
+    {
+        this.compClass = typeof(Verse.HediffComp);
+    }
+    public int days;
+}
+
+public class HediffCompProperties_SeverityFromEntropy : Verse.HediffCompProperties
+{
+    public HediffCompProperties_SeverityFromEntropy()
+    {
+        this.compClass = typeof(Verse.HediffComp);
+    }
+}
+
+public class HediffCompProperties_SeverityPerDay : Verse.HediffCompProperties
+{
+    public HediffCompProperties_SeverityPerDay()
+    {
+        this.compClass = typeof(Verse.HediffComp);
+    }
+    public object severityPerDay;
+    public object showDaysToRecover;
 }
 
 namespace HautsFramework
@@ -54,6 +126,8 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object affectsAllAbilities;
+        public object increasedCooldownRecovery;
     }
 
     public class HediffCompProperties_AnomalousActivitySeverity : Verse.HediffCompProperties
@@ -62,6 +136,8 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public float defaultSeverity;
+        public object severityAtEachLevel;
     }
 
     public class HediffCompProperties_AuraHediff : Verse.HediffCompProperties
@@ -70,6 +146,20 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public bool affectsAllies;
+        public bool affectsHostiles;
+        public object affectsMechs;
+        public bool affectsSelf;
+        public object canToggleVisualization;
+        public string color;
+        public object disappearsWhileDowned;
+        public object hediffs;
+        public string mote;
+        public float range;
+        public object scanByPawnListerNotByGrid;
+        public object visLabel;
+        public object visTooltip;
+        public object visTooltipFantasy;
     }
 
     public class HediffCompProperties_AuraThought : Verse.HediffCompProperties
@@ -78,6 +168,14 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public bool affectsAllies;
+        public bool affectsHostiles;
+        public bool affectsSelf;
+        public string color;
+        public object disappearsWhileDowned;
+        public string mote;
+        public float range;
+        public object thoughts;
     }
 
     public class HediffCompProperties_BoredomAdjustment : Verse.HediffCompProperties
@@ -86,6 +184,8 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object boredoms;
+        public int ticks;
     }
 
     public class HediffCompProperties_BreakRiskSeverity : Verse.HediffCompProperties
@@ -94,6 +194,7 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object activeDuringMentalStates;
     }
 
     public class HediffCompProperties_ChangeAboveSeverity : Verse.HediffCompProperties
@@ -102,6 +203,8 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object aboveThisSeverity;
+        public object alternativeHediff;
     }
 
     public class HediffCompProperties_ChangeBelowSeverity : Verse.HediffCompProperties
@@ -110,6 +213,8 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object alternativeHediff;
+        public object atOrBelowThisSeverity;
     }
 
     public class HediffCompProperties_ChangeSeverityOnIngestion : Verse.HediffCompProperties
@@ -118,6 +223,7 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object severityPerNutritionIngested;
     }
 
     public class HediffCompProperties_ChangeSeverityOnVerbUse : Verse.HediffCompProperties
@@ -126,6 +232,8 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object setSeverity;
+        public object severityGainedOnUse;
     }
 
     public class HediffCompProperties_CreateThingsBySpendingSeverity : Verse.HediffCompProperties
@@ -134,6 +242,13 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public float severityToTrigger;
+        public object spawnFleck1;
+        public object spawnFleck2;
+        public object spawnInOwnInventory;
+        public object spawnRadius;
+        public object spawnSound;
+        public object spawnedThingAndCountPerTrigger;
     }
 
     public class HediffCompProperties_CureHediffsOnHit : Verse.HediffCompProperties
@@ -142,6 +257,11 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object appliedViaPsycasts;
+        public float cellRange;
+        public object hediffsToCure;
+        public object victimScalar;
+        public float worldTileRange;
     }
 
     public class HediffCompProperties_DamageNegation : Verse.HediffCompProperties
@@ -150,6 +270,18 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object chance;
+        public object damageAdded;
+        public float damageMultiplier;
+        public object damageScalesSeverityLoss;
+        public object fleckOnBlock;
+        public object harmfulDamageTypesOnly;
+        public object minSeverityToWork;
+        public int priority;
+        public object severityOnHit;
+        public object soundOnBlock;
+        public object throwDustPuffsOnBlock;
+        public object unaffectedDamageTypes;
     }
 
     public class HediffCompProperties_DelayedResurrection : Verse.HediffCompProperties
@@ -158,6 +290,14 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object chance;
+        public object onDeathMessage;
+        public object onRezMessage;
+        public object rareTickDelay;
+        public object requiredTrait;
+        public object shouldSendMessage;
+        public object shouldTranslateOnDeath;
+        public object shouldTranslateOnRez;
     }
 
     public class HediffCompProperties_ExtraDamageOnHit : Verse.HediffCompProperties
@@ -166,6 +306,15 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object appliedViaAttacks;
+        public object appliedViaPsycasts;
+        public bool canAffectMechs;
+        public float cellRange;
+        public object damageScaling;
+        public object entropyCostScaling;
+        public object extraDamages;
+        public object victimScalar;
+        public float worldTileRange;
     }
 
     public class HediffCompProperties_ForcedByOtherProperty : Verse.HediffCompProperties
@@ -174,6 +323,10 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object alternativeHediffs;
+        public object forcingGenes;
+        public object forcingTraits;
+        public object returnAs;
     }
 
     public class HediffCompProperties_GasSeverity : Verse.HediffCompProperties
@@ -182,6 +335,10 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object gasTypes;
+        public object perTickInGas;
+        public object perTickNoGas;
+        public object whileNotInGas;
     }
 
     public class HediffCompProperties_GeneticResourceModifiers : Verse.HediffCompProperties
@@ -190,6 +347,8 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object drainRateFactors;
+        public object maxResourceOffsets;
     }
 
     public class HediffCompProperties_GiveScalingDurationHediff : Verse.HediffCompProperties
@@ -198,6 +357,9 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object durationScalar;
+        public object hediffDef;
+        public object skipIfAlreadyExists;
     }
 
     public class HediffCompProperties_GiveThoughtsRandomly : Verse.HediffCompProperties
@@ -206,6 +368,8 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object mtbDays;
+        public object thoughtDefs;
     }
 
     public class HediffCompProperties_GiveTrait : Verse.HediffCompProperties
@@ -214,6 +378,8 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object traitDef;
+        public object traitDegree;
     }
 
     public class HediffCompProperties_IdeoCertaintySeverity : Verse.HediffCompProperties
@@ -222,6 +388,8 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object changesToThisOnApostasy;
+        public object removeOnApostasy;
     }
 
     public class HediffCompProperties_InflictHediffOnHit : Verse.HediffCompProperties
@@ -230,6 +398,17 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object appliedViaAttacks;
+        public object appliedViaPsycasts;
+        public float baseSeverity;
+        public bool canAffectFriendlies;
+        public bool canAffectMechs;
+        public float cellRange;
+        public object damageScaling;
+        public object hediff;
+        public object localizedToHitPart;
+        public object victimScalar;
+        public float worldTileRange;
     }
 
     public class HediffCompProperties_InspireOnHit : Verse.HediffCompProperties
@@ -238,6 +417,14 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object appliedViaPsycasts;
+        public bool canAffectAnimals;
+        public object canAffectHostiles;
+        public bool canAffectMechs;
+        public float cellRange;
+        public object chance;
+        public object victimChanceScalar;
+        public float worldTileRange;
     }
 
     public class HediffCompProperties_LightingSeverity : Verse.HediffCompProperties
@@ -246,6 +433,7 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object plusInitialSeverity;
     }
 
     public class HediffCompProperties_MeditationSeverity : Verse.HediffCompProperties
@@ -254,6 +442,10 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object medFocusSpeedMatters;
+        public object perMeditationTick;
+        public object perNotMedTick;
+        public object whileNotMeditating;
     }
 
     public class HediffCompProperties_MoteConditional : Verse.HediffCompProperties
@@ -262,6 +454,8 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public string mote;
+        public object scale;
     }
 
     public class HediffCompProperties_OnCaravanSeverity : Verse.HediffCompProperties
@@ -270,6 +464,8 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object perOnCaravanTick;
+        public object whileInMap;
     }
 
     public class HediffCompProperties_PhylumMorphsHediff : Verse.HediffCompProperties
@@ -278,6 +474,8 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object hediffIfEntity;
+        public object hediffIfMutant;
     }
 
     public class HediffCompProperties_PlanetLayerSeverity : Verse.HediffCompProperties
@@ -286,6 +484,8 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public float defaultSeverity;
+        public object setToInSpace;
     }
 
     public class HediffCompProperties_PsyfocusSeverity : Verse.HediffCompProperties
@@ -302,6 +502,7 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object severityPerPsyfocus;
     }
 
     public class HediffCompProperties_RelationDependentSeverity : Verse.HediffCompProperties
@@ -310,6 +511,7 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object countNegativeRelations;
     }
 
     public class HediffCompProperties_SeverityDeterminesVisibility : Verse.HediffCompProperties
@@ -318,6 +520,7 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object invisibleWithin;
     }
 
     public class HediffCompProperties_SeverityDuringSpecificMentalStates : Verse.HediffCompProperties
@@ -326,6 +529,9 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object anyMentalState;
+        public object mentalStates;
+        public object severityInState;
     }
 
     public class HediffCompProperties_SkillAdjustment : Verse.HediffCompProperties
@@ -334,6 +540,13 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object affectedSkills;
+        public object affectsAptitudes;
+        public object minLevel;
+        public object nullifyingTraits;
+        public object skillAdjustment;
+        public object statMultiplier;
+        public int ticks;
     }
 
     public class HediffCompProperties_SkillLevelSeverity : Verse.HediffCompProperties
@@ -342,6 +555,7 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object skills;
     }
 
     public class HediffCompProperties_StunOnHit : Verse.HediffCompProperties
@@ -350,6 +564,14 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object appliedViaAttacks;
+        public object appliedViaPsycasts;
+        public float cellRange;
+        public object chance;
+        public object minDmgToTrigger;
+        public object stunTicksRange;
+        public object victimScalar;
+        public float worldTileRange;
     }
 
     public class HediffCompProperties_TemperatureLevelSeverity : Verse.HediffCompProperties
@@ -358,6 +580,10 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object changePerTick;
+        public object perTempAbove;
+        public object perTempBelow;
+        public object zeroSeverityAt;
     }
 
     public class HediffCompProperties_WaterImmersionSeverity : Verse.HediffCompProperties
@@ -366,6 +592,9 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object baseSeverityCaravan;
+        public object rainCountsFor;
+        public object severityPerCaravanRiverSize;
     }
 
     public class HediffCompProperties_WindLevelSeverity : Verse.HediffCompProperties
@@ -374,22 +603,22 @@ namespace HautsFramework
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object worksEnclosedSpace;
+        public object worldMapValue;
     }
 
     public class NoEMPReaction : Verse.DefModExtension
     {
     }
 
-    public class ThoughtWorker_OfSameFaction : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
     public class TraitGrantedStuff : Verse.DefModExtension
     {
+        public object forcedBodyTypes;
+        public object grantedAbilities;
+        public object grantedHediffs;
+        public bool hediffsToBrain;
+        public object otherHediffsToRemoveOnRemoval;
+        public object prisonerResolveFactor;
     }
 
     public class UnaffectedByDarkness : Verse.DefModExtension
@@ -406,14 +635,7 @@ namespace HautsTraits
         {
             this.compClass = typeof(Verse.HediffComp);
         }
-    }
-
-    public class HediffCompProperties_CreepjoinerBonusTraitPool : Verse.HediffCompProperties
-    {
-        public HediffCompProperties_CreepjoinerBonusTraitPool()
-        {
-            this.compClass = typeof(Verse.HediffComp);
-        }
+        public object hediffPerClass;
     }
 
     public class HediffCompProperties_FastHealPermanentWounds : Verse.HediffCompProperties
@@ -430,6 +652,8 @@ namespace HautsTraits
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object severityWhileInMajority;
+        public object severityWhileInMinority;
     }
 
     public class HediffCompProperties_ManchurianCandidacy : Verse.HediffCompProperties
@@ -438,6 +662,11 @@ namespace HautsTraits
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object chance;
+        public object faction;
+        public object onFactionChangeMessage;
+        public object periodicity;
+        public float range;
     }
 
     public class HediffCompProperties_Oneiromancy : Verse.HediffCompProperties
@@ -446,6 +675,12 @@ namespace HautsTraits
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object inspirationChancePerStack;
+        public object inspireString;
+        public object maxInspirationChance;
+        public object numStacksToTrigger;
+        public object thought;
+        public object ticksPerStack;
     }
 
     public class HediffCompProperties_SuperSpreader : Verse.HediffCompProperties
@@ -454,6 +689,7 @@ namespace HautsTraits
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object mtbDays;
     }
 
     public class HediffCompProperties_WhyAreYouRunning : Verse.HediffCompProperties
@@ -462,62 +698,8 @@ namespace HautsTraits
         {
             this.compClass = typeof(Verse.HediffComp);
         }
-    }
-
-    public class MentalStateWorker_Eureka : Verse.AI.MentalStateWorker
-    {
-        public override bool StateCanOccur(Verse.Pawn pawn)
-        {
-            return true;
-        }
-    }
-
-    public class MentalStateWorker_PanicFleeAnimals : Verse.AI.MentalStateWorker
-    {
-        public override bool StateCanOccur(Verse.Pawn pawn)
-        {
-            return true;
-        }
-    }
-
-    public class MentalStateWorker_RadThinker : Verse.AI.MentalStateWorker
-    {
-        public override bool StateCanOccur(Verse.Pawn pawn)
-        {
-            return true;
-        }
-    }
-
-    public class MentalStateWorker_SightstealerAttack : Verse.AI.MentalStateWorker
-    {
-        public override bool StateCanOccur(Verse.Pawn pawn)
-        {
-            return true;
-        }
-    }
-
-    public class MentalStateWorker_WanderFast : Verse.AI.MentalStateWorker
-    {
-        public override bool StateCanOccur(Verse.Pawn pawn)
-        {
-            return true;
-        }
-    }
-
-    public class MentalState_Eureka : Verse.AI.MentalState
-    {
-    }
-
-    public class MentalState_PanicFleeAnimals : Verse.AI.MentalState
-    {
-    }
-
-    public class MentalState_RadThinker : Verse.AI.MentalState
-    {
-    }
-
-    public class MentalState_SightstealerAttack : Verse.AI.MentalState
-    {
+        public object mentalState;
+        public object triggeringJobs;
     }
 
     public class PersoneuroformatterScrambler : Verse.DefModExtension
@@ -526,314 +708,14 @@ namespace HautsTraits
 
     public class SpecificPNFChargeCost : Verse.DefModExtension
     {
+        public object chargeCosts;
     }
 
     public class SuperPsychicTrait : Verse.DefModExtension
     {
-    }
-
-    public class ThoughtWorker_Agrizoophobia : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_AnglerYearning : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_AnomalyActivityLevel : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_AnomalyInactive : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_BroYourGroinOrChestIsUncovered : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_ButThisOneIsMine : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_Child : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_ClothistVsSelf : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_CravingLiberation : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_CreptOn : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FaithVDoubt : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_GenePurism : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_GlobetrotHediff : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_HVT_AnarchistVsServile : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_HVT_ServileVsAnarchist : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_HVT_SkulkerIsInvisible : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_ILoveWater : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_Imperial : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_InCaravan : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_IsMechanitor : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_IsPregnant : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_Leader : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_ManYouCreepin : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_NotInKansasAnymore : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_NoxiousHazeUndefeatable : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_OfOtherIdeo : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_Planetkiller : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_Pregnant : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_PseudoMonsterLove : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_SickForLove : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_Skullspike : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_SniperRangedWeapon : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_ThourtInhumanized : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_TwistedYearning : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_UrMyEverything : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_VainApparelQuality : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_VsMechanitor : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_Winsome : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
+        public string category;
+        public string descKey;
+        public string descKeyFantasy;
     }
 
 }
@@ -858,6 +740,14 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object appliedViaAttacks;
+        public object appliedViaPsycasts;
+        public bool canAffectFriendlies;
+        public float cellRange;
+        public object extraDamages;
+        public object hediffsToRemoveSelf;
+        public object victimScalar;
+        public float worldTileRange;
     }
 
     public class HediffCompProperties_AnimalImmunity : Verse.HediffCompProperties
@@ -866,6 +756,8 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public float damageMultiplier;
+        public int priority;
     }
 
     public class HediffCompProperties_Astrology : Verse.HediffCompProperties
@@ -874,6 +766,9 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object boredoms;
+        public object likelihood;
+        public int ticks;
     }
 
     public class HediffCompProperties_AuraAllelopathy : Verse.HediffCompProperties
@@ -882,6 +777,15 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public bool affectsAllies;
+        public bool affectsHostiles;
+        public string color;
+        public object damage;
+        public object damageType;
+        public object lifeLeech;
+        public string mote;
+        public object psyfocusLeech;
+        public float range;
     }
 
     public class HediffCompProperties_AuraLadybug : Verse.HediffCompProperties
@@ -890,6 +794,13 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public bool affectsAllies;
+        public bool affectsHostiles;
+        public string color;
+        public object exemptFilthTypes;
+        public object hediffs;
+        public string mote;
+        public float range;
     }
 
     public class HediffCompProperties_AuraMeerkat : Verse.HediffCompProperties
@@ -898,6 +809,12 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public bool affectsAllies;
+        public bool affectsHostiles;
+        public string color;
+        public object hediffs;
+        public string mote;
+        public float range;
     }
 
     public class HediffCompProperties_AuraOofOuchOwie : Verse.HediffCompProperties
@@ -906,6 +823,14 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public bool affectsAllies;
+        public bool affectsHostiles;
+        public bool affectsSelf;
+        public string color;
+        public object hediffFoe;
+        public object hediffs;
+        public string mote;
+        public float range;
     }
 
     public class HediffCompProperties_AuraPtar : Verse.HediffCompProperties
@@ -914,6 +839,15 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public bool affectsAllies;
+        public bool affectsHostiles;
+        public string color;
+        public object hediffBad;
+        public object hediffGood;
+        public object maxBadSeverity;
+        public object minGoodSeverity;
+        public string mote;
+        public float range;
     }
 
     public class HediffCompProperties_AuraTerror : Verse.HediffCompProperties
@@ -922,6 +856,20 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public bool affectsAllies;
+        public bool affectsHostiles;
+        public bool affectsSelf;
+        public object baseFleeChance;
+        public string color;
+        public object fleeChanceScalar;
+        public object fleeDuration;
+        public object fleeRange;
+        public string iconPath;
+        public object mapwideThought;
+        public object maxFleeChance;
+        public string mote;
+        public float range;
+        public object tickPeriodicity;
     }
 
     public class HediffCompProperties_BigBrain : Verse.HediffCompProperties
@@ -930,6 +878,11 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object allButPsyfocusScalar;
+        public object darkKnowledgePerHour;
+        public object psyfocusPerHour;
+        public object researchPerHour;
+        public object skillPerHour;
     }
 
     public class HediffCompProperties_CarrionSpawn : Verse.HediffCompProperties
@@ -938,6 +891,13 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object humanlikeChance;
+        public object setToOwnFaction;
+        public float severityToTrigger;
+        public object spawnFleck1;
+        public object spawnFleck2;
+        public object spawnRadius;
+        public object spawnSound;
     }
 
     public class HediffCompProperties_Chanshi : Verse.HediffCompProperties
@@ -946,6 +906,10 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object drugAddictionSatisfaction;
+        public object needsSatisfied;
+        public object periodicity;
+        public object satisfiesDrugAddictions;
     }
 
     public class HediffCompProperties_DamageNegationWraith : Verse.HediffCompProperties
@@ -954,6 +918,10 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object fleckOnBlock;
+        public int priority;
+        public object severityOnHit;
+        public object throwDustPuffsOnBlock;
     }
 
     public class HediffCompProperties_Egregoria : Verse.HediffCompProperties
@@ -962,6 +930,8 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object periodicity;
+        public object severityPerTotalPsylinkLevels;
     }
 
     public class HediffCompProperties_GlassSquid : Verse.HediffCompProperties
@@ -970,6 +940,9 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object healPerSeverity;
+        public object rainCountsFor;
+        public object severityPerCaravanRiverSize;
     }
 
     public class HediffCompProperties_HealPermanentWoundsPsyScaling : Verse.HediffCompProperties
@@ -978,6 +951,7 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object ticksToHeal;
     }
 
     public class HediffCompProperties_InASwaddle : Verse.HediffCompProperties
@@ -986,6 +960,7 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public float severityToTrigger;
     }
 
     public class HediffCompProperties_InflictTranscendence : Verse.HediffCompProperties
@@ -994,6 +969,7 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object MTBDays;
     }
 
     public class HediffCompProperties_KaboomBaby : Verse.HediffCompProperties
@@ -1002,6 +978,18 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object appliedViaPsycasts;
+        public float baseSeverity;
+        public bool canAffectFriendlies;
+        public float cellRange;
+        public object explosionDmg;
+        public object explosionPeriodicity;
+        public object explosionRadius;
+        public object explosionType;
+        public object hediff;
+        public object localizedToHitPart;
+        public object victimScalar;
+        public float worldTileRange;
     }
 
     public class HediffCompProperties_KopiLuwak : Verse.HediffCompProperties
@@ -1010,6 +998,13 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public float severityToTrigger;
+        public object spawnFleck1;
+        public object spawnFleck2;
+        public object spawnInOwnInventory;
+        public object spawnRadius;
+        public object spawnSound;
+        public object spawnedThingAndCountPerTrigger;
     }
 
     public class HediffCompProperties_Kudzu : Verse.HediffCompProperties
@@ -1018,6 +1013,13 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public bool affectsAllies;
+        public bool affectsHostiles;
+        public object bonusPlantGrowth;
+        public string color;
+        public object hediffs;
+        public string mote;
+        public float range;
     }
 
     public class HediffCompProperties_LPMastery : Verse.HediffCompProperties
@@ -1026,6 +1028,8 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public int psylinkLevel;
+        public int skillLevel;
     }
 
     public class HediffCompProperties_LeWokisme : Verse.HediffCompProperties
@@ -1034,6 +1038,8 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object forcingTraits;
+        public object newAwakeningPeriodicity;
     }
 
     public class HediffCompProperties_Leghorn : Verse.HediffCompProperties
@@ -1042,6 +1048,8 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object forcingTraits;
+        public string mealDef;
     }
 
     public class HediffCompProperties_ManaBarrier : Verse.HediffCompProperties
@@ -1050,6 +1058,11 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object contributingTraits;
+        public float damageMultiplier;
+        public object fleckOnBlock;
+        public int priority;
+        public object unaffectedDamageTypes;
     }
 
     public class HediffCompProperties_MaybeGrantPsylink : Verse.HediffCompProperties
@@ -1058,6 +1071,14 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object count;
+        public object failLetterLabel;
+        public object failLetterText;
+        public object failureHediff;
+        public object killLetterLabel;
+        public object killLetterText;
+        public object succeedLetterLabel;
+        public object succeedLetterText;
     }
 
     public class HediffCompProperties_Mosquito : Verse.HediffCompProperties
@@ -1066,6 +1087,17 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object appliedViaPsycasts;
+        public float baseSeverity;
+        public bool canAffectMechs;
+        public object canOnlyIncreaseSeverityUpTo;
+        public float cellRange;
+        public object hediff;
+        public object hemogenGainEfficiency;
+        public object lifestealEfficiency;
+        public object localizedToHitPart;
+        public object psyfocusCostScaling;
+        public float worldTileRange;
     }
 
     public class HediffCompProperties_MoteTranscendent : Verse.HediffCompProperties
@@ -1074,6 +1106,10 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public string mote;
+        public object mustBeTranscendent;
+        public object scale;
+        public object validRange;
     }
 
     public class HediffCompProperties_MutantImmunity : Verse.HediffCompProperties
@@ -1082,6 +1118,8 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public float damageMultiplier;
+        public int priority;
     }
 
     public class HediffCompProperties_NeuralHeatShield : Verse.HediffCompProperties
@@ -1090,6 +1128,9 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public string color;
+        public object displayUnderSeverity;
+        public object drawSize;
     }
 
     public class HediffCompProperties_Oxpeck : Verse.HediffCompProperties
@@ -1098,6 +1139,18 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object appliedViaPsycasts;
+        public float baseSeverity;
+        public bool canAffectAnimals;
+        public bool canAffectEntities;
+        public bool canAffectHumanlikes;
+        public bool canAffectMechs;
+        public bool canAffectMutants;
+        public float cellRange;
+        public object hediffMean;
+        public object hediffNice;
+        public object tameMTBcurve;
+        public object tameMTBdaysBase;
     }
 
     public class HediffCompProperties_PitohuiPurgeOnHit : Verse.HediffCompProperties
@@ -1106,6 +1159,13 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object appliedViaPsycasts;
+        public float cellRange;
+        public object hediffsToCure;
+        public object severityLostOnCure;
+        public object totallyRemoveOnCure;
+        public object victimScalar;
+        public float worldTileRange;
     }
 
     public class HediffCompProperties_PsiDisruptor : Verse.HediffCompProperties
@@ -1114,6 +1174,12 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public bool affectsHostiles;
+        public bool affectsSelf;
+        public string color;
+        public string mote;
+        public float range;
+        public object scanByPawnListerNotByGrid;
     }
 
     public class HediffCompProperties_PsiEmitter : Verse.HediffCompProperties
@@ -1122,6 +1188,10 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public float severityToTrigger;
+        public object spawnInOwnInventory;
+        public object spawnRadius;
+        public object spawnedThingAndCountPerTrigger;
     }
 
     public class HediffCompProperties_PsychicWisdom : Verse.HediffCompProperties
@@ -1130,6 +1200,7 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object chanceToAwaken;
     }
 
     public class HediffCompProperties_PupilOfTheGrave : Verse.HediffCompProperties
@@ -1138,6 +1209,11 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object corpseSearchRadius;
+        public float damageMultiplier;
+        public object fleckOnBlock;
+        public int priority;
+        public object throwDustPuffsOnBlock;
     }
 
     public class HediffCompProperties_Scarab : Verse.HediffCompProperties
@@ -1146,6 +1222,12 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object fleckOnBlock;
+        public object percentNeuralHeatOnHit;
+        public int priority;
+        public object severityOnHit;
+        public object switchToOnBreak;
+        public object throwDustPuffsOnBlock;
     }
 
     public class HediffCompProperties_SkillCopier : Verse.HediffCompProperties
@@ -1154,6 +1236,14 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public bool affectsAllies;
+        public bool affectsHostiles;
+        public object baseXPgainPerPeriod;
+        public string color;
+        public object effectScalar;
+        public string mote;
+        public float range;
+        public object tickPeriodicity;
     }
 
     public class HediffCompProperties_Sylar : Verse.HediffCompProperties
@@ -1162,6 +1252,7 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object forcingTraits;
     }
 
     public class HediffCompProperties_TMN : Verse.HediffCompProperties
@@ -1170,6 +1261,9 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object harmfulDamageTypesOnly;
+        public object hediffSelf;
+        public int priority;
     }
 
     public class HediffCompProperties_TechnopathicControl : Verse.HediffCompProperties
@@ -1178,14 +1272,14 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
-    }
-
-    public class HediffCompProperties_TheLastChipFactory : Verse.HediffCompProperties
-    {
-        public HediffCompProperties_TheLastChipFactory()
-        {
-            this.compClass = typeof(Verse.HediffComp);
-        }
+        public object appliedViaPsycasts;
+        public float baseSeverity;
+        public bool canAffectAnimals;
+        public bool canAffectHumanlikes;
+        public float cellRange;
+        public object chancesPerWeight;
+        public object hediff;
+        public float worldTileRange;
     }
 
     public class HediffCompProperties_ThoughtsInChaos : Verse.HediffCompProperties
@@ -1194,6 +1288,16 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object appliedViaPsycasts;
+        public bool canAffectFriendlies;
+        public float cellRange;
+        public object chance;
+        public object chanceCap;
+        public object chancePerVictimPsylink;
+        public object mbList;
+        public object psylinkChanceMin;
+        public object victimChanceScalar;
+        public float worldTileRange;
     }
 
     public class HediffCompProperties_Transcendenceinator : Verse.HediffCompProperties
@@ -1202,6 +1306,10 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object aboutTransingStrings;
+        public object aboutTransingStringsMonolithRequired;
+        public object severityPerPsyfocus;
+        public object ticksToReset;
     }
 
     public class HediffCompProperties_WithATasteOfYourLips : Verse.HediffCompProperties
@@ -1210,62 +1318,34 @@ namespace HautsTraitsRoyalty
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object baseHediffSeverity;
+        public object baseRetaliationDamage;
+        public object baseRetaliationDamageFactor;
+        public object chanceToDoDamage;
+        public object chanceToInflictHediff;
+        public object damageScaleWithDamage;
+        public object hediff;
+        public object hediffResistStat;
+        public object hediffScaleWithBodySize;
+        public object hediffScaleWithDamage;
+        public object hitInstigatorRegardlessOfRange;
+        public int priority;
+        public float range;
+        public object retaliationDamageDef;
+        public object vfxCooldownTicks;
+        public object visualEffect;
     }
 
     public class RemovedOnAwakening : Verse.DefModExtension
     {
+        public object awakenChance;
     }
 
-    public class ThoughtWorker_HVT_AnarchistVsServile : RimWorld.ThoughtWorker
+    public class VerbCompProperties_StandPower : Verse.DefModExtension
     {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_HVT_ServileVsAnarchist : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_HVT_TCuckoo : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_Imperial : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_Leader : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class VerbCompProperties_StandPower : Verse.HediffCompProperties
-    {
-        public VerbCompProperties_StandPower()
-        {
-            this.compClass = typeof(Verse.HediffComp);
-        }
-    }
-
-    public class VerbComp_StandPower : Verse.HediffComp
-    {
+        public string compClass;
+        public object hediff;
+        public object text;
     }
 
 }
@@ -1278,210 +1358,19 @@ namespace MVCF.Comps
         {
             this.compClass = typeof(Verse.HediffComp);
         }
+        public object verbProps;
+        public object verbs;
     }
 
 }
 
 namespace MVCF.VerbComps
 {
-    public class VerbCompProperties_Turret : Verse.HediffCompProperties
+    public class VerbCompProperties_Turret : Verse.DefModExtension
     {
-        public VerbCompProperties_Turret()
-        {
-            this.compClass = typeof(Verse.HediffComp);
-        }
-    }
-
-    public class VerbComp_Turret : Verse.HediffComp
-    {
-    }
-
-}
-
-namespace MoloyTraits
-{
-    public class MT_ThoughtWorker_ExHasLover : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class MT_ThoughtWorker_ExHasNoLover : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class MT_ThoughtWorker_LuminaryMood : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class MT_ThoughtWorker_TyrantNear : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class MT_ThoughtWorker_VenturousQuestCompletedMood : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class MT_ThoughtWorker_VenturousQuestStatusMood : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-}
-
-namespace More_Traits
-{
-    public class BOTClaustrophobicBreakState : Verse.AI.MentalState
-    {
-    }
-
-    public class BOT_ThoughtWorker_Claustrophobic : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class BOT_ThoughtWorker_Cold : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class BOT_ThoughtWorker_EarlyBirdTimeThought : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class BOT_ThoughtWorker_Hot : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class BOT_ThoughtWorker_IsCarryingMeleeWeapon : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class BOT_ThoughtWorker_IsCarryingWeapon : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class BOT_ThoughtWorker_MoodyModifier : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class BOT_ThoughtWorker_PluviophileLikesRain : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class BOT_ThoughtWorker_PyrophobicBurned : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class BOT_ThoughtWorker_PyrophobicOnFire : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_GregariousCompany : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_Misanthrope : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-}
-
-namespace More_Traits.MentalStates.MentalStateWorkers
-{
-    public class BOT_TraitMentalStateWorker : Verse.AI.MentalStateWorker
-    {
-        public override bool StateCanOccur(Verse.Pawn pawn)
-        {
-            return true;
-        }
-    }
-
-    public class MentalStateWorker_ClaustrophobicPanic : Verse.AI.MentalStateWorker
-    {
-        public override bool StateCanOccur(Verse.Pawn pawn)
-        {
-            return true;
-        }
-    }
-
-}
-
-namespace More_Traits.MentalStates.MentalStates
-{
-    public class BOT_NarcolepticAsleepState : Verse.AI.MentalState
-    {
-    }
-
-    public class MentalState_ClaustrophobicState : Verse.AI.MentalState
-    {
+        public string compClass;
+        public bool invisible;
+        public object uniqueTargets;
     }
 
 }
@@ -1490,506 +1379,29 @@ namespace More_Traits.ModExtensions
 {
     public class BOT_HediffExtension : Verse.DefModExtension
     {
+        public object stageColors;
+        public object traitDef;
     }
 
-    public class BOT_MentalStateExtension : Verse.DefModExtension
+    public class BOT_MentalStateExtension : Verse.AI.MentalState
     {
+        public object traitDef;
     }
 
     public class BOT_TraitExtension : Verse.DefModExtension
     {
-    }
-
-}
-
-namespace More_Traits.ThoughtWorkers
-{
-    public class ThoughtWorker_AnimalWhispererAnimalCount : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_ChildCount : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_ChinophileSnowing : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_Claustrophobic : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_ColdTempLove : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_EarlyBirdTimeThought : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_GregariousCompany : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_HotTempLove : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_IsCarryingMeleeWeapon : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_Misanthrope : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_Moody : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_PacifistIsCarryingWeapon : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_PluviophileLikesRain : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_PyrophobiaBurned : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_PyrophobiaOnFire : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-}
-
-namespace SimsTraits
-{
-    public class ThoughtWorker_LeatherApparel : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_Naive : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_Narcissist : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_NoPokerTable : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_OneOfUs : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_SomethingIsOff : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_VeganVsCarnist : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
+        public object hediffDef;
     }
 
 }
 
 namespace TraitTracker
 {
-    public class TraitCompProperties_SocialInteraction : Verse.HediffCompProperties
+    public class TraitCompProperties_SocialInteraction : Verse.DefModExtension
     {
-        public TraitCompProperties_SocialInteraction()
-        {
-            this.compClass = typeof(Verse.HediffComp);
-        }
-    }
-
-}
-
-namespace TraitsPlus
-{
-    public class ThoughtWorker_EarlyRiserEarlyHours : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsAllFucks : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsAstronomer : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsAutho : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsBackpacker : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsBlader : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsBotanist : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsBraggart : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsBrawler : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsCageFighter : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsCautious : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsCheerful : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsClever : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsCombatMedic : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsComplainer : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsDaredevil : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsDefensiveFighter : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsDeveloper : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsDoomed : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsEdgy : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsFighter : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsFlorist : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsRiflesmith : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_FeelingsTowardsRolled : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_LikesFall : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_LikesFallS : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_LikesSpring : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_LikesSpringF : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_LikesSummer : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_LikesSummerW : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_LikesWinter : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_LikesWinterS : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-}
-
-namespace VEF.AnimalBehaviours
-{
-    public class HediffCompProperties_Electrified : Verse.HediffCompProperties
-    {
-        public HediffCompProperties_Electrified()
-        {
-            this.compClass = typeof(Verse.HediffComp);
-        }
-    }
-
-    public class HediffCompProperties_Floating : Verse.HediffCompProperties
-    {
-        public HediffCompProperties_Floating()
-        {
-            this.compClass = typeof(Verse.HediffComp);
-        }
-    }
-
-}
-
-namespace VEF.Hediffs
-{
-    public class HediffCompProperties_Targeting : Verse.HediffCompProperties
-    {
-        public HediffCompProperties_Targeting()
-        {
-            this.compClass = typeof(Verse.HediffComp);
-        }
-    }
-
-    public class HediffComp_Phasing : Verse.HediffComp
-    {
+        public object chance;
+        public object checkInterval;
+        public object interaction;
     }
 
 }
@@ -2002,139 +1414,7 @@ namespace VFECore
         {
             this.compClass = typeof(Verse.HediffComp);
         }
-    }
-
-    public class HediffComp_Phasing : Verse.HediffComp
-    {
+        public bool neverMiss;
     }
 
 }
-
-namespace VanillaTraitsExpanded
-{
-    public class MentalStateWorker_Kleptomaniac : Verse.AI.MentalStateWorker
-    {
-        public override bool StateCanOccur(Verse.Pawn pawn)
-        {
-            return true;
-        }
-    }
-
-    public class MentalStateWorker_TechnophobeTantrum : Verse.AI.MentalStateWorker
-    {
-        public override bool StateCanOccur(Verse.Pawn pawn)
-        {
-            return true;
-        }
-    }
-
-    public class MentalState_Kleptomaniac : Verse.AI.MentalState
-    {
-    }
-
-    public class MentalState_PanicFreezing : Verse.AI.MentalState
-    {
-    }
-
-    public class MentalState_TechnophobeTantrum : Verse.AI.MentalState
-    {
-    }
-
-    public class ThoughtWorker_AnimalsInColony : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_BondedAnimalMasterHater : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_ChildOfMountain : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_ChildOfSea : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_DarkChildOfTheMountain : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_Dunce : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_HaventExitedColonyForLongTime : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_HaventHarvestedOrgansForLongTime : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_MyRivalsAreAlive : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_NoDedicatedLab : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_NotBondedAnimalMasterHater : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-    public class ThoughtWorker_PassionateCleaningWork : RimWorld.ThoughtWorker
-    {
-        protected override RimWorld.ThoughtState CurrentStateInternal(Verse.Pawn p)
-        {
-            return RimWorld.ThoughtState.Inactive;
-        }
-    }
-
-}
-
