@@ -367,7 +367,7 @@
   		<stackLimit>1</stackLimit>
   		<stages>
   			<li>
-  				<label>Сould not finish item</label>
+  				<label>Could not finish item</label>
   				<description>I couldn't finish my project, it just wasn't coming along correctly.</description>
   				<baseMoodEffect>-5</baseMoodEffect>
   			</li>
@@ -5301,8 +5301,8 @@
     </requiredTraits>
     <stages>
       <li>
-        <label>自然天成</label>
-        <description>我的身心如此纯净完美。</description>
+        <label>Natural purity</label>
+        <description>My body and mind are pure and perfect.</description>
         <baseMoodEffect>+20</baseMoodEffect>
       </li>
     </stages>
@@ -5317,8 +5317,8 @@
     </requiredTraits>
     <stages>
       <li>
-        <label>画蛇添足</label>
-        <description>我不需要任何植入物，这是对我的侮辱。</description>
+        <label>Superfluous modification</label>
+        <description>I don't need any implants, it is an insult to me.</description>
         <baseMoodEffect>-5</baseMoodEffect>
       </li>
     </stages>

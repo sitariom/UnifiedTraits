@@ -5,8 +5,8 @@
       <commonality>0.2</commonality>
       <degreeDatas>
           <li>
-              <label>&lt;color=#75f5c5&gt;棱镜力量&lt;/color&gt;</label>
-              <description>{PAWN_nameDef}曾参与过星空怪的讨伐。疯狂的色彩扭曲了时空规则，也令{PAWN_nameDef}获得了超然的力量。</description>
+              <label>&lt;color=#75f5c5&gt;Prismatic Force&lt;/color&gt;</label>
+              <description>{PAWN_nameDef} participated in defeating the Thing From the Stars. Mad colors warped spacetime, granting {PAWN_nameDef} transcendent force.</description>
               <statFactors>
                   <MeleeDamageFactor>1.5</MeleeDamageFactor> 
               </statFactors>
@@ -34,8 +34,8 @@
       <commonality>0.1</commonality>
       <degreeDatas>
           <li>
-              <label>&lt;color=#75f5c5&gt;棱镜速度&lt;/color&gt;</label>
-              <description>{PAWN_nameDef}曾参与过星空怪的讨伐。疯狂的色彩扭曲了时空规则，也令{PAWN_nameDef}获得了超然的速度。</description>
+              <label>&lt;color=#75f5c5&gt;Prismatic Speed&lt;/color&gt;</label>
+              <description>{PAWN_nameDef} participated in defeating the Thing From the Stars. Mad colors warped spacetime, granting {PAWN_nameDef} transcendent speed.</description>
               <statOffsets>
                   <MoveSpeed>0.5</MoveSpeed> 
                   <WorkSpeedGlobal>0.25</WorkSpeedGlobal> 
@@ -66,8 +66,8 @@
       <commonality>0.2</commonality>
       <degreeDatas>
           <li>
-              <label>&lt;color=#75f5c5&gt;棱镜镇定&lt;/color&gt;</label>
-              <description>{PAWN_nameDef}曾参与过星空怪的讨伐。疯狂的色彩扭曲了时空规则，也令{PAWN_nameDef}的心灵得到强化。</description>
+              <label>&lt;color=#75f5c5&gt;Prismatic Calm&lt;/color&gt;</label>
+              <description>{PAWN_nameDef} participated in defeating the Thing From the Stars. Mad colors warped spacetime, strengthening {PAWN_nameDef}'s mind.</description>
               <statOffsets>
                   <MentalBreakThreshold>-0.25</MentalBreakThreshold> 
               </statOffsets>
@@ -92,8 +92,8 @@
       <commonality>0.2</commonality>
       <degreeDatas>
           <li>
-              <label>&lt;color=#75f5c5&gt;棱镜准度&lt;/color&gt;</label>
-              <description>{PAWN_nameDef}曾参与过星空怪的讨伐。疯狂的色彩扭曲了时空规则，也令{PAWN_nameDef}获得了超然的洞察力。</description>
+              <label>&lt;color=#75f5c5&gt;Prismatic Accuracy&lt;/color&gt;</label>
+              <description>{PAWN_nameDef} participated in defeating the Thing From the Stars. Mad colors warped spacetime, granting {PAWN_nameDef} transcendent insight and precision.</description>
               <statOffsets>
                   <ShootingAccuracyPawn>16</ShootingAccuracyPawn> 
                   <MeleeHitChance>16</MeleeHitChance> 
@@ -126,8 +126,8 @@
       <commonality>0.1</commonality>
       <degreeDatas>
           <li>
-              <label>&lt;color=#75f5c5&gt;棱镜稳固&lt;/color&gt;</label>
-              <description>{PAWN_nameDef}曾参与过星空怪的讨伐。疯狂的色彩扭曲了时空规则，也令{PAWN_nameDef}获得了超凡的防护。</description>
+              <label>&lt;color=#75f5c5&gt;Prismatic Solidity&lt;/color&gt;</label>
+              <description>{PAWN_nameDef} participated in defeating the Thing From the Stars. Mad colors warped spacetime, granting {PAWN_nameDef} extraordinary protection.</description>
               <statOffsets>
                   <ArmorRating_Sharp>0.5</ArmorRating_Sharp> 
                   <ArmorRating_Blunt>0.3</ArmorRating_Blunt> 
@@ -154,8 +154,8 @@
       <commonality>0.2</commonality>
       <degreeDatas>
           <li>
-              <label>&lt;color=#a99cff&gt;乌鸦之眼&lt;/color&gt;</label>
-              <description>{PAWN_nameDef}曾参与过对尖叫魔的讨伐。尖叫魔的力量强化了{PAWN_nameDef}的双眼。</description>
+              <label>&lt;color=#a99cff&gt;Corvid Eye&lt;/color&gt;</label>
+              <description>{PAWN_nameDef} participated in slaying the Shrieker. The Shrieker's power sharpened {PAWN_nameDef}'s eyes.</description>
               <statOffsets>
                   <ShootingAccuracyPawn>16</ShootingAccuracyPawn> 
                   <MeleeHitChance>16</MeleeHitChance> 
@@ -181,8 +181,8 @@
       <commonality>0.2</commonality>
       <degreeDatas>
           <li>
-              <label>&lt;color=#a99cff&gt;乌鸦之雅&lt;/color&gt;</label>
-              <description>{PAWN_nameDef}曾参与过对尖叫魔的讨伐，在战斗中领悟了尖叫魔的战斗技艺。</description>
+              <label>&lt;color=#a99cff&gt;Corvid Grace&lt;/color&gt;</label>
+              <description>{PAWN_nameDef} participated in slaying the Shrieker, mastering its agile combat arts in battle.</description>
               <statOffsets>
   			    <MeleeDodgeChance>24</MeleeDodgeChance> 
               </statOffsets>
@@ -208,8 +208,8 @@
       <commonality>0.2</commonality>
       <degreeDatas>
           <li>
-              <label>&lt;color=#a99cff&gt;乌鸦之健&lt;/color&gt;</label>
-              <description>{PAWN_nameDef}曾参与过对尖叫魔的讨伐。尖叫魔的鲜血赋予了{PAWN_nameDef}超凡的抗性。</description>
+              <label>&lt;color=#a99cff&gt;Corvid Resilience&lt;/color&gt;</label>
+              <description>{PAWN_nameDef} participated in slaying the Shrieker. The Shrieker's blood granted {PAWN_nameDef} remarkable vitality and resistance.</description>
               <statOffsets>
                   <ToxicResistance>1</ToxicResistance> 
                   <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance> 
@@ -237,8 +237,8 @@
       <commonality>0.4</commonality>
       <degreeDatas>
           <li>
-              <label>&lt;color=#ffff4c&gt;光芒四射&lt;/color&gt;</label>
-              <description>{PAWN_nameDef}的行动迅捷如光，总能先发制人。</description>
+              <label>&lt;color=#ffff4c&gt;Radiant&lt;/color&gt;</label>
+              <description>{PAWN_nameDef}'s actions are swift as light, always striking first.</description>
               <statOffsets>
                   <MoveSpeed>0.4</MoveSpeed> 
                   <WorkSpeedGlobal>0.2</WorkSpeedGlobal> 
@@ -264,8 +264,8 @@
       <commonality>0.5</commonality>
       <degreeDatas>
           <li>
-              <label>自然天成</label>
-              <description>{PAWN_nameDef}的身心如此纯净，与自然有着深刻的共鸣。任何植入体对{PAWN_nameDef}来说都是多余的，拥有植入体会让{PAWN_pronoun}心情不佳。</description>
+              <label>Natural Purity</label>
+              <description>{PAWN_nameDef}'s body and mind are completely pure, deeply resonant with nature. Any implants are superfluous to {PAWN_objective}, causing distress if installed.</description>
               <statOffsets>
                   <WorkSpeedGlobal>0.2</WorkSpeedGlobal> 
               </statOffsets>
@@ -279,8 +279,8 @@
       <commonality>0.5</commonality>
       <degreeDatas>
           <li>
-              <label>自然之眼</label>
-              <description>{PAWN_nameDef}的目光锐利如鹰，能洞察最细微的破绽。{PAWN_pronoun}锁定目标时沉稳而致命，总能精准地命中敌人。</description>
+              <label>Eagle Eye</label>
+              <description>{PAWN_nameDef}'s gaze is as sharp as an eagle, spotting the subtlest flaws in defense. Calm and lethal when acquiring targets, {PAWN_pronoun} strikes with deadly precision.</description>
               <statOffsets>
                   <ShootingAccuracyPawn>10</ShootingAccuracyPawn> 
               </statOffsets>
@@ -306,8 +306,8 @@
       <commonality>0.4</commonality>
       <degreeDatas>
           <li>
-              <label>重击者</label>
-              <description>{PAWN_nameDef}的臂力惊人。{PAWN_pronoun}的每一次近战打击都沉重无比，能轻易撕裂防御，造成远超常人的破坏。</description>
+              <label>Slugger</label>
+              <description>{PAWN_nameDef} possesses incredible physical strength. Each of {PAWN_possessive} melee strikes carries crushing force, breaching defenses with catastrophic power.</description>
               <statFactors>
                   <MeleeDamageFactor>1.3</MeleeDamageFactor> 
               </statFactors>
@@ -332,8 +332,8 @@
       <commonality>0.4</commonality>
       <degreeDatas>
           <li>
-              <label>&lt;color=#b10000&gt;冒险&lt;/color&gt;</label>
-              <description>{PAWN_nameDef}的每一次攻击都拼尽全力，{PAWN_pronoun}从不给自己留退路。</description>
+              <label>&lt;color=#b10000&gt;Reckless Gamble&lt;/color&gt;</label>
+              <description>{PAWN_nameDef} puts everything into every attack, leaving {PAWN_objective} no room for retreat.</description>
               <statFactors>
                   <MeleeDamageFactor>1.3</MeleeDamageFactor> 
               </statFactors>
@@ -362,8 +362,8 @@
       <commonality>0.4</commonality>
       <degreeDatas>
           <li>
-              <label>&lt;color=#b10000&gt;狂乱病&lt;/color&gt;</label>
-              <description>某种未知的病毒破坏了{PAWN_nameDef}的神经系统，让{PAWN_pronoun}变得狂乱。</description>
+              <label>&lt;color=#b10000&gt;Rabid Madness&lt;/color&gt;</label>
+              <description>An unknown virus damaged {PAWN_nameDef}'s nervous system, driving {PAWN_objective} into wild frenzy.</description>
               <statFactors>
                   <MeleeDamageFactor>1.4</MeleeDamageFactor> 
               </statFactors>
@@ -398,8 +398,8 @@
       <commonality>0.8</commonality>
       <degreeDatas>
           <li>
-              <label>表皮硬化</label>
-              <description>{PAWN_nameDef}的皮肤异于常人，十分坚韧。</description>
+              <label>Hardened Skin</label>
+              <description>{PAWN_nameDef}'s skin is unnaturally tough and resilient.</description>
               <statOffsets>
   				<ArmorRating_Sharp>0.50</ArmorRating_Sharp> 
   				<ArmorRating_Blunt>0.30</ArmorRating_Blunt> 
@@ -413,8 +413,8 @@
       <commonality>0.5</commonality>
       <degreeDatas>
           <li>
-              <label>悬壶济世</label>
-              <description>{PAWN_nameDef}的医术高明，治疗效果比其他人好得多。</description>
+              <label>Master Healer</label>
+              <description>{PAWN_nameDef} is an exceptionally skilled physician, curing ailments far more effectively than others.</description>
               <statFactors>
                   <MedicalTendSpeed>1.2</MedicalTendSpeed>
                   <MedicalOperationSpeed>1.2</MedicalOperationSpeed>

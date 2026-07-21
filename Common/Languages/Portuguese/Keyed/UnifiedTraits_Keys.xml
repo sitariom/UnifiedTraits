@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Headers de Configurações -->
+  <UnifiedTraits.Settings.CategoriesHeader>Categorias de Traits Ativas</UnifiedTraits.Settings.CategoriesHeader>
+  <UnifiedTraits.Settings.EnableBasicTraits>Traits Básicos e Gerais (Basic &amp; General)</UnifiedTraits.Settings.EnableBasicTraits>
+  <UnifiedTraits.Settings.EnableSynergisticTraits>Traits de Sinergia (Synergistic Traits)</UnifiedTraits.Settings.EnableSynergisticTraits>
+  <UnifiedTraits.Settings.EnableFalloutTraits>Traits do Universo Fallout (S.P.E.C.I.A.L.)</UnifiedTraits.Settings.EnableFalloutTraits>
+  <UnifiedTraits.Settings.EnableDarkestDungeonTraits>Traits de Darkest Dungeon (Virtudes &amp; Aflições)</UnifiedTraits.Settings.EnableDarkestDungeonTraits>
+  <UnifiedTraits.Settings.EnableSimsCK3Traits>Traits de Personalidade &amp; Social (CK3 &amp; The Sims)</UnifiedTraits.Settings.EnableSimsCK3Traits>
+  <UnifiedTraits.Settings.EnableHeroicTraits>Traits Heróicos &amp; Lendários (Heroes + Gods)</UnifiedTraits.Settings.EnableHeroicTraits>
+
+  <!-- Sistemas Dinâmicos -->
+  <UnifiedTraits.Settings.MechanicsHeader>Sistemas Dinâmicos e Mecânicas</UnifiedTraits.Settings.MechanicsHeader>
+  <UnifiedTraits.Settings.EnableDynamicTraitEvolution>Evolução Dinâmica de Traits por Eventos de Vida</UnifiedTraits.Settings.EnableDynamicTraitEvolution>
+  <UnifiedTraits.Settings.EvolutionRate>Multiplicador de Velocidade de Evolução: {0}</UnifiedTraits.Settings.EvolutionRate>
+  <UnifiedTraits.Settings.EnableStressAfflictionSystem>Sistema de Aflições e Virtudes por Estresse Extremo</UnifiedTraits.Settings.EnableStressAfflictionSystem>
+  <UnifiedTraits.Settings.EnableTraitSynergyTicks>Cálculo Periódico de Sinergias de Traits em Pawns</UnifiedTraits.Settings.EnableTraitSynergyTicks>
+  <!-- Mensagens de Eventos Dinâmicos -->
+  <UnifiedTraits.Message.AfflictionGained>{0} desenvolveu a aflição: {1} devido a estresse extremo!</UnifiedTraits.Message.AfflictionGained>
+  <UnifiedTraits.Message.VirtueGained>{0} desenvolveu a virtude: {1} por superação e resiliência!</UnifiedTraits.Message.VirtueGained>
+</LanguageData>
