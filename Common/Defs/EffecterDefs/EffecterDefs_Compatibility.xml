@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <EffecterDef>
+    <defName>BOT_ClaustrophobicEffector</defName>
+  </EffecterDef>
+
+  <EffecterDef>
+    <defName>UT_VTE_PanicFreezing</defName>
+  </EffecterDef>
+
+  <EffecterDef>
+    <defName>VPE_SparksRed</defName>
+  </EffecterDef>
+
+  <EffecterDef>
+    <defName>VPE_SparksWhite</defName>
+  </EffecterDef>
+
+</Defs>

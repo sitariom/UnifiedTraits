@@ -1,0 +1,1279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <StatCategoryDef>
+    <defName>UT_CompatibilityCategory</defName>
+    <label>compatibility</label>
+    <displayOrder>9999</displayOrder>
+  </StatCategoryDef>
+
+  <StatDef>
+    <defName>AS_ExtraComponentsYield</defName>
+    <label>as extracomponentsyield</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>AS_ExtraGoldYield</defName>
+    <label>as extragoldyield</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>AccuracyLong</defName>
+    <label>accuracylong</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>AccuracyMedium</defName>
+    <label>accuracymedium</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>AccuracyShort</defName>
+    <label>accuracyshort</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>AccuracyTouch</defName>
+    <label>accuracytouch</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>ActivitySuppressionRate</defName>
+    <label>activitysuppressionrate</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>AnimalProductsSellImprovement</defName>
+    <label>animalproductssellimprovement</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>BladderRateMultiplier</defName>
+    <label>bladderratemultiplier</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>BluntDamageMultiplier</defName>
+    <label>bluntdamagemultiplier</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>BondAnimalChanceFactor</defName>
+    <label>bondanimalchancefactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>ButcheryFleshEfficiency</defName>
+    <label>butcheryfleshefficiency</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>ButcheryFleshSpeed</defName>
+    <label>butcheryfleshspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>ButcheryMechanoidEfficiency</defName>
+    <label>butcherymechanoidefficiency</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>ButcheryMechanoidSpeed</defName>
+    <label>butcherymechanoidspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>CancerRate</defName>
+    <label>cancerrate</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>CaravanBonusSpeedFactor</defName>
+    <label>caravanbonusspeedfactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>CertaintyLossFactor</defName>
+    <label>certaintylossfactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>ChemsNeedRateMultiplier</defName>
+    <label>chemsneedratemultiplier</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>CleaningSpeed</defName>
+    <label>cleaningspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>ConversionPower</defName>
+    <label>conversionpower</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>CookSpeed</defName>
+    <label>cookspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>DeathrestEffectivenessFactor</defName>
+    <label>deathresteffectivenessfactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>DrugCookingSpeed</defName>
+    <label>drugcookingspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>DrugHarvestYield</defName>
+    <label>drugharvestyield</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>DrugSellPriceImprovement</defName>
+    <label>drugsellpriceimprovement</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>DrugSynthesisSpeed</defName>
+    <label>drugsynthesisspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>EBSG_HemogenMaxOffset</defName>
+    <label>ebsg hemogenmaxoffset</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>EL_ArcheologySpeed</defName>
+    <label>el archeologyspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>EMPResistance</defName>
+    <label>empresistance</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>EntityStudyRate</defName>
+    <label>entitystudyrate</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>FishingSpeed</defName>
+    <label>fishingspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>FixBrokenDownBuildingSuccessChance</defName>
+    <label>fixbrokendownbuildingsuccesschance</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Flammability</defName>
+    <label>flammability</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>FoodPoisonChance</defName>
+    <label>foodpoisonchance</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>ForcedRecruitRelationshipDamage</defName>
+    <label>forcedrecruitrelationshipdamage</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>HackingSpeed</defName>
+    <label>hackingspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_ApparelWearRateFactor</defName>
+    <label>hauts apparelwearratefactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_BoredomDropPerDay</defName>
+    <label>hauts boredomdropperday</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_BreachDamageFactor</defName>
+    <label>hauts breachdamagefactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_CaravanVisibilityOffset</defName>
+    <label>hauts caravanvisibilityoffset</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_EntityDamageFactor</defName>
+    <label>hauts entitydamagefactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_HemogenContentFactor</defName>
+    <label>hauts hemogencontentfactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_IdeoAbilityDurationSelf</defName>
+    <label>hauts ideoabilitydurationself</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_IdeoThoughtFactor</defName>
+    <label>hauts ideothoughtfactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_InstructiveAbility</defName>
+    <label>hauts instructiveability</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_JumpRangeFactor</defName>
+    <label>hauts jumprangefactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_MaxDryadFactor</defName>
+    <label>hauts maxdryadfactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_MaxPilferingValue</defName>
+    <label>hauts maxpilferingvalue</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_MechEnergyUsage</defName>
+    <label>hauts mechenergyusage</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_MeleeArmorPenetration</defName>
+    <label>hauts meleearmorpenetration</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_PersonalCaravanVisibilityFactor</defName>
+    <label>hauts personalcaravanvisibilityfactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_PilferingStealth</defName>
+    <label>hauts pilferingstealth</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_PsycastFocusRefund</defName>
+    <label>hauts psycastfocusrefund</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_PsyfocusFromFood</defName>
+    <label>hauts psyfocusfromfood</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_PsyfocusGainOnKill</defName>
+    <label>hauts psyfocusgainonkill</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_PsyfocusRegenRate</defName>
+    <label>hauts psyfocusregenrate</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_RangedArmorPenetration</defName>
+    <label>hauts rangedarmorpenetration</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_RecyclingSpeed</defName>
+    <label>hauts recyclingspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_SkillGainFromRecreation</defName>
+    <label>hauts skillgainfromrecreation</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_SkipcastRangeFactor</defName>
+    <label>hauts skipcastrangefactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_SpewRangeFactor</defName>
+    <label>hauts spewrangefactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_SurveySpeed</defName>
+    <label>hauts surveyspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_TierOnePsycastCostOffset</defName>
+    <label>hauts tieronepsycastcostoffset</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Hauts_TrackSize</defName>
+    <label>hauts tracksize</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>HemogenGainFactor</defName>
+    <label>hemogengainfactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>HungerRateFactor</defName>
+    <label>hungerratefactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>HygieneRateMultiplier</defName>
+    <label>hygieneratemultiplier</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>InjuryHealingFactor</defName>
+    <label>injuryhealingfactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>JoyFallRateFactor</defName>
+    <label>joyfallratefactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>JoyNeedRateMultiplier</defName>
+    <label>joyneedratemultiplier</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>LanguageLearningAbility</defName>
+    <label>languagelearningability</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Mashed_Ashlands_AshResistance</defName>
+    <label>mashed ashlands ashresistance</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Mass</defName>
+    <label>mass</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>MaxHitPoints</defName>
+    <label>maxhitpoints</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>MechControlGroups</defName>
+    <label>mechcontrolgroups</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>MechFormingSpeed</defName>
+    <label>mechformingspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>MechRemoteControlDistanceOffset</defName>
+    <label>mechremotecontroldistanceoffset</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>MechRemoteRepairDistance</defName>
+    <label>mechremoterepairdistance</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>MechRemoteShieldDistance</defName>
+    <label>mechremoteshielddistance</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>MechRemoteShieldEnergy</defName>
+    <label>mechremoteshieldenergy</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>MechRepairSpeed</defName>
+    <label>mechrepairspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>MedicalTendQualityOffset</defName>
+    <label>medicaltendqualityoffset</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>MeleeCritChance</defName>
+    <label>meleecritchance</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>MeleeDPS</defName>
+    <label>meleedps</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>MeleeParryChance</defName>
+    <label>meleeparrychance</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>MeleeWeapon_CooldownMultiplier</defName>
+    <label>meleeweapon cooldownmultiplier</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>MeleeWeapon_DamageMultiplier</defName>
+    <label>meleeweapon damagemultiplier</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>P42_AllergicSensitivity</defName>
+    <label>p42 allergicsensitivity</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>PawnBeauty</defName>
+    <label>pawnbeauty</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>PilotingAbility</defName>
+    <label>pilotingability</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>PsychicEntropyGain</defName>
+    <label>psychicentropygain</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>PsychicRitualQualityOffset</defName>
+    <label>psychicritualqualityoffset</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>RBSF_NatureConnection</defName>
+    <label>rbsf natureconnection</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>Radiation</defName>
+    <label>radiation</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>RangedWeapon_DamageMultiplier</defName>
+    <label>rangedweapon damagemultiplier</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>RawNutritionFactor</defName>
+    <label>rawnutritionfactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>ReadingSpeed</defName>
+    <label>readingspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>RecruitRelationshipDamage</defName>
+    <label>recruitrelationshipdamage</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>RoyalFavorValue</defName>
+    <label>royalfavorvalue</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>SculptingSpeed</defName>
+    <label>sculptingspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>SharpDamageMultiplier</defName>
+    <label>sharpdamagemultiplier</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>ShootingAccuracyFactor_Long</defName>
+    <label>shootingaccuracyfactor long</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>ShootingAccuracyFactor_Medium</defName>
+    <label>shootingaccuracyfactor medium</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>ShootingAccuracyFactor_Short</defName>
+    <label>shootingaccuracyfactor short</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>ShootingAccuracyFactor_Touch</defName>
+    <label>shootingaccuracyfactor touch</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>SlaveSuppressionFallRate</defName>
+    <label>slavesuppressionfallrate</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>SmeltingSpeed</defName>
+    <label>smeltingspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>SmithingSpeed</defName>
+    <label>smithingspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>SocialIdeoSpreadFrequencyFactor</defName>
+    <label>socialideospreadfrequencyfactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>StudyEfficiency</defName>
+    <label>studyefficiency</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>SurgerySuccessChanceFactor</defName>
+    <label>surgerysuccesschancefactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>SwimSpeed</defName>
+    <label>swimspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>TailoringSpeed</defName>
+    <label>tailoringspeed</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>ThirstRateMultiplier</defName>
+    <label>thirstratemultiplier</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>VAEI_SanityGainMultiplier</defName>
+    <label>vaei sanitygainmultiplier</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>VAEI_SanityLossMultiplier</defName>
+    <label>vaei sanitylossmultiplier</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>VAEI_SanityMultiplier</defName>
+    <label>vaei sanitymultiplier</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>VEF_BodySize_Offset</defName>
+    <label>vef bodysize offset</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>VEF_EnergyShieldEnergyMaxFactor</defName>
+    <label>vef energyshieldenergymaxfactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>VEF_FoodCapacityMultiplier</defName>
+    <label>vef foodcapacitymultiplier</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>VEF_MassCarryCapacity</defName>
+    <label>vef masscarrycapacity</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>VEF_MeleeWeaponRange</defName>
+    <label>vef meleeweaponrange</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>VEF_RangeAttackDamageFactor</defName>
+    <label>vef rangeattackdamagefactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>VEF_RangeAttackSpeedFactor</defName>
+    <label>vef rangeattackspeedfactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>VEF_VerbRangeFactor</defName>
+    <label>vef verbrangefactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+  <StatDef>
+    <defName>WorkTableWorkSpeedFactor</defName>
+    <label>worktableworkspeedfactor</label>
+    <description>Compatibility stat for Unified Traits Reimagined.</description>
+    <category>UT_CompatibilityCategory</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+
+</Defs>

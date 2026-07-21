@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DamageDef>
+    <defName>Hauts_SkipFrag</defName>
+    <label>hauts skipfrag</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>VEF_PermanentBurn</defName>
+    <label>vef permanentburn</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>VEF_SecondaryAcidBurn</defName>
+    <label>vef secondaryacidburn</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+  </DamageDef>
+
+</Defs>
