@@ -22,9 +22,27 @@
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>Ludeon.RimWorld.Biotech</li>
 		<li>Ludeon.RimWorld.Anomaly</li>
+		<li>UnlimitedHugs.HugsLib</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
+	<incompatibleWith>
+		<li>VanillaExpanded.VTE</li>
+		<li>Syrchalis.Traits</li>
+		<li>Nuke.FalloutTraits</li>
+		<li>DarkestDungeon.Traits</li>
+		<li>Hauts.Traits</li>
+		<li>Gewen.AdditionalTraits</li>
+		<li>BOT.MoreTraits</li>
+	</incompatibleWith>
 	<description>
 Unified Traits Reimagined é a unificação completa, reescrita do zero e otimizada de 16 mods populares de traits do RimWorld.
+
+Dependência Obrigatória:
+- Harmony (brrainz.harmony)
+
+Compatibilidade Nativa de Carga (loadAfter):
+- RimWorld Core &amp; todas as DLCs (Royalty, Ideology, Biotech, Anomaly)
+- HugsLib &amp; Vanilla Expanded Framework (opcional)
 
 Características Principais:
 - Reimplementação completa e otimizada em C# de mais de 1.900 definições de traits.
@@ -34,3 +52,4 @@ Características Principais:
 - Tradução nativa completa em Português (PT-BR) e Inglês.
 	</description>
 </ModMetaData>
+
