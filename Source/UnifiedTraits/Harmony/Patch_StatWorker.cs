@@ -9,7 +9,7 @@ namespace UnifiedTraits.HarmonyPatches
     public static class Patch_StatWorker
     {
         [HarmonyPostfix]
-        public static void Postfix(StatWorker __instance, StatRequest req, ref float __result, bool applyBases = true)
+        public static void Postfix(StatWorker __instance, StatRequest req, ref float __result, bool applyPostProcess = true)
         {
             if (!req.HasThing || !(req.Thing is Pawn pawn) || pawn.story?.traits == null)
                 return;
